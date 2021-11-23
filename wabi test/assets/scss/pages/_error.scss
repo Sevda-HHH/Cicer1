@@ -1,0 +1,137 @@
+section#error {
+    padding-top: 83px;
+    .content {
+        height: 300px;
+        padding: 40px 0;
+        margin-top: 80px;
+        padding: 40px 0;
+        width: 100%;
+        .main {
+            font-family: $monst;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 144px;
+            line-height: 176px;
+            letter-spacing: 0.03em;
+            color: $dark-blue;
+        }
+        .des {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+    }
+    .linkButtons {
+        margin-top: 32px;
+        .contactBtn {
+            display: block;
+            button {
+                background: $white;
+                border: 1px solid #bfc1c9;
+                box-sizing: border-box;
+                border-radius: 100px;
+                font-family: $open;
+                font-style: normal;
+                transition: 0.3s;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                padding: 14.5px 0;
+                width: 100%;
+                color: $dark-blue;
+                &:hover {
+                    color: $white;
+                    background: $dark-blue;
+                    border: 1px solid $dark-blue;
+                }
+            }
+        }
+        .goBackBtn {
+            display: block;
+            button {
+                border: 1px solid $dark-blue;
+                box-sizing: border-box;
+                border-radius: 100px;
+                transition: 0.3s;
+                font-family: $open;
+                font-style: normal;
+                margin-left: 24px;
+                font-weight: 600;
+                background: $dark-blue;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                padding: 14.5px 0px;
+                width: 75%;
+                color: $white;
+                &:hover {
+                    color: $white;
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    section#error .linkButtons .contactBtn,
+    section#error .linkButtons .goBackBtn {
+        width: 30% !important;
+    }
+}
+@media screen and (max-width: 900px) {
+    section#error .linkButtons .contactBtn {
+        width: 30% !important;
+    }
+    section#error .linkButtons .goBackBtn {
+        width: 50% !important;
+    }
+}
+@media screen and (max-width: 550px) {
+    section#error .linkButtons .contactBtn button:hover {
+        color: #215273;
+        background: #ffffff;
+        border: 1px solid #bfc1c9;
+    }
+    section#error .linkButtons .goBackBtn button:hover {
+        border: 1px solid #215273;
+        background: #215273;
+        color: #ffffff;
+    }
+    section#error .linkButtons .contactBtn {
+        width: 40% !important;
+    }
+    section#error .linkButtons .goBackBtn {
+        width: 60% !important;
+    }
+}
+@media screen and (max-width: 420px) {
+    section#error .linkButtons .contactBtn,
+    section#error .linkButtons .goBackBtn {
+        width: 100% !important;
+    }
+
+    section#error .linkButtons .goBackBtn button {
+        margin-left: 0;
+        margin-top: 24px;
+        width: 100%;
+    }
+    section#error .content .main {
+        font-size: 72px;
+        line-height: 88px;
+    }
+    section#error .content {
+        height: 240px;
+        margin-top: 24px;
+    }
+    section#error .content .des {
+        font-size: 13px;
+        line-height: 160%;
+    }
+}

@@ -1,0 +1,349 @@
+section#createATrip {
+    padding-top: 81px;
+
+    .createATripMain {
+        flex-wrap: wrap;
+        background: #fbfbfc;
+    }
+    .createATripBg {
+        height: 231px;
+    }
+    .main {
+        margin: -56px 0 0 0;
+
+        font-family: $open;
+        font-style: normal;
+        line-height: 160%;
+        background: $white;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.03);
+        border-radius: 12px;
+        .first {
+            padding: 24px;
+        }
+        .inputDate {
+            position: relative;
+            input {
+                padding-left: 55px !important;
+            }
+            .dateIcon {
+                position: absolute;
+                top: 17%;
+                left: 3%;
+                cursor: pointer;
+            }
+        }
+        .second {
+            padding: 24px;
+            border-top: 1px dashed #e5e7eb;
+            border-bottom: 1px dashed #e5e7eb;
+            .heading {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: $dark-blue;
+                margin-bottom: 12px;
+            }
+            .language {
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $dark-grey;
+                margin-right: 32px;
+                &.chosen {
+                    background: #eef9ff;
+                    border-radius: 8px;
+                    padding: 4px;
+                }
+            }
+            .showMore {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 280%;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+        }
+        .saveBtn {
+            text-align: center;
+            button {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                color: $white;
+                padding: 10px 20px;
+                transition: 0.3s;
+                margin: 24px 0;
+                background: $dark-blue;
+                border: 1px solid $dark-blue;
+                border-radius: 100px;
+                &:hover {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+        .form-group {
+            .datepicker-dropdown .datepicker-picker {
+                background: #ffffff !important;
+                border: 1px solid #e5e7eb !important;
+                box-sizing: border-box !important;
+                box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1) !important;
+                border-radius: 12px !important;
+            }
+            .datepicker-header {
+                .datepicker-controls {
+                    padding: 20px !important;
+                }
+            }
+            button.button.view-switch {
+                background: white !important;
+            }
+            input {
+                &[type="number"] {
+                    width: 100%;
+                    &:disabled {
+                        background: #f4f5f6 !important  ;
+                    }
+                }
+                &[type="text"],
+                &[type="date"],
+                &[type="number"] {
+                    background: $white;
+                    padding: 12px 0 12px 24px;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                    }
+                    &::placeholder {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 160%;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                    }
+                }
+
+                &[type="radio"],
+                &[type="checkbox"] {
+                    width: 20px;
+                    background: none;
+                    height: 20px;
+                    border-radius: 6px !important;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &:checked {
+                        background: #258ee3;
+                        border: 1px solid #258ee3;
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+                    }
+                }
+            }
+
+            .form-check {
+                margin-right: 32px;
+                cursor: pointer;
+
+                label {
+                    cursor: pointer;
+                    font-family: $open;
+                    margin-left: 12px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                }
+            }
+
+            .head {
+                font-weight: 600;
+                font-size: 14px;
+                padding: 24px 0 0 0;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+        }
+        .title {
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+    }
+    .head {
+        padding: 68px 0;
+        font-family: $monst;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: 0.03em;
+        color: $black;
+    }
+    .ques {
+        margin-top: 30px;
+        ul {
+            margin-left: 20px;
+            li {
+                margin-bottom: 12px;
+                a {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    &:hover {
+                        color: #258ee3 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.titleTextt {
+    margin: 0 0 16px 0;
+    font-family: $open;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: $black;
+    .clearLanguages,
+    .clearActivities {
+        padding: 4px 10px;
+        font-family: $open;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: $dark-grey;
+        background: $light;
+        margin-left: 24px;
+        cursor: pointer;
+        border-radius: 100px;
+    }
+}
+.language {
+    font-family: $open;
+    font-style: normal;
+    margin-top: 4px;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: $dark-grey;
+    margin-right: 16px;
+    margin-left: 8px;
+    .remove {
+        display: none;
+        cursor: pointer;
+    }
+    &.chosenn {
+        .remove {
+            display: unset;
+        }
+        background: #eef9ff;
+        padding: 2px 8px 4px 8px;
+        border-radius: 8px;
+        line-height: 25%;
+        &.language {
+            margin-right: 16px !important;
+            margin-left: 0px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    section#createATrip .createATripMain {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section#createATrip .main .saveBtn button {
+        margin: 16px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section#createATrip .createATripBg {
+        height: 179px;
+    }
+    section#createATrip .main .second .heading {
+        flex-wrap: wrap;
+    }
+    .titleTextt .clearLanguages,
+    .titleTextt .clearActivities {
+        margin-left: 12px;
+    }
+    section#createATrip .ques ul li a {
+        font-size: 14px;
+        line-height: 160%;
+    }
+    section#createATrip .main .first {
+        padding: 16px 12px;
+    }
+    section#createATrip .createATripMain {
+        padding: 0 24px;
+    }
+    section#createATrip .head {
+        font-size: 24px;
+        line-height: 29px;
+        padding: 53px 0 100px 0px;
+    }
+    section#createATrip .main .form-group .head {
+        font-size: 13px;
+        line-height: 160%;
+        padding: 16px 0 0 0;
+    }
+    section#createATrip .main .form-group .form-check label {
+        font-size: 14px;
+        line-height: 160%;
+    }
+    section#createATrip .main .second .language {
+        font-size: 13px;
+        line-height: 160%;
+        margin-right: 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .titleTextt .clearLanguages,
+    .titleTextt .clearActivities {
+        margin-left: 0px !important;
+    }
+}

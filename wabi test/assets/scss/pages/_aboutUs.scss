@@ -1,0 +1,583 @@
+section#aboutUsIntro {
+    padding-top: 128px;
+    .imageContent {
+        align-self: unset;
+    }
+    .content {
+        align-self: center;
+        .title {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #05a4ff;
+        }
+        .head {
+            font-family: $monst;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 39px;
+            letter-spacing: 0.03em;
+            color: #002c2f;
+            margin-top: 8px;
+            span {
+                color: #05a4ff;
+            }
+        }
+        .des {
+            margin-top: 32px;
+            font-family: $open;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+
+// be a local guide
+section#aboutUsBeALocalGuide {
+    margin-top: 64px;
+    .aboutUsBeALocalGuidereverse {
+        flex-wrap: wrap;
+    }
+    img {
+        width: 100%;
+    }
+    .imageContent {
+        align-self: unset;
+    }
+    .content {
+        margin-left: 36px;
+        align-self: center;
+        .beLocalGuideBtn {
+            button {
+                margin-top: 32px;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                padding: 10px 20px;
+                color: $white;
+                background: $dark-blue;
+                transition: 0.3s;
+                border: 1px solid $dark-blue;
+                border-radius: 100px;
+                &:hover {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+        .head {
+            font-family: $monst;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 140%;
+            letter-spacing: 0.03em;
+            color: #18191f;
+        }
+        .des {
+            font-family: $open;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            margin-top: 16px;
+            line-height: 180%;
+            letter-spacing: 0.02em;
+            color: #18191f;
+        }
+        .listOfSteps {
+            margin-top: 32px;
+            ul {
+                padding-left: 0;
+                list-style: none;
+                li {
+                    margin-top: 24px;
+                    img {
+                        width: 56px;
+                        height: 56px;
+                        margin-right: 16px;
+                    }
+                    .title {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: #04878f;
+                    }
+                    .des {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        margin-top: 4px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: #18191f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Как найти гида?
+section#howItWorks {
+    .wrapNoWrap {
+        flex-wrap: wrap;
+    }
+    .bgImg {
+        min-height: 385px;
+        padding: 31px;
+        position: relative;
+        margin-top: 56px;
+    }
+    .beaGuideBtn {
+        button {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.03em;
+            color: $white;
+            padding: 10px 20px;
+            background: $dark-blue;
+            border: 1px solid $dark-blue;
+            border-radius: 100px;
+            position: absolute;
+            bottom: -2%;
+            right: 42%;
+            &:hover {
+                background: $dark;
+                border: 1px solid $dark;
+            }
+        }
+    }
+}
+
+// Вопрос - ответ
+section#questionsAndAnswers {
+    margin-top: 108px;
+    .ques {
+        text-align: center;
+        font-family: $open;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.02em;
+    }
+    .head {
+        text-align: center;
+        font-family: $monst;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: 0.03em;
+        color: $black;
+    }
+    .moreDetailsBtn {
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #dfdfdf;
+        button {
+            margin-top: 32px;
+            padding: 10px 61px;
+
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.03em;
+            color: $dark-blue;
+            background: $white;
+            border: 1px solid $med-grey;
+            transition: 0.3s;
+            border-radius: 100px;
+            &:hover {
+                border: 1px solid $dark-blue;
+                background: $dark-blue;
+                color: $white;
+            }
+        }
+    }
+    .accordian {
+        // padding: 24px 24px 24px 0;
+        margin-top: 24px;
+    }
+    li {
+        list-style: none;
+    }
+
+    li h2 {
+        font-family: $nunito;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+        font-feature-settings: "liga" off;
+        color: #212121;
+        padding: 24px 0;
+        padding-left: 0;
+    }
+
+    .question {
+        position: relative;
+        border-top: 1px solid #dfdfdf;
+        cursor: pointer;
+        img {
+            padding: 24px 0;
+        }
+    }
+
+    .question .glyphicon {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+    }
+
+    .answer p {
+        font-family: $nunito;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 160%;
+        letter-spacing: 0.03em;
+        font-feature-settings: "liga" off;
+        color: $black;
+    }
+
+    .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+    }
+
+    .accordian li.open .answer {
+        max-height: 250px;
+    }
+
+    .accordian li.open .question .glyphicon {
+        transform: rotate(180deg);
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+}
+
+.howItWorksImage img {
+    height: 100%;
+}
+
+@media screen and (max-width: 1390px) {
+    section#howItWorks .content {
+        width: 189px;
+    }
+}
+@media screen and (max-width: 1190px) {
+    section#howItWorks .content {
+        width: 156px;
+    }
+}
+@media screen and (max-width: 990px) {
+    section#howItWorks .content {
+        width: 200px;
+    }
+    section#howItWorks .wrapNoWrap {
+        flex-wrap: nowrap;
+        width: 103%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        justify-content: start !important;
+        padding-bottom: 11px;
+    }
+}
+@media screen and (max-width: 980px) {
+    section#howItWorks .beaGuideBtn button {
+        right: 33%;
+    }
+}
+@media screen and (max-width: 970px) {
+    section#aboutUsIntro .content .title {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    section#aboutUsIntro .content .head,
+    section#aboutUsBeALocalGuide .content .head {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    section#aboutUsIntro .content .des,
+    section#aboutUsBeALocalGuide .content .des,
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li .des {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    section#aboutUsBeALocalGuide .content {
+        margin-left: 0 !important;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps {
+        margin-top: 16px;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li .title {
+        font-size: 19px;
+        line-height: 31px;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li .des {
+        margin-top: 8px;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li {
+        margin-top: 16px;
+    }
+    section#aboutUsBeALocalGuide .content .beLocalGuideBtn button {
+        margin-top: 8px;
+    }
+    section#aboutUsIntro .imageContent {
+        align-self: center;
+    }
+}
+@media screen and (max-width: 870px) {
+    section#howItWorks .content {
+        width: 186px;
+    }
+    section#howItWorks .beaGuideBtn button {
+        right: 27%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section#howItWorks .bgImg {
+        padding: 20px 0 31px 31px;
+    }
+    section#aboutUsIntro .content .title {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    section#aboutUsIntro .content .head,
+    section#aboutUsBeALocalGuide .content .head {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    section#aboutUsIntro .content .des,
+    section#aboutUsBeALocalGuide .content .des,
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li .des {
+        margin-top: 32px;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    section#aboutUsBeALocalGuide .content {
+        margin-left: 0 !important;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps {
+        margin-top: 16px;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li .title {
+        font-size: 18px;
+        line-height: 160%;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li .des {
+        font-weight: normal;
+        font-size: 15px;
+        margin-top: 4px;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li {
+        margin-top: 24px;
+    }
+    section#aboutUsBeALocalGuide .content .beLocalGuideBtn button {
+        margin-top: 16px;
+    }
+    section#aboutUsBeALocalGuide .aboutUsBeALocalGuidereverse {
+        flex-wrap: wrap-reverse;
+    }
+    section#aboutUsBeALocalGuide .imageContent {
+        margin-top: 48px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    section#howItWorks .bgImg {
+        min-height: 340px;
+    }
+    section#howItWorks .content .des {
+        font-size: 13px;
+    }
+    section#howItWorks .content .title {
+        font-size: 14px;
+    }
+    section#howItWorks .content {
+        width: 157px;
+    }
+    section#howItWorks .beaGuideBtn button {
+        right: 30%;
+    }
+}
+@media screen and (max-width: 560px) {
+    section#questionsAndAnswers {
+        margin-top: 56px;
+    }
+    section#questionsAndAnswers ul {
+        padding: 0 16px;
+    }
+    section#howItWorks .content {
+        padding: 0 2px;
+        width: 186px !important;
+    }
+    section#howItWorks .beaGuideBtn button {
+        right: 24%;
+        bottom: 0;
+    }
+}
+@media screen and (max-width: 530px) {
+    section#howItWorks .content {
+        width: 162px !important;
+    }
+    section#howItWorks .beaGuideBtn button {
+        right: 27%;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section#questionsAndAnswers .head {
+        font-size: 19px;
+        line-height: 23px;
+    }
+    section#questionsAndAnswers .ques {
+        font-size: 13px;
+    }
+    section#questionsAndAnswers li h2 {
+        padding: 22px 0;
+    }
+    section#howItWorks .beaGuideBtn button {
+        right: 21%;
+        bottom: 0;
+    }
+    section#aboutUsIntro .content .title {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    section#aboutUsIntro .content .head,
+    section#aboutUsBeALocalGuide .content .head {
+        font-size: 19px;
+        line-height: 160%;
+    }
+    section#aboutUsIntro .content .des,
+    section#aboutUsBeALocalGuide .content .des {
+        margin-top: 16px;
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li .des {
+        margin-top: 4px;
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#aboutUsBeALocalGuide .content {
+        margin-left: 0 !important;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps {
+        margin-top: 16px;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li .title {
+        font-size: 16px;
+        line-height: 160%;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li .des {
+        font-size: 14px;
+        line-height: 160%;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li {
+        margin-top: 24px;
+    }
+    section#aboutUsBeALocalGuide .content .beLocalGuideBtn button {
+        margin-top: 16px;
+    }
+    section#aboutUsBeALocalGuide .aboutUsBeALocalGuidereverse {
+        flex-wrap: wrap-reverse;
+    }
+    section#aboutUsBeALocalGuide .content .listOfSteps ul li img {
+        width: 40px;
+        height: 40px;
+    }
+    section#aboutUsBeALocalGuide .imageContent {
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section#howItWorks .bgImg {
+        min-height: 330px;
+    }
+    section#howItWorks .beaGuideBtn button {
+        right: 19%;
+    }
+    section#howItWorks .content {
+        width: 140px !important;
+    }
+    section#howItWorks .headd {
+        margin: 40px 0 24px 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    section#howItWorks .bgImg {
+        min-height: 300px;
+    }
+    section#howItWorks .beaGuideBtn button {
+        right: 13%;
+    }
+    .howItWorksImage img {
+        height: 80%;
+    }
+    section#howItWorks .content {
+        width: 126px !important;
+    }
+}
+@media screen and (max-width: 290px) {
+    section#howItWorks .bgImg {
+        min-height: 275px;
+    }
+    section#howItWorks .beaGuideBtn button {
+        right: 13%;
+    }
+    .howItWorksImage img {
+        height: 70%;
+    }
+    section#howItWorks .content {
+        width: 126px !important;
+    }
+    section#howItWorks .beaGuideBtn button {
+        right: 10%;
+    }
+    section#howItWorks .content {
+        width: 122px !important;
+    }
+    section#howItWorks .content .title {
+        line-height: 17px;
+        font-size: 13px;
+    }
+}

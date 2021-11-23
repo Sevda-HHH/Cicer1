@@ -1,0 +1,52 @@
+.show-result {
+    margin: 10px;
+    padding: 10px;
+    color: green;
+    font-size: 20px;
+}
+
+.star-rating s:hover,
+.star-rating s.active {
+    color: $dark-blue;
+}
+.star-rating-rtl s:hover,
+.star-rating-rtl s.active {
+    color: $dark-blue;
+}
+
+.star-rating s,
+.star-rating-rtl s {
+    color: #e5e7eb;
+    font-size: 40px;
+
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 50px;
+}
+.star-rating {
+    padding: 2px;
+}
+.star-rating s.rated:before,
+.star-rating s.active:before,
+.star-rating s.active:hover:before {
+    color: #ffd938;
+    content: "\2605";
+}
+.star-rating s:hover:before {
+    content: "\2605";
+    color: rgba(255, 217, 56, 0.26);
+}
+.star-rating s:before {
+    color: #e5e7eb;
+    content: "\2606";
+}
+.star-rating-rtl s:hover:after,
+.star-rating-rtl s.rated:after,
+.star-rating-rtl s.active:after {
+    content: "\2605";
+    color: #ffd938 !important;
+}
+.star-rating-rtl s:after {
+    content: "\2606";
+    color: #ffd938;
+}

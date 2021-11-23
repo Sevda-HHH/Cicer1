@@ -1,0 +1,1483 @@
+section#myProfile {
+    // intro
+    background: #fafafb;
+    body {
+        background: #fafafb !important ;
+    }
+
+    .mainCotent {
+        .aa {
+            width: 372px;
+            height: 287px;
+            position: absolute;
+            left: 63%;
+            top: 37%;
+            background: #ffffff;
+            box-shadow: 0px 4px 10px rgb(0 0 0 / 6%);
+            border-radius: 12px;
+            .priceAndRanking {
+                display: flex;
+                justify-content: space-between;
+                padding: 24px 24px 16px 24px;
+                border-bottom: 1px dashed #e5e7eb;
+                .price {
+                    font-family: $monst;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 27px;
+                    letter-spacing: 0.03em;
+                    color: $dark-blue;
+                }
+                .ranking {
+                    color: #11142d;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    span {
+                        color: #a8b0c0;
+                    }
+                    img {
+                        padding: 0 3px 3px 5px;
+                    }
+                }
+            }
+            .content {
+                padding: 16px 24px 24px 24px;
+                .editProfileBtn {
+                    button {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 19px;
+                        letter-spacing: 0.03em;
+                        color: $dark-blue;
+                        border: 1px solid $dark-blue;
+                        box-sizing: border-box;
+                        border-radius: 100px;
+                        width: 100%;
+                        transition: 0.3s;
+                        padding: 14px 0;
+                        margin-bottom: 24px;
+                        &:hover {
+                            border: 1px solid $dark-blue;
+                            background: $dark-blue;
+                            color: $white;
+                        }
+                    }
+                }
+                .makeATrip {
+                    button {
+                        background: $dark-blue;
+                        border-radius: 100px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 19px;
+                        width: 100%;
+                        border: 1px solid $dark-blue;
+                        transition: 0.3s;
+                        letter-spacing: 0.03em;
+                        color: $white;
+                        padding: 14px 0;
+                        &:hover {
+                            background: $dark;
+                            border: 1px solid $dark;
+                        }
+                    }
+                }
+                .txtLine {
+                    width: 90%;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    text-align: center;
+                    letter-spacing: 0.02em;
+                    color: $dark-grey;
+                    padding-bottom: 12px;
+                }
+            }
+        }
+        .bbResponsive {
+            width: 372px;
+            height: 349px;
+            display: none;
+            margin-top: 16px;
+            background: #ffffff;
+            box-shadow: 0px 4px 10px rgb(0 0 0 / 6%);
+            border-radius: 12px;
+            .priceAndRanking {
+                display: flex;
+                justify-content: space-between;
+                padding: 24px 24px 16px 24px;
+                border-bottom: 1px dashed #e5e7eb;
+                .price {
+                    font-family: $monst;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 27px;
+                    letter-spacing: 0.03em;
+                    color: $dark-blue;
+                }
+                .ranking {
+                    color: #11142d;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    span {
+                        color: #a8b0c0;
+                    }
+                    img {
+                        padding: 0 3px 3px 5px;
+                    }
+                }
+            }
+            .content {
+                padding: 16px 24px;
+                border-bottom: 1px dashed #e5e7eb;
+
+                .leaveAReview {
+                    button {
+                        margin-top: 16px;
+
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 19px;
+                        letter-spacing: 0.03em;
+                        color: $dark-blue;
+                        border: 1px solid $med-grey;
+                        box-sizing: border-box;
+                        border-radius: 100px;
+                        width: 100%;
+                        transition: 0.3s;
+                        background: $white;
+                        padding: 14px 0;
+                        &:hover {
+                            border: 1px solid $dark-blue;
+                            background: $dark-blue;
+                            color: $white;
+                        }
+                    }
+                }
+                .makeATrip {
+                    button {
+                        background: $dark-blue;
+                        border-radius: 100px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 19px;
+                        width: 100%;
+                        border: 1px solid $dark-blue;
+                        transition: 0.3s;
+                        letter-spacing: 0.03em;
+                        color: $white;
+                        padding: 14px 0;
+                        &:hover {
+                            background: $dark;
+                            border: 1px solid $dark;
+                        }
+                    }
+                }
+                .txtLine {
+                    width: 90%;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    text-align: center;
+                    letter-spacing: 0.02em;
+                    color: $dark-grey;
+                    padding-bottom: 12px;
+                }
+            }
+            .foot {
+                padding: 16px 24px;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 120%;
+                letter-spacing: 0.02em;
+                color: #a8b0c0;
+                .share {
+                    .txt {
+                        padding: 8px 0 8px 16px;
+                    }
+                }
+                .link {
+                    a {
+                        text-decoration: none;
+                        color: #a8b0c0;
+                    }
+                    margin-top: 16px;
+                }
+            }
+        }
+        .aaResponsive {
+            width: 372px;
+            height: 287px;
+            display: none;
+            background: #ffffff;
+            box-shadow: 0px 4px 10px rgb(0 0 0 / 6%);
+            border-radius: 12px;
+            .priceAndRanking {
+                display: flex;
+                justify-content: space-between;
+                padding: 24px 24px 16px 24px;
+                border-bottom: 1px dashed #e5e7eb;
+                .price {
+                    font-family: $monst;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 27px;
+                    letter-spacing: 0.03em;
+                    color: $dark-blue;
+                }
+                .ranking {
+                    color: #11142d;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    span {
+                        color: #a8b0c0;
+                    }
+                    img {
+                        padding: 0 3px 3px 5px;
+                    }
+                }
+            }
+            .content {
+                padding: 16px 24px 24px 24px;
+                .editProfileBtn {
+                    button {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 19px;
+                        letter-spacing: 0.03em;
+                        color: $dark-blue;
+                        border: 1px solid $dark-blue;
+                        box-sizing: border-box;
+                        border-radius: 100px;
+                        width: 100%;
+                        transition: 0.3s;
+                        padding: 14px 0;
+                        margin-bottom: 24px;
+                        &:hover {
+                            border: 1px solid $dark-blue;
+                            background: $dark-blue;
+                            color: $white;
+                        }
+                    }
+                }
+                .makeATrip {
+                    button {
+                        background: $dark-blue;
+                        border-radius: 100px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 19px;
+                        width: 100%;
+                        border: 1px solid $dark-blue;
+                        transition: 0.3s;
+                        letter-spacing: 0.03em;
+                        color: $white;
+                        padding: 14px 0;
+                        &:hover {
+                            background: $dark;
+                            border: 1px solid $dark;
+                        }
+                    }
+                }
+                .txtLine {
+                    width: 90%;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    text-align: center;
+                    letter-spacing: 0.02em;
+                    color: $dark-grey;
+                    padding-bottom: 12px;
+                }
+            }
+        }
+        .bb {
+            width: 372px;
+            height: 349px;
+            position: absolute;
+            left: 63%;
+            top: 37%;
+            background: #ffffff;
+            box-shadow: 0px 4px 10px rgb(0 0 0 / 6%);
+            border-radius: 12px;
+            .priceAndRanking {
+                display: flex;
+                justify-content: space-between;
+                padding: 24px 24px 16px 24px;
+                border-bottom: 1px dashed #e5e7eb;
+                .price {
+                    font-family: $monst;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 27px;
+                    letter-spacing: 0.03em;
+                    color: $dark-blue;
+                }
+                .ranking {
+                    color: #11142d;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    span {
+                        color: #a8b0c0;
+                    }
+                    img {
+                        padding: 0 3px 3px 5px;
+                    }
+                }
+            }
+            .content {
+                padding: 16px 24px;
+                border-bottom: 1px dashed #e5e7eb;
+
+                .leaveAReview {
+                    button {
+                        margin-top: 16px;
+
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 19px;
+                        letter-spacing: 0.03em;
+                        color: $dark-blue;
+                        border: 1px solid $med-grey;
+                        box-sizing: border-box;
+                        border-radius: 100px;
+                        width: 100%;
+                        transition: 0.3s;
+                        background: $white;
+                        padding: 14px 0;
+                        &:hover {
+                            border: 1px solid $dark-blue;
+                            background: $dark-blue;
+                            color: $white;
+                        }
+                    }
+                }
+                .makeATrip {
+                    button {
+                        background: $dark-blue;
+                        border-radius: 100px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 19px;
+                        width: 100%;
+                        border: 1px solid $dark-blue;
+                        transition: 0.3s;
+                        letter-spacing: 0.03em;
+                        color: $white;
+                        padding: 14px 0;
+                        &:hover {
+                            background: $dark;
+                            border: 1px solid $dark;
+                        }
+                    }
+                }
+                .txtLine {
+                    width: 90%;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    text-align: center;
+                    letter-spacing: 0.02em;
+                    color: $dark-grey;
+                    padding-bottom: 12px;
+                }
+            }
+            .foot {
+                padding: 16px 24px;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 120%;
+                letter-spacing: 0.02em;
+                color: #a8b0c0;
+                .share {
+                    .txt {
+                        padding: 8px 0 8px 16px;
+                    }
+                }
+                .link {
+                    a {
+                        text-decoration: none;
+                        color: #a8b0c0;
+                    }
+                    margin-top: 16px;
+                }
+            }
+        }
+        .bgIMG {
+            height: 272px;
+            width: 100%;
+        }
+        .main {
+            background: $white;
+            box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.06);
+            border-radius: 0px 0px 32px 32px;
+            .profilePic {
+                padding: 0;
+                width: 170px;
+                margin: -96px 0;
+                height: 170px;
+                overflow: hidden;
+                cursor: pointer;
+                border: 5px solid $white;
+                border-radius: 100px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .nameAndPlace {
+                margin-top: 14px;
+                .name {
+                    margin-right: 8px;
+                    font-family: $monst;
+                    font-style: normal;
+                    padding-top: 4px;
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 27px;
+                    letter-spacing: 0.03em;
+                    color: $black;
+                }
+                .place {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    text-align: center;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    background: linear-gradient(
+                        180deg,
+                        rgba(8, 126, 225, 0.2) 0%,
+                        rgba(47, 179, 255, 0.2) 99.99%,
+                        rgba(5, 232, 186, 0.2) 100%
+                    );
+                    border-radius: 100px;
+                    padding: 7px 8px;
+                }
+            }
+            .quote {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #002c2f;
+                .open {
+                    margin-top: 24px;
+                }
+                .end {
+                    margin-top: 8px;
+                    margin-bottom: 29px;
+                }
+                .text {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+
+    // Личная информация
+    section#myProfilePersonalData {
+        overflow-x: hidden;
+        margin-top: 80px;
+
+        .head {
+            margin-bottom: 16px;
+            font-family: $monst;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 27px;
+            letter-spacing: 0.03em;
+            color: $black;
+        }
+        .main {
+            background: $white;
+            box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.06);
+            border-radius: 32px;
+            padding-bottom: 32px;
+            .showAll {
+                cursor: pointer;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 120%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.02em;
+                color: #05a4ff;
+                i {
+                    font-size: 13px;
+                    margin-left: 10px;
+                    color: #05a4ff;
+                }
+            }
+            .aboutMe {
+                margin-top: 32px;
+                .des {
+                    margin: 16px 0;
+                    display: block;
+                    width: 100%;
+                    color: $black;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.02em;
+                }
+            }
+            .languages {
+                margin-top: 48px;
+                .language {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    padding: 5px 12px;
+                    background: #def4ff;
+                    border-radius: 100px;
+                    margin-right: 16px;
+                    color: $black;
+                }
+            }
+            .iWillPresent {
+                margin-top: 46px;
+                .txt {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.02em;
+                    margin-top: 16px;
+                    color: $black;
+                }
+            }
+            .activity {
+                margin-top: 48px;
+                .txt {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    display: flex;
+                    padding: 16px 0;
+                    align-items: center;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                }
+            }
+            .general {
+                margin-top: 48px;
+                .list {
+                    ul {
+                        padding-left: 0;
+                        li {
+                            margin: 16px 0 8px 0;
+                            .icon {
+                                min-width: 22px;
+                                margin-right: 16px;
+                            }
+                            .txt {
+                                font-family: $open;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 15px;
+                                line-height: 160%;
+                                letter-spacing: 0.02em;
+                                color: #464646;
+                            }
+                        }
+                    }
+                }
+            }
+            .photo {
+                margin-top: 48px;
+                .photos {
+                    .image {
+                        cursor: pointer;
+                        width: 178.67px;
+                        height: 160px;
+                        overflow: hidden;
+                        background: #c4c4c4;
+                        border-radius: 8px;
+                        margin-top: 16px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // reviews
+    section#myProfileReviews {
+        padding-top: 80px;
+        .dropdown {
+            margin-bottom: 16px;
+            .titleDes {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $med-grey;
+                span {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $dark-grey;
+                }
+            }
+            .btn {
+                padding-top: 5px !important;
+                padding-left: 0 !important;
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+            .dropdown-menu {
+                min-width: 283px !important;
+                background: $white;
+                border: 1px solid #e5e7eb !important;
+                border-radius: 12px !important;
+                padding: 0;
+                .dropdown-item {
+                    padding: 16px 18px;
+                    .bb {
+                        border-bottom: 1px solid #e5e7eb !important;
+                    }
+                }
+            }
+            a {
+                padding: 0;
+                &.dropdown-text {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $dark-grey !important;
+                    img {
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+        .head {
+            margin-bottom: 16px;
+            font-family: $monst;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 27px;
+            letter-spacing: 0.03em;
+            color: $black;
+        }
+        .reviewsCount {
+            font-family: $open;
+            font-style: normal;
+            height: 32px;
+            width: 32px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            letter-spacing: 0.02em;
+            padding: 5px 8px;
+            background: $black;
+            border-radius: 6px;
+            margin-left: 16px;
+            color: $white;
+        }
+        .content {
+            margin-bottom: 30px;
+            padding-bottom: 24px;
+            background: $white;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+            border-radius: 32px;
+
+            .navv {
+                margin-top: 16px;
+                .titleDes {
+                    line-height: 290% !important;
+                }
+                .titleDes {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $med-grey;
+                }
+                .page-item {
+                    a {
+                        text-decoration: none !important;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        outline: none;
+                        box-shadow: none;
+                        background: $white;
+                        border: 1px solid white;
+                        line-height: 160%;
+                        padding: 8px 15px;
+                        margin: 0 6px;
+                        letter-spacing: 0.02em !important;
+                        color: $dark-grey !important;
+                        &.active {
+                            border: 1px solid #05a4ff;
+                            box-sizing: border-box;
+                            border-radius: 4px;
+                            outline: none;
+                            box-shadow: none;
+                            background: $white;
+                        }
+                        img {
+                            margin-bottom: 2px;
+                        }
+                    }
+                }
+            }
+            .reviews {
+                .item {
+                    margin: 32px 0 56px 0;
+                    .heading {
+                        .pic {
+                            width: 70px;
+                            height: 70px;
+                            overflow: hidden;
+                            border-radius: 100px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .nameAndPlace {
+                            margin-left: 17px;
+                            .name {
+                                font-family: $open;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 160%;
+                                letter-spacing: 0.02em;
+                                color: $black;
+                            }
+                            .place {
+                                margin-top: 8px;
+                                img {
+                                    padding-bottom: 14px;
+                                }
+                                .location {
+                                    margin-left: 6px;
+                                    font-family: $open;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 13px;
+                                    line-height: 120%;
+                                    letter-spacing: 0.02em;
+                                    color: $dark-blue;
+                                }
+                            }
+                        }
+                        .date {
+                            font-family: $open;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 13px;
+                            line-height: 120%;
+                            display: flex;
+                            padding-top: 8px;
+                            letter-spacing: 0.02em;
+                            color: $dark-grey;
+                        }
+                    }
+                    .title {
+                        margin-top: 14px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 24px;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                    }
+                    .rate {
+                        margin-top: 6px;
+                        .star-ratings {
+                            align-self: flex-end;
+                            unicode-bidi: bidi-override;
+                            color: #ccc;
+                            font-size: 20px;
+                            position: relative;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .star-ratings .starRate {
+                            font-family: "Open Sans", sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 160%;
+                            letter-spacing: 0.02em;
+                            color: #002c2f;
+                            margin: 0px 6px;
+                        }
+                        .star-ratings .fill-ratings {
+                            color: #ffd938;
+                            padding: 0;
+                            position: absolute;
+                            z-index: 1;
+                            display: block;
+                            top: 0;
+                            left: 0;
+                            overflow: hidden;
+                        }
+                        .star-ratings .fill-ratings span {
+                            display: inline-block;
+                        }
+                        .star-ratings .empty-ratings {
+                            padding: 0;
+                            font-size: 20px !important;
+                            display: block;
+                            z-index: 0;
+                            color: #bfc1c9;
+                        }
+                    }
+                    .comment {
+                        margin-top: 26px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 160%;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#offerTripPopUp {
+    .modal-content {
+        background: $white;
+        border-radius: 16px;
+    }
+    .modal-header {
+        border-bottom: 1px dashed #e5e7eb;
+        margin: 0 4px;
+        .headTitle {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: #000000;
+        }
+        .close {
+            cursor: pointer;
+        }
+    }
+    .modal-body {
+        padding: 16px 30px;
+        .txtDes {
+            font-family: $open;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $dark-grey;
+            margin-bottom: 16px;
+        }
+        .textareaa {
+            margin-top: 24px;
+        }
+        .form-group {
+            .head {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+            textarea {
+                min-height: 102px;
+                margin-top: 12px;
+                background: $white;
+                border: 1px solid #e5e7eb;
+                box-sizing: border-box;
+                border-radius: 12px;
+                &::placeholder {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $dark-grey;
+                }
+                &:focus {
+                    box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                    border-radius: 12px;
+                    outline: none;
+                }
+            }
+        }
+    }
+    .modal-footer {
+        margin: 0 4px;
+        border-top: 1px dashed #e5e7eb;
+        .submitBtn {
+            button {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                color: $white;
+                padding: 10px 20px;
+                transition: 0.3s;
+                background: $dark-blue;
+                border: 1px solid $dark-blue;
+                border-radius: 100px;
+                &:hover {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+    }
+}
+
+#sharPopUp {
+    .modal-content {
+        background: $white;
+        border-radius: 16px;
+    }
+    .modal-header {
+        border-bottom: none;
+        margin: 0 4px;
+        .headTitle {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 24px;
+
+            letter-spacing: 0.02em;
+            color: #a8b0c0;
+            div {
+                margin-left: 24px !important;
+                cursor: pointer;
+            }
+            .active {
+                color: $dark-blue;
+            }
+        }
+        .close {
+            cursor: pointer;
+        }
+    }
+    .modal-body {
+        padding: 24px;
+        .ques {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 13px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            margin: 24px 0;
+            color: #a8b0c0;
+        }
+
+        .webLinks {
+            img {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#imagesAlbomSlider {
+    .itemm {
+        height: 100vh;
+    }
+    .modal-content {
+        background-color: none;
+        background: rgba(0, 0, 0, 0.86) !important;
+    }
+    .modal-body {
+        position: relative;
+        max-height: 787px;
+        overflow: hidden;
+        .closeBtn {
+            cursor: pointer;
+            position: absolute;
+            top: 5%;
+            right: 0.5%;
+            z-index: 900000000000;
+            button {
+                img {
+                    cursor: pointer;
+                }
+                padding: 7px 13px 9px 13px;
+                background: #f3f3f4;
+                border-radius: 6px;
+                border: 1px solid #f3f3f4;
+            }
+        }
+        .count {
+            position: absolute;
+            top: 3.5%;
+            left: 48.3%;
+            z-index: 100000;
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $white;
+            background: rgba(0, 0, 0, 0.55);
+            border-radius: 100px;
+            padding: 5px 16px;
+        }
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            width: 1.5rem !important;
+        }
+        .carousel-control-next,
+        .carousel-control-prev {
+            top: 45% !important;
+            background: #5e5e63 !important;
+            border-radius: 6px !important;
+            height: 6.2% !important;
+            width: 3% !important;
+            opacity: 1 !important;
+        }
+
+        #carouselExampleControlsNoTouching {
+            max-height: 787px;
+            overflow: hidden;
+            img {
+                height: 100vh;
+                width: auto !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section#myProfile section#myProfilePersonalData .main .photo .photos .image {
+        width: 134.67px;
+        height: 121px;
+    }
+}
+@media screen and (max-width: 992px) {
+    #imagesAlbomSlider .modal-body .carousel-control-next,
+    #imagesAlbomSlider .modal-body .carousel-control-prev {
+        width: 5% !important;
+    }
+    section#myProfile .mainCotent .aaResponsive {
+        margin-top: 16px;
+    }
+    section#myProfile .mainCotent .aa {
+        display: none;
+    }
+    section#myProfile .mainCotent .aaResponsive {
+        display: block;
+    }
+    section#myProfile .mainCotent .bb {
+        display: none;
+    }
+    section#myProfile .mainCotent .bbResponsive {
+        display: block;
+    }
+    section#myProfile .mainCotent .main .nameAndPlace {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #sharPopUp .modal-body {
+        padding: 10px 16px 16px 16px;
+    }
+    section#myProfile section#myProfilePersonalData .main .photo .photos .image {
+        width: 170.67px;
+        height: 154px;
+    }
+}
+@media screen and (max-width: 600px) {
+    section#myProfile section#myProfilePersonalData .main .photo .photos .image {
+        width: 154.67px;
+        height: 139px;
+    }
+    #imagesAlbomSlider .modal-body #carouselExampleControlsNoTouching img {
+        height: auto;
+        width: 100% !important;
+        align-self: center;
+    }
+    .modal-body .container-fluid {
+        padding: 0;
+    }
+    #imagesAlbomSlider .modal-body .carousel-control-next,
+    #imagesAlbomSlider .modal-body .carousel-control-prev {
+        width: 7% !important;
+    }
+}
+@media screen and (max-width: 560px) {
+    section#myProfile section#myProfileReviews .content .reviews .item .comment {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    section#myProfile section#myProfilePersonalData .main .photo .photos .image {
+        width: 147.67px;
+        height: 132px;
+    }
+}
+@media screen and (max-width: 500px) {
+    section#myProfile section#myProfilePersonalData .main .photo .photos .image {
+        width: 135px;
+        height: 110px;
+    }
+    section#myProfile .mainCotent .main .nameAndPlace .name {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    section#myProfile .mainCotent .main .nameAndPlace .place {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#myProfile .mainCotent .main .quote {
+        font-size: 13px;
+    }
+    section#myProfile .mainCotent .main .quote .open {
+        margin-top: 16px;
+    }
+    section#myProfile .mainCotent .main .quote .text {
+        margin-top: 8px;
+    }
+    section#myProfile .mainCotent .main .profilePic {
+        margin: -105px 0;
+        width: 150px;
+        height: 150px;
+    }
+    section#myProfile .mainCotent .main .nameAndPlace {
+        margin-top: 52px;
+    }
+    section#myProfile .mainCotent .aaResponsive .priceAndRanking .price {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    section#myProfile .mainCotent .aaResponsive .priceAndRanking .ranking {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    section#myProfile .mainCotent .aaResponsive .content .txtLine {
+        font-size: 13px;
+        line-height: 152%;
+    }
+    section#myProfile section#myProfilePersonalData .head {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    section#myProfile section#myProfilePersonalData .main {
+        padding: 0;
+        padding-bottom: 16px;
+    }
+    section#myProfile section#myProfilePersonalData .main .general .list ul li .txt,
+    section#myProfile section#myProfilePersonalData .main .aboutMe .des,
+    section#myProfile section#myProfilePersonalData .main .activity .txt {
+        font-size: 14px;
+    }
+    section#myProfile section#myProfilePersonalData .main .languages .language {
+        margin-right: 16px;
+        margin-left: 0;
+        font-size: 13px;
+    }
+    section#myProfile section#myProfilePersonalData {
+        margin-top: 48px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #imagesAlbomSlider .modal-body .count {
+        top: 2.5%;
+        left: 6.3%;
+    }
+    #imagesAlbomSlider .modal-body .carousel-control-next,
+    #imagesAlbomSlider .modal-body .carousel-control-prev {
+        top: 43% !important;
+    }
+
+    #claimsForm .modal-body .form-group .dropdown button .txt {
+        line-height: 210% !important;
+    }
+    #claimsForm .modal-body .form-group .dropdown button {
+        padding: 12px 16px 8px 16px !important;
+    }
+    #reviewPopUp .modal-body .stars .des {
+        font-size: 13px !important;
+        line-height: 20.8px;
+    }
+    #reviewPopUp .modal-body .stars .head {
+        font-size: 17px !important;
+    }
+    #offerTripPopUp .modal-header .headTitle {
+        font-size: 14px !important;
+    }
+    #reviewPopUp .modal-body .stars {
+        padding: 0 16px 20px 16px !important;
+    }
+    #reviewPopUp .modal-body .form-group,
+    #offerTripPopUp .modal-body {
+        padding: 16px 20px !important;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item .title {
+        margin-top: 10px !important;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item .rate {
+        margin-top: 0 !important;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item .rate .star-ratings .starRate {
+        font-size: 13px;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item .rate .star-ratings .empty-ratings,
+    section#myProfile section#myProfileReviews .content .reviews .item .rate .star-ratings {
+        font-size: 18px !important;
+    }
+    section#myProfile section#myProfileReviews .content .navv .titleDes {
+        font-size: 13px;
+        margin-right: 10px;
+        line-height: 197% !important;
+    }
+    section#myProfile section#myProfileReviews .content .navv .page-item a {
+        padding: 3px 8px;
+        margin: 0px 4px;
+        font-size: 12px;
+    }
+    section#myProfile section#myProfileReviews .head {
+        font-size: 17px;
+        line-height: 21px;
+        margin-bottom: 8px;
+    }
+    section#myProfile section#myProfileReviews .reviewsCount {
+        font-size: 13px;
+        height: 26px;
+        width: 30px;
+        padding: 2.5px 7px;
+        margin-left: 8px;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item .heading .date {
+        font-size: 12px;
+        line-height: 120%;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item .heading .nameAndPlace .name {
+        font-size: 17px;
+        line-height: 160%;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item .heading .nameAndPlace .place .location {
+        font-size: 12px;
+        line-height: 120%;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item {
+        margin: 16px 0 36px 0 !important;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item .heading .pic {
+        width: 48px;
+        height: 48px;
+    }
+    section#myProfile .mainCotent .main .profilePic {
+        margin: -50px 0;
+        width: 90px;
+        height: 90px;
+    }
+    section#myProfile section#myProfilePersonalData .main .activity,
+    section#myProfile section#myProfilePersonalData .main .languages,
+    section#myProfile section#myProfilePersonalData .main .iWillPresent,
+    section#myProfile section#myProfilePersonalData .main .general,
+    section#myProfile section#myProfilePersonalData .main .photo {
+        margin-top: 24px;
+    }
+    section#myProfile section#myProfilePersonalData .head {
+        font-size: 16px;
+    }
+    section#myProfile section#myProfilePersonalData .main .aboutMe .des {
+        margin: 0 0 8px 0;
+    }
+    section#myProfile section#myProfilePersonalData .main .iWillPresent .txt {
+        margin-top: 0;
+    }
+    section#myProfile section#myProfilePersonalData .main .activity .txt {
+        padding: 0 0 8px 0;
+    }
+    section#myProfile section#myProfilePersonalData .main .general .list ul {
+        margin-bottom: 0;
+    }
+    section#myProfile section#myProfilePersonalData .head {
+        margin-bottom: 8px !important;
+    }
+    section#myProfile section#myProfilePersonalData .main .aboutMe {
+        margin-top: 16px;
+    }
+    #imagesAlbomSlider .modal-body .closeBtn {
+        top: 2% !important;
+    }
+    section#myProfile section#myProfilePersonalData .main .photo .photos .image {
+        width: 115.67px;
+        height: 104px;
+    }
+    section#myProfile section#myProfileReviews .content {
+        padding: 0 0 16px 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #imagesAlbomSlider .modal-body .carousel-control-next,
+    #imagesAlbomSlider .modal-body .carousel-control-prev {
+        top: 52% !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    section#myProfile section#myProfileReviews {
+        padding-top: 40px;
+    }
+
+    #imagesAlbomSlider .modal-body .carousel-control-next,
+    #imagesAlbomSlider .modal-body .carousel-control-prev {
+        width: 9% !important;
+    }
+    section#myProfile section#myProfilePersonalData .main .photo .photos .image {
+        width: 103.67px;
+        height: 94px;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item .heading .pic {
+        width: 42px;
+        height: 42px;
+    }
+
+    section#myProfile section#myProfileReviews .content .reviews .item .heading .nameAndPlace .name {
+        font-size: 17px;
+        line-height: 110%;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item .heading .nameAndPlace .place {
+        font-size: 12px;
+        line-height: 120%;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item .heading .nameAndPlace .place {
+        font-size: 12px;
+        line-height: 120%;
+    }
+    section#myProfile section#myProfileReviews .content .reviews .item .heading .nameAndPlace {
+        margin-left: 10px;
+        align-self: center;
+    }
+    section#myProfile section#myProfileReviews .content .navv .page-item a {
+        padding: 2px 8px;
+        margin: 0px 2px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 360px) {
+    section#myProfile section#myProfileReviews .content .navv .titleDes {
+        font-size: 12px;
+        margin-right: 5px;
+        line-height: 202% !important;
+    }
+
+    section#myProfile section#myProfilePersonalData .main .photo .photos .image {
+        width: 103.67px;
+        height: 94px;
+    }
+    section#myProfile .mainCotent .main .nameAndPlace .name {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 295px) {
+    section#myProfile .mainCotent .main .nameAndPlace .place {
+        padding: 5px 4px;
+        font-size: 12px;
+    }
+}

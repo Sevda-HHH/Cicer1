@@ -1,0 +1,1199 @@
+section#chats {
+    overflow: hidden;
+    padding-top: 83px;
+    .head {
+        font-family: $open;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 160%;
+        margin: 24px 0;
+        letter-spacing: 0.02em;
+        color: $black;
+    }
+    .toggleDownIcon {
+        display: none;
+    }
+    .guideInfo {
+        background: $white;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+        border-radius: 12px;
+        .priceAndStars {
+            transition: 1s;
+            display: flex;
+            border-bottom: 1px dashed #e5e7eb;
+            font-style: normal;
+            &.bb-none {
+                border-bottom: none;
+                transition: 1s;
+            }
+            .price {
+                font-family: $monst;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 27px;
+                letter-spacing: 0.03em;
+                color: $dark-blue;
+            }
+            .stars {
+                font-family: $open;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #11142d;
+                img {
+                    padding-bottom: 5px;
+                }
+                span {
+                    color: #a8b0c0;
+                }
+            }
+        }
+        .content {
+            padding: 16px 24px;
+            .picAndName {
+                .pic {
+                    width: 64px;
+                    height: 64px;
+                    overflow: hidden;
+                    img {
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+                .name {
+                    margin-left: 16px;
+                    align-self: center;
+                    .namee {
+                        align-self: center;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 24px;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                    }
+                    .country {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 160%;
+                        align-self: center;
+                        letter-spacing: 0.02em;
+                        color: $dark-grey;
+                    }
+                }
+            }
+            .details {
+                padding: 24px 0 8px 0;
+                .info {
+                    margin-bottom: 16px;
+
+                    .text {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        margin-left: 16px;
+                        align-self: center;
+                        font-size: 14px;
+                        line-height: 200%;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                    }
+                }
+            }
+            .chooseBtn {
+                button {
+                    &.dark {
+                        border: 1px solid $dark-blue !important;
+                        background: $dark-blue !important;
+                        color: $white !important;
+                    }
+                    &.light {
+                        color: $dark-blue !important;
+                        background: $white !important;
+                        border: 1px solid $dark-blue !important;
+                    }
+                    &:hover {
+                        &.dark {
+                            border: 1px solid $dark !important;
+                            background: $dark !important;
+                        }
+                        &.light {
+                            border: 1px solid $dark-blue !important;
+                            background: $dark-blue !important;
+                            color: white !important;
+                        }
+                    }
+
+                    transition: 0.2s;
+                    border-radius: 100px;
+                    width: 100%;
+                    font-family: $open;
+                    font-style: normal;
+                    border: 1px solid $dark;
+                    background: $white;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 15px;
+                    letter-spacing: 0.03em;
+                    padding: 14.5px 0;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .complainLink {
+        margin-top: 16px;
+        a {
+            text-decoration: none;
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            color: #a8b0c0;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    // chat
+    .chat {
+        .chatFrame {
+            max-height: 490px;
+            width: 100%;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow-y: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .greeting {
+                background: #7ed0ff;
+                border-radius: 100px;
+                font-family: $open;
+                font-style: normal;
+                max-height: 33px;
+                font-weight: 600;
+                font-size: 13px;
+                max-width: 307px;
+                margin: 8px 0;
+                line-height: 80%;
+                letter-spacing: 0.02em;
+                color: $black;
+                padding: 12px 16px;
+            }
+            .guide {
+                margin-bottom: 8px;
+                padding-bottom: 25px;
+                width: 606px;
+                .pic {
+                    width: 76px;
+                    height: 48px;
+                    overflow: hidden;
+                    margin-right: 16px;
+                    img {
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+                .nameAndTime {
+                    padding-bottom: 8px;
+                    .name {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 24px;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                        margin-right: 8px;
+                    }
+                    .time {
+                        padding-top: 6px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 120%;
+                        letter-spacing: 0.02em;
+                        color: #a8b0c0;
+                    }
+                }
+                .message {
+                    padding: 12px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    max-width: 500px;
+                    color: $black;
+                    background: #f6f8fa;
+                    border-radius: 8px;
+                }
+            }
+            .user {
+                margin-bottom: 8px;
+                padding-bottom: 25px;
+                width: 606px;
+                align-self: flex-end;
+                .pic {
+                    width: 76px;
+                    height: 48px;
+                    overflow: hidden;
+                    margin-left: 16px;
+                    img {
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+                .nameAndTime {
+                    padding-bottom: 8px;
+                    .name {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 24px;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                        margin-right: 8px;
+                    }
+                    .time {
+                        padding-top: 6px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 120%;
+                        letter-spacing: 0.02em;
+                        color: #a8b0c0;
+                    }
+                }
+                .message {
+                    p {
+                        padding: 12px;
+                        font-family: $open;
+                        max-width: 500px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                        background: #f6f8fa;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .chatInput {
+        margin-top: 8px;
+        .textBox {
+            margin-bottom: 8px;
+            textarea {
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                height: 86px;
+                background: $white;
+                border: 1px solid $light;
+                box-sizing: border-box;
+                padding-left: 16px;
+                width: 105%;
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 160%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.02em;
+                color: $dark-grey;
+                padding-top: 8px;
+                border-radius: 12px;
+                padding-top: 6px;
+                border-radius: 12px;
+                &:focus {
+                    outline: none;
+                    box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                    border-radius: 12px;
+                }
+                &::placeholder {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $dark-grey;
+                }
+            }
+        }
+        .sendButton {
+            button {
+                background: #7ed0ff;
+                border: 1px solid #7ed0ff;
+                width: 48px;
+                height: 48px;
+                border-radius: 100px;
+                padding: 0px 3px 4px 0px;
+            }
+        }
+    }
+}
+
+.modal-content {
+    background: #ffffff;
+    border-radius: 16px;
+    .closeBtn {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}
+#cancelGuideForm {
+    .modal-content {
+        background: #ffffff;
+        border-radius: 16px;
+        .closeBtn {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+    .modal-header {
+        .headTitle {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+
+        margin: 0 3px;
+        border-bottom: 1px dashed #e5e7eb;
+    }
+    .modal-body {
+        .ques {
+            font-family: $open;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            letter-spacing: 0.02em;
+            margin-top: 16px;
+            color: $black;
+        }
+        .form-group {
+            .form-floating {
+                textarea {
+                    background: $white;
+                    padding: 16px;
+                    margin-top: 8px;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    &::placeholder {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: $dark-grey;
+                    }
+                    &:focus {
+                        box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                        outline: none;
+                    }
+                }
+            }
+            .head {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 160%;
+                margin-top: 16px;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+            .dropdown {
+                .dropdown-menu {
+                    width: 100%;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 12px;
+                    .dropdown-item {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: #11142d;
+                        padding: 16px 18px;
+                        &:focus {
+                            background: none;
+                        }
+                    }
+                }
+                button {
+                    padding: 12px 24px;
+                    background: $white;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    margin-top: 8px;
+                    width: 100%;
+                    .txt {
+                        font-family: $open;
+                        font-style: normal;
+                        align-items: flex-end;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 160%;
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .buttons {
+            .yess {
+                button {
+                    padding: 10px 20px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    margin: 16px 10px 32px 10px;
+                    font-size: 14px;
+                    line-height: 19px;
+                    letter-spacing: 0.03em;
+                    color: $dark-blue;
+                    background: $white;
+                    border: 1px solid $dark-blue;
+                    border-radius: 100px;
+                    transition: 0.3s;
+                    &:hover {
+                        background: $dark-blue;
+                        color: $white;
+                    }
+                }
+            }
+            .noo {
+                button {
+                    padding: 10px 20px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    margin: 16px 10px 32px 10px;
+                    letter-spacing: 0.03em;
+                    color: $white;
+                    background: $dark-blue;
+                    border: 1px solid $dark-blue;
+                    border-radius: 100px;
+                    transition: 0.3s;
+                    &:hover {
+                        border: 1px solid $dark;
+                        background: $dark;
+                    }
+                }
+            }
+        }
+    }
+    .modal-footer {
+        padding: 16px;
+        border-top: 1px dashed #e5e7eb;
+        .confirmBtn {
+            button {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                color: $white;
+                padding: 10px 20px;
+                background: $dark-blue;
+                border: 1px solid $dark-blue;
+                border-radius: 100px;
+                transition: 0.3s;
+                &:hover {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+    }
+}
+#cancelGuide {
+    .modal-content {
+        background: #ffffff;
+        border-radius: 16px;
+        .closeBtn {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .modal-header {
+            .headTitle {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+
+            margin: 0 3px;
+            border-bottom: 1px dashed #e5e7eb;
+        }
+        .modal-body {
+            .ques {
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 160%;
+                text-align: center;
+                letter-spacing: 0.02em;
+                margin-top: 16px;
+                color: $black;
+            }
+            .buttons {
+                .yess {
+                    button {
+                        padding: 10px 20px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        margin: 16px 10px 32px 10px;
+                        font-size: 14px;
+                        line-height: 19px;
+                        letter-spacing: 0.03em;
+                        color: $dark-blue;
+                        background: $white;
+                        border: 1px solid $dark-blue;
+                        border-radius: 100px;
+                        transition: 0.3s;
+                        &:hover {
+                            background: $dark-blue;
+                            color: $white;
+                        }
+                    }
+                }
+                .noo {
+                    button {
+                        padding: 10px 20px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 19px;
+                        margin: 16px 10px 32px 10px;
+                        letter-spacing: 0.03em;
+                        color: $white;
+                        background: $dark-blue;
+                        border: 1px solid $dark-blue;
+                        border-radius: 100px;
+                        transition: 0.3s;
+                        &:hover {
+                            border: 1px solid $dark;
+                            background: $dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#cancelGuideConfirm {
+    .modal-content {
+        background: #ffffff;
+        border-radius: 16px;
+        .closeBtn {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+    .modal-header {
+        border-bottom: none;
+    }
+    .modal-body {
+        padding: 8px 32px 32px 32px;
+    }
+    .headTitle {
+        font-family: $monst;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $black;
+    }
+    .des {
+        margin-top: 8px;
+        font-family: $open;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+        text-align: center;
+
+        letter-spacing: 0.02em;
+        color: $black;
+    }
+}
+
+#successPopup {
+    .icon {
+        margin-bottom: 8px;
+    }
+    .modal-content {
+        background: #ffffff;
+        border-radius: 16px;
+        .closeBtn {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+    .modal-header {
+        border-bottom: none;
+    }
+    .modal-body {
+        padding: 8px 32px 32px 32px;
+    }
+    .headTitle {
+        font-family: $monst;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $black;
+    }
+    .des {
+        margin-top: 8px;
+        font-family: $open;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+        text-align: center;
+
+        letter-spacing: 0.02em;
+        color: $black;
+    }
+    .linkBtn {
+        button {
+            margin-top: 24px;
+            background: $dark-blue;
+            border: 1px solid $dark-blue;
+            border-radius: 100px;
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.03em;
+            padding: 14px 20px;
+            transition: 0.3s;
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+            &:hover {
+                background: $dark;
+                border: 1px solid $dark;
+            }
+        }
+    }
+}
+
+#successsPopup {
+    .icon {
+        margin-bottom: 8px;
+    }
+    .modal-content {
+        background: #ffffff;
+        border-radius: 16px;
+        .closeBtn {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+    .modal-header {
+        border-bottom: none;
+    }
+    .modal-body {
+        padding: 8px 32px 32px 32px;
+    }
+    .headTitle {
+        font-family: $monst;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $black;
+    }
+    .des {
+        margin-top: 8px;
+        font-family: $open;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+        text-align: center;
+
+        letter-spacing: 0.02em;
+        color: $black;
+    }
+    .linkBtn {
+        button {
+            margin-top: 24px;
+            background: $dark-blue;
+            border: 1px solid $dark-blue;
+            border-radius: 100px;
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.03em;
+            padding: 14px 20px;
+            transition: 0.3s;
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+            &:hover {
+                background: $dark;
+                border: 1px solid $dark;
+            }
+        }
+    }
+}
+#claimConfirmed {
+    .icon {
+        margin-bottom: 8px;
+    }
+    .modal-content {
+        background: #ffffff;
+        border-radius: 16px;
+        .closeBtn {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+    .modal-header {
+        border-bottom: none;
+    }
+    .modal-body {
+        padding: 8px 32px 32px 32px;
+    }
+    .headTitle {
+        font-family: $monst;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $black;
+    }
+    .des {
+        margin-top: 8px;
+        font-family: $open;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+        text-align: center;
+
+        letter-spacing: 0.02em;
+        color: $black;
+    }
+}
+
+#claimsForm {
+    .modal-content {
+        background: #ffffff;
+        border-radius: 16px;
+        .closeBtn {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+    .modal-header {
+        .headTitle {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+
+        margin: 0 3px;
+        border-bottom: 1px dashed #e5e7eb;
+    }
+    .modal-body {
+        .ques {
+            font-family: $open;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            letter-spacing: 0.02em;
+            margin-top: 16px;
+            color: $black;
+        }
+        .form-group {
+            .form-floating {
+                textarea {
+                    background: $white;
+                    padding: 16px;
+                    margin-top: 8px;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    &::placeholder {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: $dark-grey;
+                    }
+                    &:focus {
+                        box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                        outline: none;
+                    }
+                }
+            }
+            .head {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 160%;
+                margin-top: 16px;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+            .dropdown {
+                .dropdown-menu {
+                    width: 100%;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 12px;
+                    .dropdown-item {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: #11142d;
+                        padding: 16px 18px;
+                        &:focus {
+                            background: none;
+                        }
+                    }
+                }
+                button {
+                    padding: 12px 24px;
+                    background: $white;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    margin-top: 8px;
+                    width: 100%;
+                    .txt {
+                        font-family: $open;
+                        font-style: normal;
+                        align-items: flex-end;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 160%;
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .buttons {
+            .yess {
+                button {
+                    padding: 10px 20px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    margin: 16px 10px 32px 10px;
+                    font-size: 14px;
+                    line-height: 19px;
+                    letter-spacing: 0.03em;
+                    color: $dark-blue;
+                    background: $white;
+                    border: 1px solid $dark-blue;
+                    border-radius: 100px;
+                    transition: 0.3s;
+                    &:hover {
+                        background: $dark-blue;
+                        color: $white;
+                    }
+                }
+            }
+            .noo {
+                button {
+                    padding: 10px 20px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    margin: 16px 10px 32px 10px;
+                    letter-spacing: 0.03em;
+                    color: $white;
+                    background: $dark-blue;
+                    border: 1px solid $dark-blue;
+                    border-radius: 100px;
+                    transition: 0.3s;
+                    &:hover {
+                        border: 1px solid $dark;
+                        background: $dark;
+                    }
+                }
+            }
+        }
+    }
+    .modal-footer {
+        padding: 16px;
+        border-top: 1px dashed #e5e7eb;
+        .confirmBtn {
+            button {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                color: $white;
+                padding: 10px 20px;
+                background: $dark-blue;
+                border: 1px solid $dark-blue;
+                border-radius: 100px;
+                transition: 0.3s;
+                &:hover {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 977px) {
+    body,
+    section#chat {
+        overflow: scroll !important;
+    }
+    section#chats .chat .chatFrame .greeting {
+        font-size: 12px;
+    }
+    section#chats .chat .chatFrame .greeting {
+        padding: 12px 11px;
+    }
+    #chats .container {
+        padding: 0 24px !important;
+    }
+    section#chats .toggleDownIcon {
+        display: unset;
+    }
+    section#chats {
+        overflow: scroll !important;
+    }
+    section#chats .guideInfo .content .details {
+        display: none;
+    }
+    section#chats .guideInfo .priceAndStars {
+        border-bottom: none;
+    }
+
+    section#chats .guideInfo .priceAndStars.bb-none {
+        transition: 1s;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .modal-body .form-group .dropdown button {
+        padding: 12px 16px;
+    }
+    .modal-body .form-group .dropdown button .txt {
+        line-height: 202%;
+    }
+    #cancelGuideConfirm .des,
+    #claimConfirmed .des {
+        font-size: 13px;
+    }
+    #cancelGuideConfirm .headTitle,
+    #claimConfirmed .headTitle {
+        font-size: 17px;
+    }
+    #cancelGuideForm .modal-body .form-group .head,
+    #claimConfirmed .modal-body .form-group .head {
+        font-size: 13px;
+    }
+
+    #claimsForm .modal-body .form-group .dropdown button .txt,
+    #cancelGuideForm .modal-body .form-group .dropdown button .txt {
+        line-height: 200%;
+    }
+    #cancelGuideForm .modal-body .form-group .dropdown button {
+        padding: 12px 16px;
+    }
+    #cancelGuideForm .modal-body .ques {
+        margin-top: 0;
+    }
+    section#chats .guideInfo .priceAndStars.bb-none {
+        margin-top: 16px;
+    }
+    section#chats .head {
+        margin: 16px 0 10px 0;
+    }
+    section#chats .guideInfo .content {
+        padding: 0 !important;
+    }
+
+    section#chats .guideInfo {
+        padding: 16px;
+    }
+    section#chats .guideInfo .content .details {
+        padding: 16px 0 8px 0;
+    }
+    section#chats .guideInfo .priceAndStars .price {
+        font-size: 17px;
+        line-height: 21px;
+    }
+    section#chats .guideInfo .priceAndStars .stars {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    section#chats .guideInfo .content .details .info .text {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#chats .complainLink {
+        margin-bottom: 12px;
+    }
+    section#chats .chat .chatFrame .user {
+        padding-bottom: 8px;
+    }
+
+    section#chats .chat .chatFrame .guide .pic {
+        margin-right: 8px;
+    }
+    section#chats .chat .chatFrame .guide .nameAndTime .name {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    section#chats .chat .chatFrame .user .message p {
+        margin-bottom: 0;
+    }
+    section#chats .chat .chatFrame .guide .nameAndTime .time,
+    section#chats .chat .chatFrame .user .nameAndTime .time {
+        font-size: 12px;
+        line-height: 120%;
+    }
+    section#chats .chat .chatFrame .guide .message,
+    section#chats .chat .chatFrame .user .message p {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#chats .chat .chatFrame .user {
+        padding-right: 0;
+    }
+    section#chats .head {
+        font-size: 16px;
+        line-height: 160%;
+    }
+    section#chats .guideInfo .content .picAndName .name .namee,
+    section#chats .chat .chatFrame .user .nameAndTime .name {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    section#chats .guideInfo .content .picAndName .name .country {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#chats .chat .chatFrame {
+        width: unset;
+    }
+    section#chats .guideInfo .content .picAndName .pic img,
+    section#chats .guideInfo .content .picAndName .pic,
+    section#chats .chat .chatFrame .user .pic,
+    section#chats .chat .chatFrame .user .pic img,
+    section#chats .chat .chatFrame .guide .pic img {
+        width: 40px;
+        height: 40px;
+    }
+    section#chats .chat .chatFrame .guide .pic {
+        width: 90px;
+        height: 40px;
+    }
+    section#chats .guideInfo .content .chooseBtn button {
+        font-size: 13px;
+        padding: 12px 0;
+    }
+    section#chats .guideInfo .content {
+        padding: 16px 16px 0 16px;
+    }
+    section#chats .guideInfo .content {
+        padding: 16px;
+    }
+    section#chats .chatInput .sendButton button {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 330px) {
+    section#chats .chat .chatFrame .greeting {
+        padding: 10px 8px;
+        font-size: 11px;
+    }
+    section#chats .guideInfo .content .picAndName .pic img,
+    section#chats .guideInfo .content .picAndName .pic,
+    section#chats .chat .chatFrame .user .pic,
+    section#chats .chat .chatFrame .user .pic img,
+    section#chats .chat .chatFrame .guide .pic img {
+        width: 32px;
+        height: 32px;
+    }
+
+    section#chats .chat .chatFrame .guide .pic {
+        width: 90px;
+        height: 32px;
+    }
+}

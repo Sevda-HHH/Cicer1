@@ -1,0 +1,105 @@
+#reviewPopUp {
+    .modal-content {
+        background: $white;
+        border-radius: 16px;
+    }
+    .modal-header {
+        border-bottom: 1px dashed #e5e7eb;
+        margin: 0 4px;
+        .headTitle {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+        .close {
+            cursor: pointer;
+        }
+    }
+    .modal-body {
+        .stars {
+            padding: 16px 30px;
+            border-bottom: 1px dashed #e5e7eb;
+            .head {
+                font-family: $monst;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 27px;
+                letter-spacing: 0.03em;
+                color: $black;
+                margin-bottom: 8px;
+            }
+            .des {
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+        }
+        .form-group {
+            padding: 16px 30px;
+            .head {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+            textarea {
+                min-height: 102px;
+                margin-top: 12px;
+                background: $white;
+                border: 1px solid #e5e7eb;
+                box-sizing: border-box;
+                border-radius: 12px;
+                &::placeholder {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $dark-grey;
+                }
+                &:focus {
+                    box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                    border-radius: 12px;
+                    outline: none;
+                }
+            }
+        }
+    }
+    .modal-footer {
+        margin: 0 4px;
+        border-top: 1px dashed #e5e7eb;
+        .submitBtn {
+            button {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                color: $white;
+                padding: 10px 20px;
+                transition: 0.3s;
+                background: $dark-blue;
+                border: 1px solid $dark-blue;
+                border-radius: 100px;
+                &:hover {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+    }
+}

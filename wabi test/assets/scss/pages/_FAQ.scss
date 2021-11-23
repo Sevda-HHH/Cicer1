@@ -1,0 +1,146 @@
+section#FAQ {
+    padding-top: 123px;
+    // sideNav
+    .sideNav {
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 16px;
+            li {
+                font-weight: 600;
+                font-family: $open;
+                font-style: normal;
+                font-size: 15px;
+                cursor: pointer;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                &:hover {
+                    a {
+                        color: $green;
+                    }
+                }
+                &.active {
+                    a {
+                        color: $green;
+                    }
+                }
+                a {
+                    color: $dark-grey;
+                    &.active {
+                        color: $green;
+                    }
+                }
+                padding: 12px 0 12px 24px;
+                &.head {
+                    color: $black;
+                    background: rgba(5, 164, 255, 0.25);
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+
+    .content {
+        padding-left: 24px;
+        .ques {
+            font-family: $open;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+        .head {
+            font-family: $monst;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 39px;
+            letter-spacing: 0.03em;
+            color: $black;
+        }
+        .main {
+            .txt {
+                p {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                }
+            }
+            .head {
+                margin: 32px 0 16px 0;
+                font-family: $monst;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 27px;
+                letter-spacing: 0.03em;
+                color: #04878f;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 500px) {
+    section#FAQ .sideNav ul li a:hover {
+        color: #7b808a;
+    }
+    section#FAQ .sideNav ul li:hover a {
+        color: #7b808a;
+    }
+    section#FAQ .content .ques,
+    section#FAQ .content .head {
+        text-align: center;
+    }
+    section#FAQ .content .main .head {
+        text-align: start;
+    }
+}
+@media screen and (max-width: 430px) {
+    .sideNav {
+        padding: 0 16px;
+        margin-bottom: 16px;
+    }
+    section#FAQ .content {
+        padding-left: 0;
+        padding: 0 16px;
+    }
+    section#FAQ .content .main .head {
+        font-size: 17px;
+        line-height: 21px;
+    }
+    section#FAQ .content .main .txt p {
+        font-size: 14px;
+        line-height: 160%;
+    }
+    section#FAQ .content .ques {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#FAQ .content .head {
+        font-size: 19px;
+        line-height: 23px;
+    }
+    section#FAQ .sideNav ul li {
+        font-size: 14px;
+        padding: 12px 0 12px 16px;
+    }
+    section#FAQ .sideNav ul li.head {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 320px) {
+}
+@media screen and (max-width: 300px) {
+    .sideNav {
+        padding: 0 8px;
+    }
+}

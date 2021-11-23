@@ -1,0 +1,1246 @@
+section#beAGuide {
+    padding-top: 83px;
+
+    .head {
+        padding: 68px 0;
+        font-family: $monst;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: 0.03em;
+        color: $white;
+    }
+    .ques {
+        margin-top: 30px;
+        ul {
+            margin-left: 20px;
+            li {
+                margin-bottom: 12px;
+                a {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    &:hover {
+                        color: #258ee3 !important;
+                    }
+                }
+            }
+        }
+    }
+    .mainInfo {
+        margin: -56px 0 0 0;
+        font-family: $open;
+        font-style: normal;
+        line-height: 160%;
+        background: $white;
+        box-shadow: 0px 2px 10px 2px rgb(0 0 0 / 5%);
+        border-radius: 12px;
+
+        .first {
+            padding: 24px;
+        }
+        .second {
+            padding: 24px;
+            border-top: 1px dashed #e5e7eb;
+            border-bottom: 1px dashed #e5e7eb;
+            .heading {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: $dark-blue;
+                margin-bottom: 12px;
+                .clearLanguages,
+                .clearActivities {
+                    padding: 4px 10px;
+
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 120%;
+                    width: max-content;
+                    letter-spacing: 0.02em;
+                    color: $dark-grey;
+                    background: $light;
+                    margin-left: 24px;
+                    cursor: pointer;
+                    border-radius: 100px;
+                }
+            }
+            .language {
+                font-family: $open;
+                font-style: normal;
+                margin-top: 4px;
+                font-weight: normal;
+                cursor: pointer;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $dark-grey;
+                margin-right: 24px;
+                margin-left: 8px;
+                .remove {
+                    display: none;
+                    cursor: pointer;
+                }
+                &.chosenn {
+                    .remove {
+                        display: unset;
+                    }
+                    background: #eef9ff;
+                    padding: 4px 8px;
+                    border-radius: 8px;
+                    line-height: 25%;
+                    &.language {
+                        margin-right: 4px !important;
+                        margin-left: 0px !important;
+                    }
+                }
+            }
+            .showMore {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 240%;
+                cursor: pointer;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+        }
+        .saveBtn {
+            text-align: center;
+            button {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                color: $white;
+                padding: 10px 20px;
+                transition: 0.3s;
+                margin: 24px 0;
+                background: $dark-blue;
+                border: 1px solid $dark-blue;
+                border-radius: 100px;
+                &:hover {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+        .form-group {
+            .comment {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $med-grey;
+                margin-top: 12px;
+            }
+            .datepicker-dropdown .datepicker-picker {
+                background: #ffffff !important;
+                border: 1px solid #e5e7eb !important;
+                box-sizing: border-box !important;
+                box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1) !important;
+                border-radius: 12px !important;
+            }
+            .datepicker-header {
+                .datepicker-controls {
+                    padding: 20px !important;
+                }
+            }
+            button.button.view-switch {
+                background: white !important;
+            }
+            input {
+                &[type="number"] {
+                    width: 100%;
+                    &:disabled {
+                        background: #f4f5f6 !important  ;
+                    }
+                }
+                &[type="text"],
+                &[type="date"],
+                &[type="number"] {
+                    background: $white;
+                    padding: 12px 0 12px 24px;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                    }
+                    &::placeholder {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 160%;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.02em;
+                        color: $dark-grey;
+                    }
+                }
+
+                &[type="radio"],
+                &[type="checkbox"] {
+                    width: 20px;
+                    background: none;
+                    height: 20px;
+                    border-radius: 6px !important;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &:checked {
+                        background: #258ee3;
+                        border: 1px solid #258ee3;
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+                    }
+                }
+            }
+
+            .form-check {
+                margin-right: 32px;
+
+                label {
+                    cursor: pointer;
+                    font-family: $open;
+                    margin-left: 12px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                }
+            }
+
+            .head {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                padding: 40px 0 8px 0;
+                color: $black;
+            }
+        }
+        .title {
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 0.02em;
+            color: $med-grey;
+
+            &.active {
+                color: $black !important;
+            }
+            img {
+                &.done {
+                    display: none;
+                }
+                &.empty {
+                    display: inline-block;
+                }
+            }
+            &.done {
+                img {
+                    &.done {
+                        display: inline-block !important;
+                    }
+                    &.empty {
+                        display: none !important;
+                    }
+                }
+            }
+            img {
+                margin-right: 16px;
+            }
+        }
+        .icon {
+            cursor: pointer;
+        }
+    }
+    .contact {
+        margin-top: 40px;
+        form {
+            padding: 24px 24px 0 24px;
+        }
+        .warning {
+            p {
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $black;
+                span {
+                    color: #fb3968;
+                    font-weight: 600;
+                }
+            }
+        }
+        .head {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            padding: 24px 0 8px 0 !important;
+            color: $black;
+        }
+        .form-group {
+            .form-floating {
+                textarea {
+                    background: $white;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    padding: 8px 16px;
+                    &:focus {
+                        box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                        border-radius: 12px;
+                        outline: none;
+                    }
+                    &::placeholder {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 160%;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.02em;
+                        color: #7b808a;
+                    }
+                }
+            }
+            .txtDes {
+                margin-bottom: 12px;
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: #7b808a;
+            }
+            .emailInput {
+                position: relative;
+                .contactIcon {
+                    position: absolute;
+                    top: 16%;
+                    left: 3%;
+                }
+                .checked {
+                    display: none;
+                    position: absolute;
+                    top: 22%;
+                    right: 4%;
+                }
+                input {
+                    padding: 12px 60px !important;
+                }
+            }
+            &.correct {
+                .contactIcon {
+                    position: absolute;
+                    top: 16%;
+                    left: 3%;
+                }
+                .checked {
+                    display: block;
+                }
+                input {
+                    background: rgba(4, 135, 143, 0.05);
+                }
+                .confirmedTxt {
+                    display: block;
+                }
+            }
+            .confirmedTxt {
+                display: none;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 120%;
+                letter-spacing: 0.02em;
+                margin-top: 12px;
+                color: #04878f;
+            }
+        }
+        .saveBtn {
+            margin-top: 24px;
+            border-top: 1px dashed #e5e7eb;
+        }
+    }
+    .guideInfo {
+        margin-top: 40px;
+        form {
+            padding: 24px 0;
+        }
+        .warning {
+            padding: 0 24px 24px 24px;
+
+            p {
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $black;
+                span {
+                    color: #fb3968;
+                    font-weight: 600;
+                }
+            }
+        }
+        .head {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            padding: 40px 0 8px 0;
+            color: $black;
+        }
+
+        .form-group {
+            padding: 0 24px;
+            .form-floating {
+                textarea {
+                    background: $white;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    padding: 8px 16px;
+                    &:focus {
+                        box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                        border-radius: 12px;
+                        outline: none;
+                    }
+                    &::placeholder {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 160%;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.02em;
+                        color: #7b808a;
+                    }
+                }
+            }
+            .txtDes {
+                margin-bottom: 12px;
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: #7b808a;
+            }
+            .emailInput {
+                position: relative;
+                .contactIcon {
+                    position: absolute;
+                    top: 16%;
+                    left: 3%;
+                }
+                .checked {
+                    display: none;
+                    position: absolute;
+                    top: 22%;
+                    right: 4%;
+                }
+                input {
+                    padding: 12px 60px !important;
+                }
+            }
+            &.correct {
+                .contactIcon {
+                    position: absolute;
+                    top: 16%;
+                    left: 3%;
+                }
+                .checked {
+                    display: block;
+                }
+                input {
+                    background: rgba(4, 135, 143, 0.05);
+                }
+                .confirmedTxt {
+                    display: block;
+                }
+            }
+            .confirmedTxt {
+                display: none;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 120%;
+                letter-spacing: 0.02em;
+                margin-top: 12px;
+                color: #04878f;
+            }
+        }
+        .saveBtn {
+            margin-top: 24px;
+            border-top: 1px dashed #e5e7eb;
+        }
+
+        .firstPart {
+            padding-bottom: 24px;
+            border-bottom: 1px dashed #e5e7eb;
+        }
+        .activity {
+            border-bottom: 1px dashed #e5e7eb;
+            padding: 24px;
+            .title {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: $dark-blue;
+                &.active {
+                    color: $black !important;
+                }
+            }
+            .form-group {
+                padding: 0;
+                margin-right: 0 !important;
+                .form-check {
+                    margin-top: 20px !important;
+                    margin-right: 0;
+                }
+                .form-check-input {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 4px;
+                }
+                label {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                }
+            }
+        }
+        .checkout {
+            padding: 24px 24px 0 24px;
+            .title {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: $dark-blue;
+                &.active {
+                    color: $black !important;
+                }
+            }
+            .form-group {
+                padding: 0;
+                margin-right: 0 !important;
+                .head {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    padding: 24px 0 8px 0 !important;
+                    color: $black;
+                }
+                .form-check {
+                    margin-right: 0 !important;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                }
+            }
+            .dropdown {
+                button {
+                    background: $white;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    color: $black;
+                    padding: 8px 16px 8px 24px;
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                    span {
+                        padding: 4px;
+                    }
+                }
+                .dropdown-menu {
+                    min-width: 7rem !important;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 12px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+
+                    li {
+                        border-bottom: 1px solid #e5e7eb !important;
+                    }
+                }
+            }
+        }
+    }
+    .uploadPhoto {
+        margin-top: 40px;
+        .comment {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $med-grey;
+            padding: 0 24px 16px 24px;
+        }
+        .firstPart {
+            padding: 24px 0;
+            .txtDes {
+                padding: 0 24px;
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $dark-grey;
+            }
+            .uploadImage {
+                border-bottom: 1px dashed #e5e7eb;
+                align-self: center;
+                padding: 24px !important;
+                .uploadIcon {
+                    width: 125px;
+                    height: 125px;
+                    border-radius: 100px;
+                    overflow: hidden;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .content {
+                    align-self: center;
+                    margin-left: 24px;
+                    .head {
+                        font-family: $open;
+                        padding: 0 !important;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                    }
+                    .upload-delete {
+                        font-family: $open;
+                        padding: 16px 0 0 0;
+                        .upload {
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 160%;
+                            padding: 10px 20px;
+                            transition: 0.3s;
+                            cursor: pointer;
+                            background: $dark-blue;
+                            border: 1px solid $dark-blue;
+                            border-radius: 100px;
+                            letter-spacing: 0.02em;
+                            color: $white;
+                            &:hover {
+                                background: $dark;
+                                border: 1px solid $dark;
+                            }
+                        }
+                        .delete {
+                            cursor: pointer;
+                            font-family: $open;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 160%;
+                            padding: 9px 0 9px 24px;
+                            letter-spacing: 0.02em;
+                            color: #05a4ff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .secondPart {
+            padding: 0 0 24px 0;
+            .head {
+                padding: 0 24px 4px 24px !important;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+            .uploadedImages {
+                padding: 0px 24px;
+                .uploadedImage {
+                    margin-bottom: 16px;
+                    background: #ffffff;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+                    border-radius: 10px;
+                    min-height: 48px;
+                    width: 100%;
+                    .uploadedImg {
+                        align-self: center;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .imgName {
+                        padding: 0 0 0 8px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 160%;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.02em;
+                        color: #685879;
+                    }
+                    .rubbish {
+                        padding: 0 16px 0 0;
+                        cursor: pointer;
+                        align-self: center;
+                    }
+                }
+                .uploadOnMore {
+                    display: flex;
+                    font-family: $open;
+                    width: 50%;
+                    height: 48px;
+                    padding: 14px 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    letter-spacing: 0.03em;
+                    color: $dark-blue;
+                    cursor: pointer;
+                    border: 1px solid $med-grey;
+                    box-sizing: border-box;
+                    border-radius: 100px;
+
+                    .txt {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+    // submit
+    .submitBtn {
+        button {
+            padding: 10px 20px;
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: $white;
+            border: 1px solid $dark-blue;
+            background: $dark-blue;
+            transition: 0.3s;
+            margin-top: 40px;
+            border-radius: 100px;
+            &:hover {
+                background: $dark;
+                border: 1px solid $dark;
+            }
+            &:disabled {
+                background: $light;
+                border: 1px solid $light;
+                box-sizing: border-box;
+                border-radius: 100px;
+                color: $dark-grey;
+            }
+        }
+    }
+}
+
+section#beAGuide .guideInfo .checkout .dropdown .dropdown-menu li:last-of-type {
+    border-bottom: none !important;
+}
+
+#chooseALanguage {
+    .modal-content {
+        background: $white;
+        border-radius: 16px;
+    }
+    input {
+        &[type="number"] {
+            width: 100%;
+            &:disabled {
+                background: #f4f5f6 !important  ;
+            }
+        }
+        &[type="text"],
+        &[type="date"],
+        &[type="number"] {
+            background: $white;
+            padding: 12px 0 12px 24px;
+            border: 1px solid #e5e7eb;
+            box-sizing: border-box;
+            border-radius: 12px;
+            font-family: $open;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 160%;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+            color: $black;
+            &:focus {
+                outline: none;
+                box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+            }
+            &::placeholder {
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 160%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.02em;
+                color: $dark-grey;
+            }
+        }
+
+        &[type="radio"],
+        &[type="checkbox"] {
+            width: 20px;
+            background: none;
+            height: 20px;
+            border-radius: 6px !important;
+            &:hover {
+                cursor: pointer;
+            }
+            &:checked {
+                background: #258ee3;
+                border: 1px solid #258ee3;
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+            }
+        }
+    }
+    .form-check {
+        margin-top: 20px;
+        margin-right: 32px;
+
+        label {
+            font-family: $open;
+            margin-left: 12px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+    }
+
+    .modal-header {
+        border-bottom: 1px dashed #e5e7eb;
+        .head {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 160%;
+            padding-left: 30px;
+            letter-spacing: 0.02em;
+            color: #000000;
+        }
+        .close {
+            cursor: pointer;
+        }
+    }
+    .modal-body {
+        padding-right: 0;
+        .body {
+            height: 352px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            .nav-search {
+                position: relative;
+            }
+            .nav-search .searchNavIcon {
+                position: absolute;
+                top: 14%;
+                left: 4%;
+            }
+            .nav-search input {
+                width: 368px;
+                height: 40px;
+                padding-left: 56px;
+                border: 1px solid #bfc1c9;
+                box-sizing: border-box;
+                border-radius: 44px;
+                outline: none;
+            }
+            .nav-search input:focus {
+                border: rgba(0, 187, 199, 0.61) 1px solid;
+                outline: none;
+                box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+            }
+            .nav-search input::placeholder {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: #bfc1c9;
+            }
+        }
+    }
+    .modal-footer {
+        display: flex;
+        justify-content: space-between;
+        .clear {
+            cursor: pointer;
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+        .save {
+            button {
+                padding: 10px 20px;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                color: $white;
+                background: $dark-blue;
+                border-radius: 100px;
+                transition: 0.3s;
+                border: 1px solid $dark-blue;
+                &:hover {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+    }
+}
+
+section#beAGuide .mainInfo .title {
+    width: 60%;
+}
+@media screen and (max-width: 1050px) {
+    section#beAGuide .ques ul {
+        margin-left: 12px;
+    }
+    section#beAGuide .ques ul li a {
+        font-size: 13px;
+    }
+    section#beAGuide .uploadPhoto .secondPart .uploadedImages .uploadOnMore {
+        width: 80%;
+    }
+    section#profileSettings .uploadPhoto .secondPart .uploadedImages .uploadOnMore {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 980px) {
+    section#beAGuide .ques {
+        display: none !important;
+    }
+    section#beAGuide .uploadPhoto .secondPart .uploadedImages .uploadOnMore {
+        width: 50%;
+    }
+    section#profileSettings .uploadPhoto .secondPart .uploadedImages .uploadOnMore {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 550px) {
+    section#beAGuide .uploadPhoto .firstPart {
+        padding: 16px 0;
+    }
+    section#beAGuide .uploadPhoto .firstPart .txtDes {
+        padding: 0 16px;
+    }
+    section#profileSettings .uploadPhoto .firstPart {
+        padding: 16px 0;
+    }
+    section#profileSettings .uploadPhoto .firstPart .txtDes {
+        padding: 0 16px;
+    }
+    section#beAGuide .guideInfo .form-group {
+        padding: 0 16px;
+    }
+    section#beAGuide .contact form {
+        padding: 24px 16px 0 16px;
+    }
+    section#beAGuide .guideInfo .warning {
+        padding: 0 16px 16px 16px;
+    }
+    section#beAGuide .guideInfo .activity {
+        padding: 16px;
+    }
+    section#beAGuide .guideInfo .checkout {
+        padding: 16px 16px 0 16px;
+    }
+    section#beAGuide .guideInfo {
+        margin-top: 32px;
+    }
+    section#beAGuide .mainInfo .title {
+        width: 85%;
+    }
+    section#beAGuide .ques {
+        padding: 0 16px;
+    }
+    section#beAGuide .mainInfo .title img {
+        width: 25px;
+        height: 25px;
+    }
+    section#beAGuide .head {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #successPopup .modal-header {
+        padding: 16px 0 0 0;
+    }
+    #successPopup .linkBtn button {
+        margin-top: 14px;
+    }
+    #successPopup .modal-content .closeBtn {
+        margin-right: 40px;
+    }
+    #successPopup .modal-body {
+        padding: 0px 24px 24px 24px;
+    }
+    section#profileSettings .uploadPhoto .secondPart .uploadedImages .uploadOnMore {
+        width: 70%;
+    }
+    #successPopup .linkBtn button {
+        padding: 10px 20px !important;
+    }
+    section#beAGuide .uploadPhoto .firstPart .uploadImage .content {
+        margin-left: 16px;
+    }
+    section#beAGuide .uploadPhoto .firstPart .uploadImage .content .head {
+        font-size: 13px;
+    }
+    section#beAGuide .uploadPhoto .firstPart .uploadImage .content .upload-delete .delete {
+        font-size: 14px;
+    }
+    section#beAGuide .uploadPhoto .firstPart .uploadImage {
+        padding: 16px !important;
+    }
+    section#beAGuide .uploadPhoto .firstPart .uploadImage .content .upload-delete .upload {
+        padding: 8px 12px;
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#profileSettings .uploadPhoto .firstPart .uploadImage .content {
+        margin-left: 16px;
+    }
+    section#profileSettings .uploadPhoto .firstPart .uploadImage .content .head {
+        font-size: 13px;
+    }
+    section#profileSettings .uploadPhoto .firstPart .uploadImage .content .upload-delete .delete {
+        font-size: 14px;
+    }
+    section#profileSettings .uploadPhoto .firstPart .uploadImage {
+        padding: 16px !important;
+    }
+    section#profileSettings .uploadPhoto .firstPart .uploadImage .content .upload-delete .upload {
+        padding: 8px 12px;
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#beAGuide .head {
+        font-size: 29px;
+        line-height: 29px;
+    }
+    section#beAGuide .mainInfo .title img {
+        width: 20px;
+        height: 20px;
+    }
+    section#beAGuide .mainInfo .form-group .head {
+        padding: 0px 0 0px 0 !important;
+        margin-top: 16px;
+    }
+    section#beAGuide .uploadPhoto .firstPart .uploadImage .content .upload-delete {
+        padding: 8px 0 0 0;
+    }
+    section#beAGuide .uploadPhoto .firstPart .uploadImage .content .upload-delete .delete {
+        padding: 9px 0 9px 0px;
+    }
+    section#beAGuide .uploadPhoto .firstPart .txtDes {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#profileSettings .uploadPhoto .firstPart .uploadImage .content .upload-delete {
+        padding: 8px 0 0 0;
+    }
+    section#profileSettings .uploadPhoto .firstPart .uploadImage .content .upload-delete .delete {
+        padding: 9px 0 9px 0px;
+    }
+    section#profileSettings .uploadPhoto .firstPart .txtDes {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#beAGuide .guideInfo .checkout .form-group .head {
+        padding: 0 0 8px 0 !important;
+    }
+    section#beAGuide .mainInfo .first {
+        padding: 16px 16px 13px 16px;
+    }
+
+    section#beAGuide .mainInfo .title {
+        font-size: 16px;
+    }
+    section#beAGuide .mainInfo .second .language {
+        margin-top: 8px;
+    }
+    section#beAGuide .mainInfo .second .showMore {
+        margin-top: 6px;
+    }
+    section#beAGuide .contact,
+    section#beAGuide .submitBtn button,
+    section#beAGuide .uploadPhoto {
+        margin-top: 32px;
+    }
+    section#beAGuide .contact .warning p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    section#beAGuide .mainInfo .saveBtn button {
+        margin: 16px 0;
+    }
+    #successPopup .headTitle,
+    #successsPopup .headTitle {
+        font-size: 17px;
+        line-height: 21px;
+    }
+    #successPopup .des,
+    #successsPopup .des {
+        font-size: 13px;
+        line-height: 160%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    section#beAGuide .uploadPhoto .firstPart .uploadImage .uploadIcon {
+        width: 88px;
+        height: 88px;
+    }
+    section#profileSettings .uploadPhoto .firstPart .uploadImage .uploadIcon {
+        width: 88px;
+        height: 88px;
+    }
+    section#beAGuide .head {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    section#beAGuide .mainInfo .title {
+        font-size: 15px;
+    }
+    section#beAGuide .mainInfo .form-group .head {
+        font-size: 13px;
+        line-height: 160%;
+    }
+}
+@media screen and (max-width: 340px) {
+    section#beAGuide .uploadPhoto .secondPart .uploadedImages .uploadOnMore {
+        width: 65%;
+    }
+    section#profileSettings .uploadPhoto .secondPart .uploadedImages .uploadOnMore {
+        width: 65%;
+    }
+    section#beAGuide .mainInfo .second .heading .clearLanguages {
+        margin-left: 4px !important;
+    }
+}
+@media screen and (max-width: 310px) {
+    section#beAGuide .mainInfo .second .heading .clearLanguages {
+        margin-left: 0px !important;
+    }
+}
+@media screen and (max-width: 310px) {
+    section#beAGuide .uploadPhoto .secondPart .uploadedImages .uploadOnMore {
+        width: 70%;
+    }
+    section#profileSettings .uploadPhoto .secondPart .uploadedImages .uploadOnMore {
+        width: 70%;
+    }
+}

@@ -1,0 +1,534 @@
+section#searchCardsHeading {
+    margin-bottom: 64px;
+    padding-top: 83px;
+    .head {
+        text-align: center;
+        margin-top: 40px;
+        font-family: $monst;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+        color: $black;
+    }
+    .des {
+        text-align: center;
+        margin-top: 16px;
+        font-family: $open;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: $dark-grey;
+        a {
+            text-decoration: none;
+            color: #05a4ff;
+        }
+    }
+}
+
+section#searchCardsCard {
+    .cards {
+        .item {
+            border-radius: 12px;
+            margin-top: 28px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+
+            &:hover {
+                .cardImg {
+                    img {
+                        transform: scale(1.05);
+                        transition: 0.5s;
+                    }
+                }
+            }
+            .cardImg {
+                border-radius: 12px 12px 0 0;
+                overflow: hidden;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .mainContent {
+                padding: 16px 24px;
+                .title {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                }
+                .country {
+                    margin-top: 8px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 120%;
+                    letter-spacing: 0.02em;
+                    color: $dark-blue;
+                    padding-bottom: 12px;
+                    border-bottom: 1px dashed #e5e7eb;
+                    margin-bottom: 12px;
+                }
+                .date {
+                    margin-bottom: 24px;
+                    max-height: 24px;
+                    .text {
+                        font-family: $open;
+                        padding: 4px 0 0 0;
+                        font-style: normal;
+                        font-weight: normal;
+                        margin-left: 16px;
+                        align-self: center;
+                        font-size: 14px;
+                        line-height: 200%;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                    }
+                }
+                .languages {
+                    margin-bottom: 24px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $dark-grey;
+                    span.langs {
+                        color: $black;
+                    }
+                }
+                .cardBtn {
+                    button {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 160%;
+                        transition: 0.3s;
+                        width: 100%;
+                        letter-spacing: 0.02em;
+                        border: 1px solid $dark-blue;
+                        color: $dark-blue;
+                        background: $white;
+                        padding: 10px 20px;
+                        border-radius: 100px;
+                        &:hover {
+                            background: $dark-blue;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navv {
+        margin-top: 48px;
+        .titleDes {
+            line-height: 290% !important;
+        }
+        .titleDes {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $med-grey;
+        }
+        .page-item {
+            a {
+                text-decoration: none !important;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                outline: none;
+                box-shadow: none;
+                background: $white;
+                border: 1px solid white;
+                line-height: 160%;
+                padding: 8px 15px;
+                margin: 0 6px;
+                letter-spacing: 0.02em !important;
+                color: $dark-grey !important;
+                &.active {
+                    border: 1px solid #05a4ff;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    outline: none;
+                    box-shadow: none;
+                    background: $white;
+                }
+                img {
+                    margin-bottom: 2px;
+                }
+            }
+        }
+    }
+}
+
+#offersFormPopup {
+    .modal-content {
+        background: #ffffff;
+        border-radius: 16px;
+        .closeBtn {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+    .modal-header {
+        .headTitle {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+
+        margin: 0 3px;
+        border-bottom: 1px dashed #e5e7eb;
+    }
+    .modal-body {
+        padding: 16px 30px;
+        .mainContent {
+            .date {
+                margin-top: 16px;
+                margin-bottom: 24px;
+                max-height: 8px;
+                .text {
+                    font-family: $open;
+                    padding: 24px 0 0 0;
+                    font-style: normal;
+                    font-weight: normal;
+                    margin-left: 16px;
+                    align-self: center;
+                    font-size: 14px;
+                    line-height: 200%;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                }
+            }
+            .languages {
+                margin-bottom: 16px;
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $dark-grey;
+                span.langs {
+                    color: $black;
+                }
+            }
+        }
+        .guideProfile {
+            .image {
+                width: 64px;
+                height: 64px;
+                border-radius: 100px;
+                overflow: hidden;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .nameAndPlace {
+                align-self: center;
+                margin-left: 12px;
+                .name {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                }
+                .place {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 120%;
+                    letter-spacing: 0.02em;
+                    color: $dark-blue;
+                }
+            }
+        }
+        form {
+            border-top: 1px dashed #e5e7eb;
+        }
+        .txtDes {
+            font-family: $open;
+            font-style: normal;
+            font-weight: normal;
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $dark-grey;
+        }
+        .ques {
+            font-family: $open;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            letter-spacing: 0.02em;
+            margin-top: 16px;
+            color: $black;
+        }
+        .form-group {
+            .form-floating {
+                textarea {
+                    background: $white;
+                    padding: 16px;
+                    margin-top: 8px;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    &::placeholder {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: $dark-grey;
+                    }
+                    &:focus {
+                        box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                        outline: none;
+                    }
+                }
+            }
+            .head {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 160%;
+                margin-top: 24px;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+            .dropdown {
+                .dropdown-menu {
+                    width: 100%;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 12px;
+                    .dropdown-item {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: #11142d;
+                        padding: 16px 18px;
+                        &:focus {
+                            background: none;
+                        }
+                    }
+                }
+                button {
+                    padding: 5.5px 24px;
+                    background: $white;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    margin-top: 8px;
+                    width: 100%;
+                    .txt {
+                        font-family: $open;
+                        font-style: normal;
+                        align-items: flex-end;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 240%;
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .buttons {
+            .yess {
+                button {
+                    padding: 10px 20px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    margin: 16px 10px 32px 10px;
+                    font-size: 14px;
+                    line-height: 19px;
+                    letter-spacing: 0.03em;
+                    color: $dark-blue;
+                    background: $white;
+                    border: 1px solid $dark-blue;
+                    border-radius: 100px;
+                    transition: 0.3s;
+                    &:hover {
+                        background: $dark-blue;
+                        color: $white;
+                    }
+                }
+            }
+            .noo {
+                button {
+                    padding: 10px 20px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    margin: 16px 10px 32px 10px;
+                    letter-spacing: 0.03em;
+                    color: $white;
+                    background: $dark-blue;
+                    border: 1px solid $dark-blue;
+                    border-radius: 100px;
+                    transition: 0.3s;
+                    &:hover {
+                        border: 1px solid $dark;
+                        background: $dark;
+                    }
+                }
+            }
+        }
+    }
+    .modal-footer {
+        padding: 16px;
+        border-top: 1px dashed #e5e7eb;
+        .confirmBtn {
+            button {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                color: $white;
+                padding: 10px 20px;
+                background: $dark-blue;
+                border: 1px solid $dark-blue;
+                border-radius: 100px;
+                transition: 0.3s;
+                &:hover {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    section#SearchBarFilter .smallFilter .navv {
+        justify-content: start !important;
+    }
+}
+@media screen and (max-width: 490px) {
+    .inputDate .dateIcon {
+        left: 3% !important;
+    }
+}
+@media screen and (max-width: 450px) {
+    #offersFormPopup .modal-body .guideProfile .image {
+        width: 48px;
+        height: 48px;
+    }
+    #offersFormPopup .modal-body .guideProfile .nameAndPlace .name {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #offersFormPopup .modal-body .guideProfile .nameAndPlace .place {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    #offersFormPopup .modal-body .mainContent .date {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    #offersFormPopup .modal-body .mainContent .languages {
+        font-size: 14px;
+        line-height: 160%;
+    }
+    #offersFormPopup .modal-body .txtDes {
+        font-size: 12px;
+        line-height: 160%;
+    }
+    #offersFormPopup .modal-body .form-group .head {
+        margin-top: 16px;
+        font-size: 13px;
+        line-height: 160%;
+    }
+    .datepicker-input {
+        width: 100%;
+    }
+    section#SearchBarFilter .smallFilter .dropdown .btn {
+        font-size: 14px;
+    }
+    section#searchCardsCard .navv .titleDes,
+    section#searchCardsCard .navv .page-item a {
+        font-size: 13px;
+    }
+    section#searchCardsHeading .head {
+        font-size: 17px;
+        line-height: 21px;
+    }
+    section#searchCardsHeading .des {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 0;
+    }
+    section#SearchBarFilter .smallFilter .titleDes {
+        font-size: 13px;
+        line-height: 160%;
+        margin-right: 6px;
+    }
+    section#searchCardsCard .navv .page-item a {
+        padding: 4px 9px !important;
+    }
+    section#searchCardsCard .cards .item .mainContent .title {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    section#searchCardsCard .cards .item .mainContent .country {
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 120%;
+    }
+    section#searchCardsCard .cards .item .mainContent .date {
+        margin-bottom: 12px;
+    }
+    section#searchCardsCard .cards .item .mainContent .date .text {
+        font-size: 13px;
+        line-height: 160%;
+        margin-top: 4px;
+    }
+    section#searchCardsCard .cards .item .mainContent .languages {
+        font-size: 13px;
+        line-height: 160%;
+        margin-bottom: 12px;
+    }
+    section#searchCardsCard .cards .item .mainContent .cardBtn button {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#searchCardsCard .cards .item .mainContent {
+        padding: 16px;
+    }
+}

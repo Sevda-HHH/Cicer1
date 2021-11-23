@@ -1,0 +1,403 @@
+section#offersMain {
+    .form-check-input:checked[type="checkbox"] {
+        outline: none;
+        box-shadow: none;
+    }
+    padding-top: 83px;
+    .head {
+        font-family: $monst;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        margin-top: 24px;
+        letter-spacing: 0.03em;
+        color: $black;
+    }
+    .tripCount {
+        font-family: $open;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: 26px;
+        font-size: 15px;
+        margin-left: 24px;
+        line-height: 160%;
+        letter-spacing: 0.02em;
+        color: #a8b0c0;
+    }
+
+    .tab {
+        overflow: hidden;
+        margin: 32px 0;
+        border-bottom: 1px solid $light;
+        button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 16px 0;
+            transition: 0.3s;
+            font-family: $open;
+            font-style: normal;
+            padding-bottom: 16px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 160%;
+            margin-right: 42px;
+            letter-spacing: 0.02em;
+            color: $black;
+            border-bottom: 3px solid transparent !important;
+            &:hover {
+                color: #2fb3ff;
+            }
+            &.active {
+                font-weight: 600;
+                border-bottom: 3px solid #2fb3ff !important;
+            }
+        }
+    }
+    .tabcontent {
+        display: none;
+        border-top: none;
+        &#Tourist {
+            min-height: 400px;
+        }
+        &#Guide {
+            .sorting {
+                margin-bottom: 25px;
+                .chooseAll {
+                    padding: 8px 16px;
+                    background: $white;
+                    border: 0.8px solid #e5e7eb;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+                    border-radius: 8px;
+                    label {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        padding-left: 10px;
+                        color: $dark-grey;
+                    }
+                    input {
+                        cursor: pointer;
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+                .delete {
+                    padding-left: 10px;
+                    .icon {
+                        padding: 7px 6.5px;
+                        background: $white;
+                        border: 0.8px solid #e5e7eb;
+                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+                        border-radius: 8px;
+                        cursor: pointer;
+                    }
+                    .delText {
+                        padding-left: 8px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 280%;
+                        letter-spacing: 0.02em;
+                        color: #05a4ff;
+                    }
+                }
+                .dropdown {
+                    padding-left: 38px;
+                    .titleDes {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: $med-grey;
+                        span {
+                            font-family: $open;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 160%;
+                            letter-spacing: 0.02em;
+                            color: $dark-grey;
+                        }
+                    }
+                    .btn {
+                        padding-top: 5px !important;
+                        padding-left: 0 !important;
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+                    .dropdown-menu {
+                        min-width: 283px !important;
+                        background: $white;
+                        border: 1px solid #e5e7eb !important;
+                        border-radius: 12px !important;
+                        .dropdown-item {
+                            padding: 16px 18px;
+                            .bb {
+                                border-bottom: 1px solid #e5e7eb !important;
+                            }
+                        }
+                    }
+                    a {
+                        padding: 0;
+                        &.dropdown-text {
+                            font-family: $open;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 160%;
+                            letter-spacing: 0.02em;
+                            color: $dark-grey !important;
+                            img {
+                                margin-left: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .offers {
+                .item {
+                    padding: 24px 0;
+
+                    &.unread {
+                        .dot {
+                            i {
+                                font-weight: 900 !important;
+                            }
+                        }
+                        .message {
+                            font-weight: 600;
+                        }
+                    }
+                    .form-check {
+                        align-self: center;
+                        input {
+                            width: 20px;
+                            height: 20px;
+                            cursor: pointer;
+                            &:focus {
+                                box-shadow: none;
+                                outline: none;
+                            }
+                        }
+                    }
+                    .dot {
+                        align-self: center;
+                        margin-left: 16px;
+                        padding: 8px 0;
+                        font-size: 8px;
+                        color: #05a4ff;
+                        i {
+                            font-weight: 500;
+                        }
+                    }
+                    .profilePicture {
+                        align-self: center;
+                        width: 40px;
+                        height: 40px;
+                        margin-left: 40px;
+                        overflow: hidden;
+                        border-radius: 100px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .nameAndCountry {
+                        margin-left: 9px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        letter-spacing: 0.02em;
+
+                        .name {
+                            font-size: 15px;
+                            line-height: 24px;
+                            padding-left: 2px;
+                            color: $black;
+                        }
+                        .country {
+                            font-size: 13px;
+                            line-height: 120%;
+                            margin-top: 3px;
+                            color: #a8b0c0;
+                        }
+                    }
+                    .message {
+                        align-self: center;
+                        max-width: 490px;
+                        margin-left: 100px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                    }
+                    .time {
+                        margin-left: 109px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 120%;
+                        text-align: right;
+                        letter-spacing: 0.02em;
+                        color: #a8b0c0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1188px) {
+    section#offersMain .tabcontent#Guide .offers .item .time {
+        margin-left: 65px;
+    }
+}
+@media screen and (max-width: 960px) {
+    section#offersMain .tabcontent#Guide .offers .item {
+        flex-wrap: wrap;
+    }
+    section#offersMain .tabcontent#Guide .offers .item .message {
+        margin-left: 90px;
+        margin-top: 5px;
+    }
+    section#offersMain .tabcontent#Guide .offers .item .time {
+        margin-left: 90px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    section#offersMain {
+        padding: 83px 8px 0 8px;
+    }
+    section#offersMain .tabcontent#Guide .sorting .dropdown {
+        padding-left: 0;
+        margin-top: 14px;
+    }
+    section#offersMain .tabcontent#Guide .sorting {
+        display: flex;
+        flex-wrap: wrap !important;
+    }
+    section#offersMain .tabcontent#Guide .offers .item {
+        flex-wrap: wrap;
+    }
+    section#offersMain .head {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    section#offersMain .tripCount {
+        font-size: 14px;
+        margin-left: 24px;
+    }
+    section#offersMain .tab button {
+        font-size: 13px;
+        line-height: 160%;
+        margin-right: 26px;
+    }
+    section#offersMain .tabcontent#Guide .sorting .chooseAll label {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#offersMain .tabcontent#Guide .sorting .delete .delText {
+        font-size: 13px;
+        line-height: 339%;
+    }
+    section#offersMain .tabcontent#Guide .sorting .dropdown .titleDes,
+    section#offersMain .tabcontent#Guide .sorting .dropdown a.dropdown-text {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#offersMain .tabcontent#Guide .offers .item .profilePicture {
+        width: 32px;
+        height: 32px;
+        margin-left: 12px;
+    }
+    section#offersMain .tabcontent#Guide .offers .item .dot {
+        margin-left: 10px;
+        padding: 8px 0;
+        font-size: 7px;
+    }
+    section#offersMain .tabcontent#Guide .offers .item.unread .message,
+    section#offersMain .tabcontent#Guide .offers .item .message {
+        margin-top: 5px;
+        margin-left: 55px;
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#offersMain .tabcontent#Guide .offers .item .time {
+        margin-left: 57px;
+    }
+    section#offersMain .tabcontent#Guide .offers .item .time {
+        font-size: 12px;
+        line-height: 120%;
+    }
+    section#offersMain .tabcontent#Guide .offers .item .nameAndCountry .country {
+        font-size: 12px;
+        line-height: 120%;
+    }
+    section#offersMain .tabcontent#Guide .offers .item .nameAndCountry .name {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section#offersMain .tab {
+        margin: 16px 0;
+    }
+}
+@media screen and (max-width: 450px) {
+    section#offersMain .tab {
+        margin: 0 0 16px 0;
+    }
+}
+@media screen and (max-width: 390px) {
+    section#offersMain .tab {
+        border-bottom: none;
+    }
+    section#offersMain .tab button {
+        margin-right: 12px;
+    }
+}
+@media screen and (max-width: 390px) {
+    section#offersMain .tab button {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 355px) {
+    section#offersMain .tab button {
+        border-bottom: 1px solid #e5e7eb;
+        font-size: 13px;
+        text-align: center;
+        padding: 24px 0 4px 0 !important;
+    }
+}
+@media screen and (max-width: 310px) {
+    section#offersMain .tabcontent#Guide .sorting .chooseAll {
+        padding: 7px 10px;
+    }
+    section#offersMain .tabcontent#Guide .sorting .delete {
+        padding-left: 3px;
+    }
+}
+@media screen and (max-width: 300px) {
+    section#offersMain .tab button {
+        width: 100%;
+    }
+}

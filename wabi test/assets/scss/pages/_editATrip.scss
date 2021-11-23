@@ -1,0 +1,720 @@
+section#editATrip {
+    padding-top: 83px;
+    .createATripMain {
+        flex-wrap: wrap;
+        background: #fbfbfc;
+    }
+    .datepicker {
+        z-index: 10 !important;
+    }
+    input {
+        &:disabled {
+            background: #f4f5f6 !important;
+            border: 1px solid #e5e7eb;
+            color: #a8b0c0 !important;
+            cursor: default;
+            label {
+                cursor: default;
+            }
+        }
+    }
+    .second.disabled {
+        cursor: default;
+
+        .heading {
+            color: #a8b0c0 !important;
+        }
+        .language.chosenn {
+            background: #f4f5f6 !important;
+        }
+        .languagee.chosenn {
+            background: #f4f5f6 !important;
+        }
+        .showMore {
+            line-height: 180% !important;
+        }
+        .showMore {
+            color: #a8b0c0 !important;
+            cursor: unset !important;
+        }
+    }
+    input:disabled::placeholder {
+        color: #a8b0c0 !important;
+        cursor: default;
+    }
+    .openChatBtn {
+        button {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            width: 100%;
+            letter-spacing: 0.03em;
+            padding: 10px 0;
+            color: $white;
+            background: $dark-blue;
+            border-radius: 100px;
+            transition: 0.3s;
+            margin-top: 16px;
+            border: 1px solid $dark-blue;
+            &:hover {
+                border: 1px solid $dark;
+                background: $dark;
+            }
+        }
+    }
+    .leaveReviewBtn {
+        button {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            width: 100%;
+            letter-spacing: 0.03em;
+            padding: 10px 0;
+            color: $dark-blue;
+            background: $white;
+            border-radius: 100px;
+            transition: 0.3s;
+            margin: 16px 0 30px 0;
+            border: 1px solid $dark-blue;
+            &:hover {
+                background: $dark-blue;
+                color: $white;
+            }
+        }
+    }
+    .cancelGuide {
+        font-family: $open;
+        font-style: normal;
+        font-weight: 600;
+        margin: 16px 0;
+        font-size: 13px;
+        text-align: center;
+        line-height: 120%;
+        cursor: pointer;
+        letter-spacing: 0.02em;
+        color: $dark-grey;
+    }
+    .guideInfo {
+        background: $white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+        border-radius: 12px;
+        .priceAndStars {
+            border-bottom: 1px dashed #e5e7eb;
+            padding: 24px 24px 16px 24px;
+            font-style: normal;
+            .txtTitle {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+            .price {
+                font-family: $monst;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 27px;
+                letter-spacing: 0.03em;
+                color: $dark-blue;
+            }
+            .stars {
+                font-family: $open;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #11142d;
+                img {
+                    padding-bottom: 5px;
+                }
+                span {
+                    color: #a8b0c0;
+                }
+            }
+        }
+        .content {
+            padding: 16px 24px;
+            .picAndName {
+                .price {
+                    font-family: $monst;
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 27px;
+                    letter-spacing: 0.03em;
+                    color: $dark-blue;
+                }
+                .stars {
+                    font-family: $open;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #11142d;
+                    img {
+                        padding-bottom: 5px;
+                    }
+                    span {
+                        color: #a8b0c0;
+                    }
+                }
+                .pic {
+                    width: 64px;
+                    height: 64px;
+                    overflow: hidden;
+                    img {
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+                .name {
+                    margin-left: 16px;
+                    align-self: center;
+                    .namee {
+                        align-self: center;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 24px;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                    }
+                    .country {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 160%;
+                        align-self: center;
+                        letter-spacing: 0.02em;
+                        color: $dark-grey;
+                    }
+                }
+            }
+            .details {
+                padding: 24px 0 8px 0;
+
+                .info {
+                    width: 50%;
+                    &.iconn {
+                        margin-left: 24px;
+                    }
+                    .text {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        margin-left: 16px;
+                        align-self: center;
+                        font-size: 14px;
+                        line-height: 200%;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                    }
+                }
+            }
+            .chooseBtn {
+                button {
+                    &.dark {
+                        border: 1px solid $dark-blue !important;
+                        background: $dark-blue !important;
+                        color: $white !important;
+                    }
+                    &.light {
+                        color: $dark-blue !important;
+                        background: $white !important;
+                        border: 1px solid $dark-blue !important;
+                    }
+                    &:hover {
+                        &.dark {
+                            border: 1px solid $dark !important;
+                            background: $dark !important;
+                        }
+                        &.light {
+                            border: 1px solid $dark-blue !important;
+                            background: $dark-blue !important;
+                            color: white !important;
+                        }
+                    }
+
+                    transition: 0.2s;
+                    border-radius: 100px;
+                    width: 100%;
+                    font-family: $open;
+                    font-style: normal;
+                    border: 1px solid $dark;
+                    background: $white;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    letter-spacing: 0.03em;
+
+                    padding: 14.5px 0;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        &.mainn {
+            margin: -56px 0 0 0;
+        }
+        font-family: $open;
+        font-style: normal;
+        line-height: 160%;
+        background: $white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+        border-radius: 12px;
+        .first {
+            padding: 24px;
+        }
+        .second {
+            padding: 24px;
+            border-top: 1px dashed #e5e7eb;
+            border-bottom: 1px dashed #e5e7eb;
+            .heading {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: $dark-blue;
+                margin-bottom: 12px;
+            }
+            .language {
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $dark-grey;
+                margin-right: 32px;
+                &.chosen {
+                    background: #eef9ff;
+                    border-radius: 8px;
+                    padding: 4px;
+                }
+            }
+            .languagee {
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $dark-grey;
+                margin-right: 24px;
+                img {
+                    display: none !important;
+                }
+                &.chosenn {
+                    background: #eef9ff;
+                    border-radius: 8px;
+                    padding: 0 4px;
+                    img {
+                        display: unset !important;
+                    }
+                }
+            }
+
+            .showMore {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                cursor: pointer;
+                line-height: 260%;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+        }
+        .saveBtn {
+            text-align: center;
+            button {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                color: $white;
+                padding: 10px 20px;
+                transition: 0.3s;
+                margin: 24px 0;
+                background: $dark-blue;
+                border: 1px solid $dark-blue;
+                border-radius: 100px;
+                &:hover {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+        .form-group {
+            .datepicker-dropdown .datepicker-picker {
+                background: #ffffff !important;
+                border: 1px solid #e5e7eb !important;
+                box-sizing: border-box !important;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
+                border-radius: 12px !important;
+            }
+            .datepicker-header {
+                .datepicker-controls {
+                    padding: 20px !important;
+                }
+            }
+            button.button.view-switch {
+                background: white !important;
+            }
+            input[type="radio"]:disabled,
+            input[type="checkbox"]:disabled {
+                background: #eaeaea !important;
+                border: 1px solid #b3abbc !important     ;
+                box-sizing: border-box;
+                cursor: default;
+                border-radius: 4px;
+                .form-check {
+                    cursor: default;
+                }
+                label {
+                    cursor: default;
+                }
+            }
+            input {
+                &[type="number"] {
+                    width: 100%;
+                    &:disabled {
+                        background: #f4f5f6 !important  ;
+                        cursor: default;
+                        .form-check {
+                            cursor: default;
+                        }
+                        label {
+                            cursor: default;
+                        }
+                    }
+                }
+                &[type="text"],
+                &[type="date"],
+                &[type="number"] {
+                    background: $white;
+                    padding: 12px 0 12px 24px;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                    }
+                    &::placeholder {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 160%;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.02em;
+                        color: $black;
+                    }
+                }
+
+                &[type="radio"],
+                &[type="checkbox"] {
+                    width: 20px;
+                    background: none;
+                    height: 20px;
+                    border-radius: 6px !important;
+                    &:disabled {
+                        cursor: default !important;
+                        background: #eaeaea !important;
+                        border: 1px solid #b3abbc !important     ;
+                        box-sizing: border-box;
+                        cursor: default;
+                        border-radius: 4px;
+                        .form-check {
+                            cursor: default;
+                        }
+                        label {
+                            cursor: default;
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &:checked {
+                        background: #258ee3;
+                        border: 1px solid #258ee3;
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+                    }
+                }
+            }
+
+            .form-check {
+                margin-right: 32px;
+                cursor: pointer;
+                &.disabled {
+                    cursor: default !important;
+                    &:hover {
+                        cursor: default !important;
+                    }
+                    label {
+                        cursor: default;
+                    }
+                }
+
+                label {
+                    font-family: $open;
+                    margin-left: 12px;
+                    font-style: normal;
+                    cursor: pointer;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                }
+            }
+
+            .head {
+                font-weight: 600;
+                font-size: 14px;
+                padding: 24px 0 0 0;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+        }
+        .title {
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+    }
+    .head {
+        padding: 68px 0;
+        font-family: $monst;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: 0.03em;
+        color: $black;
+    }
+    .ques {
+        margin-top: 30px;
+        ul {
+            margin-left: 20px;
+            li {
+                margin-bottom: 12px;
+                a {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    &:hover {
+                        color: #258ee3 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    section#editATrip .createATripMain {
+        flex-wrap: wrap-reverse;
+    }
+}
+@media screen and (max-width: 505px) {
+    section#editATrip .guideInfo .content .details .info {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .language.chosenn.language {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    section#editATrip .main .second .showMore {
+        margin-left: 8px;
+    }
+    section#editATrip .main.mainn {
+        padding: 0;
+    }
+    section#editATrip .main .first {
+        padding: 16px 6px;
+    }
+
+    section#editATrip .main .second .showMore {
+        line-height: 215%;
+    }
+    section#editATrip .main .second {
+        padding: 16px;
+    }
+    section#editATrip .main .second .showMore {
+        margin-left: 4px;
+    }
+    section#editATrip .createATripMain {
+        padding: 0 10px;
+    }
+    section#editATrip .ques ul li a {
+        font-size: 14px;
+        line-height: 160%;
+    }
+    section#editATrip .main .saveBtn button {
+        margin: 16px 0;
+    }
+    section#editATrip .main .title {
+        font-size: 16px;
+        line-height: 160%;
+    }
+    section#editATrip .main .form-group .head {
+        padding: 16px 0 0 0;
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#editATrip .main .form-group .form-check.disabled label {
+        font-size: 14px;
+        line-height: 160%;
+    }
+    section#editATrip .main .second .languagee {
+        font-size: 13px;
+        margin-bottom: 10px;
+        line-height: 160%;
+        margin-right: 16px;
+    }
+    section#editATrip .guideInfo .content .details {
+        padding: 16px 0 8px 0;
+    }
+    section#editATrip .main .second .language {
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+    section#editATrip .guideInfo .content .picAndName .name {
+        margin-left: 16px;
+        align-self: start;
+    }
+    section#editATrip .guideInfo .content .picAndName .pic,
+    section#editATrip .guideInfo .content .picAndName .pic img {
+        width: 40px;
+        height: 40px;
+    }
+    section#editATrip .guideInfo .content .picAndName .name .namee {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    section#editATrip .guideInfo .priceAndStars {
+        padding: 12px 16px 16px 16px;
+    }
+    section#editATrip .guideInfo .content .picAndName .name .country {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#editATrip .guideInfo .priceAndStars .txtTitle {
+        font-size: 16px;
+        line-height: 160%;
+    }
+    section#editATrip .guideInfo .priceAndStars .price {
+        font-size: 17px;
+        line-height: 21px;
+    }
+    section#editATrip .guideInfo .content .picAndName .price {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 8px;
+    }
+
+    section#editATrip .guideInfo .content .details {
+        flex-wrap: wrap;
+    }
+    section#editATrip .guideInfo .content {
+        padding: 16px 16px 4px 16px;
+    }
+    section#editATrip .guideInfo .content .details .info.iconn {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    section#editATrip .leaveReviewBtn button {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#editATrip .head {
+        width: 80%;
+        font-size: 24px;
+        line-height: 29px;
+        padding: 51px 0 97px 0;
+    }
+    section#editATrip .main .first {
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#beAGuide .mainInfo .second {
+        padding: 16px;
+    }
+    section#beAGuide .mainInfo .second .language {
+        margin-bottom: 10px !important;
+        mask-type: 0 !important;
+    }
+    section#editATrip .main .second {
+        padding: 16px;
+    }
+    section#beAGuide .mainInfo .second .showMore {
+        margin-top: 0 !important;
+        line-height: 215%;
+    }
+}
+@media screen and (max-width: 340px) {
+    section#editATrip .main .second .heading {
+        flex-wrap: wrap;
+    }
+    .titleTextt .clearLanguages,
+    .titleTextt .clearActivities {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 334px) {
+    .titleTextt .clearLanguages,
+    .titleTextt .clearActivities {
+        margin-left: 0 !important;
+    }
+}
+@media screen and (max-width: 300px) {
+    section#editATrip .createATripMain {
+        padding: 0 8px;
+    }
+    section#editATrip .head {
+        padding: 54px 0 97px 0;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    section#editATrip .main .form-group .form-check {
+        margin-right: 10px;
+    }
+}

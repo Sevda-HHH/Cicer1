@@ -1,0 +1,1300 @@
+@-webkit-keyframes second-nav-item {
+    0% {
+        top: 0%;
+        left: 10%;
+    }
+    100% {
+        top: 30%;
+        left: 10%;
+    }
+}
+@keyframes second-nav-item {
+    0% {
+        top: 0%;
+        left: 10%;
+    }
+    100% {
+        top: 30%;
+        left: 10%;
+    }
+}
+@-webkit-keyframes first-nav-item {
+    0% {
+        top: 70%;
+        left: 10%;
+    }
+    100% {
+        top: 0%;
+        left: 10%;
+    }
+}
+@keyframes first-nav-item {
+    0% {
+        top: 70%;
+        left: 10%;
+    }
+    100% {
+        top: 0%;
+        left: 10%;
+    }
+}
+@-webkit-keyframes third-nav-item {
+    0% {
+        top: 30%;
+        left: 10%;
+    }
+    100% {
+        top: 76%;
+        left: 10%;
+    }
+}
+@keyframes third-nav-item {
+    0% {
+        top: 30%;
+        left: 10%;
+    }
+    100% {
+        top: 76%;
+        left: 10%;
+    }
+}
+
+.noUi-connect {
+    background: #05a4ff;
+    border: 1px solid #05a4ff;
+    z-index: 100;
+}
+.noUi-handle:after,
+.noUi-handle:before {
+    content: none;
+}
+.noUi-target {
+    border: none;
+}
+.noUi-horizontal {
+    height: 4px;
+}
+.noUi-target {
+    background: #e5e7eb;
+}
+.noUi-horizontal .noUi-handle {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    right: -17px;
+    background: $white;
+    border: 1.8px solid #05a4ff;
+    top: -7px;
+    border-radius: 100px;
+}
+#slider-non-linear-step-value {
+    margin-bottom: 16px;
+    font-family: $open;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: $black;
+    span {
+        font-family: $open;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.02em;
+        color: $dark-grey;
+    }
+}
+
+section#SearchBarFilter .smallFilter .dropdown .dropdown-text {
+    color: $dark-grey;
+}
+section#SearchBarCardsIntro {
+    padding-top: 81px;
+    .searchBarFilter {
+        margin-top: 42px;
+
+        .filter {
+            button {
+                width: 57px;
+                height: 57px;
+                border: 1px solid $dark-blue;
+                background: $dark-blue;
+                border-radius: 12px;
+                position: relative;
+                margin-right: 41px;
+                .filterRedCircle {
+                    position: absolute;
+                    top: -5%;
+                    right: -2%;
+                    background: #fb3968;
+                    border-radius: 100px;
+                    width: 10px;
+                    height: 10px;
+                    border: 4px solid #fb3968;
+                }
+            }
+        }
+        .search {
+            position: relative;
+            height: 57px;
+            input {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                color: $black;
+                background: #ffffff;
+                border-radius: 12px;
+                width: 100%;
+                height: 100%;
+                border: 1px solid #ffffff;
+                padding-left: 24px;
+                &:focus {
+                    outline: none;
+                    border: 1px solid rgba(0, 187, 199, 0.61);
+                    box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                }
+                &::placeholder {
+                    font-family: "Open Sans", sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: #bfc1c9;
+                }
+            }
+            .submitButton button {
+                font-family: "Open Sans", sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                background: #215273;
+                border-radius: 8px;
+                padding: 12px 32px;
+                position: absolute;
+                top: 10%;
+                border: 1px solid #215273;
+                right: 1%;
+                letter-spacing: 0.02em;
+                color: #ffffff;
+                &:hover {
+                    border: 1px solid #143d59 !important;
+                    color: white !important;
+                    background: #143d59 !important;
+                    transition: 0.3s !important;
+                }
+            }
+        }
+    }
+}
+
+section#SearchBarFilter {
+    .head {
+        margin-top: 40px;
+        font-family: $monst;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+        color: $black;
+        margin-bottom: 8px;
+    }
+    .smallFilter {
+        margin-top: 8px;
+        .navv {
+            justify-content: flex-end;
+        }
+        .dropdown {
+            .btn {
+                padding-left: 0 !important;
+            }
+            .price {
+                &.dropdown-menu {
+                    min-width: 222px !important;
+                    background: $white;
+                    border: 1px solid #e5e7eb !important;
+                    border-radius: 12px !important;
+                    .dropdown-item {
+                        padding: 16px 18px;
+                        .bb {
+                            border-bottom: 1px solid #e5e7eb !important;
+                        }
+                    }
+                }
+                a {
+                    padding: 0;
+                    &.dropdown-text {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: $dark-grey !important;
+                        img {
+                            margin-left: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dropdown {
+            .review {
+                &.dropdown-menu {
+                    min-width: 244px !important;
+                    background: $white;
+                    border: 1px solid #e5e7eb !important;
+                    border-radius: 12px !important;
+                    .dropdown-item {
+                        padding: 16px 18px;
+                        .bb {
+                            border-bottom: 1px solid #e5e7eb !important;
+                        }
+                    }
+                }
+                a {
+                    padding: 0;
+                    &.dropdown-text {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: $dark-grey !important;
+                        img {
+                            margin-left: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .titleDes {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $med-grey;
+        }
+        .navv {
+            .titleDes {
+                line-height: 290% !important;
+            }
+            .page-item {
+                a {
+                    text-decoration: none !important;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    outline: none;
+                    box-shadow: none;
+                    background: $white;
+                    border: 1px solid white;
+                    line-height: 160%;
+                    padding: 8px 15px;
+                    margin: 0 6px;
+                    letter-spacing: 0.02em !important;
+                    color: $dark-grey !important;
+                    &.active {
+                        border: 1px solid #05a4ff;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        outline: none;
+                        box-shadow: none;
+                        background: $white;
+                    }
+                    img {
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+        }
+
+        .btn {
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+
+section#searchBarCards {
+    .searchBarCardsCenterBetween {
+        justify-content: space-between;
+    }
+    .titleDes {
+        font-family: $open;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.02em;
+        color: $med-grey;
+    }
+    .navv {
+        margin-top: 48px;
+        .titleDes {
+            line-height: 290% !important;
+        }
+        .page-item {
+            a {
+                text-decoration: none !important;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                outline: none;
+                box-shadow: none;
+                background: $white;
+                border: 1px solid white;
+                line-height: 160%;
+                padding: 8px 15px;
+                margin: 0 6px;
+                letter-spacing: 0.02em !important;
+                color: $dark-grey !important;
+                &.active {
+                    border: 1px solid #05a4ff;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    outline: none;
+                    box-shadow: none;
+                    background: $white;
+                }
+                img {
+                    margin-bottom: 2px;
+                }
+            }
+        }
+    }
+    .cardSlider {
+        position: relative;
+        max-width: 300px;
+        margin-top: 24px;
+        height: 400px;
+        margin-bottom: 24px;
+        background: #ffffff;
+        margin-left: 10px !important;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+        border-radius: 6px !important;
+        .cardSliderr {
+            padding: 54px 10px 0 24px;
+            .nav {
+                opacity: 0.5;
+                height: 278px;
+                width: 17px;
+                border-radius: 100px;
+                background: #e5e7eb;
+                z-index: 0;
+                position: relative;
+                .first {
+                    position: absolute;
+                    top: 0%;
+                    left: 10%;
+                    border-radius: 12px;
+                    z-index: 2;
+                    height: 33px;
+                    width: 4px;
+                    animation: first-nav-item 0.3s linear;
+                    background: $blue;
+                }
+                .second {
+                    position: absolute;
+                    top: 30%;
+                    left: 10%;
+                    border-radius: 12px;
+                    z-index: 2;
+                    animation: second-nav-item 0.3s linear;
+                    height: 100px;
+                    width: 4px;
+                    background: $blue;
+                }
+                .third {
+                    position: absolute;
+                    top: 76%;
+                    left: 10%;
+                    animation: third-nav-item 0.3s linear;
+                    border-radius: 12px;
+                    z-index: 2;
+                    height: 73px;
+                    width: 4px;
+                    background: $blue;
+                }
+            }
+            .items {
+                padding: 0 12.5px 0 30px;
+                height: 270px;
+                .item {
+                    height: 90px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $dark-grey;
+                    opacity: 0.5;
+
+                    &.first {
+                        &.active {
+                            color: $dark-grey;
+                            opacity: 1;
+                        }
+                    }
+                    &.second {
+                        &.active {
+                            color: $dark-grey;
+                            opacity: 1;
+                        }
+                    }
+                    &.third {
+                        padding-top: 36px;
+                        align-self: flex-end;
+                        &.active {
+                            color: $dark-grey;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .createTripBtn {
+            margin-left: 18px;
+            button {
+                width: 100%;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                align-self: flex-end;
+                color: $white;
+                padding: 10.5px 20px;
+                background: $dark-blue;
+                border: 1px solid $dark-blue;
+                border-radius: 100px;
+                &:hover {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+    }
+}
+
+section#searchBarCards .guideCard {
+    position: relative;
+    max-width: 300px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 0;
+    background: #ffffff;
+    margin-left: 10px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 6px !important;
+}
+
+section#searchBarCards .guideCard .cardImg {
+    width: 100% !important;
+    max-height: 196px !important;
+    margin: 0 auto;
+    overflow: hidden !important;
+    border-radius: 6px 6px 0px 0px;
+}
+
+section#searchBarCards .guideCard:hover .name {
+    color: #258ee3 !important;
+}
+
+section#searchBarCards .guideCard .pricePerHour {
+    position: absolute;
+    top: -2%;
+    right: 6%;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 2.5px;
+    z-index: 100;
+    background: #fb3968;
+    text-align: center;
+    border-radius: 100px;
+    width: 64px;
+    height: 32px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+a {
+    text-decoration: none !important;
+}
+section#searchBarCards .guideCard img {
+    max-height: 196px;
+}
+section#searchBarCards .guideCard:hover img {
+    transform: scale(1.2) !important;
+    z-index: 0 !important;
+}
+
+section#searchBarCards .guideCard img {
+    margin: 0 auto;
+    transition: transform 0.5s;
+    border-radius: 6px 6px 0px 0px;
+}
+
+section#searchBarCards .guideCard .mainContent {
+    height: 258px;
+    padding: 16px 24px;
+}
+
+section#searchBarCards .guideCard .mainContent .nameAndCity {
+    margin-bottom: 16px;
+}
+
+section#searchBarCards .guideCard .mainContent .nameAndCity .name {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #002c2f;
+}
+
+section#searchBarCards .guideCard .mainContent .nameAndCity .name:hover {
+    color: #258ee3 !important;
+}
+
+section#searchBarCards .guideCard .mainContent .nameAndCity .city {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 120%;
+    margin-top: 4px;
+    letter-spacing: 0.02em;
+    color: #215273;
+}
+
+section#searchBarCards .guideCard .mainContent .des {
+    width: 90%;
+    margin-bottom: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #002c2f;
+}
+
+section#searchBarCards .guideCard .mainContent .languages {
+    height: 44px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #bfc1c9;
+}
+
+section#searchBarCards .guideCard .mainContent .languages span {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #002c2f;
+}
+
+section#searchBarCards .guideCard .mainContent .reviewsInfo {
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+section#searchBarCards .guideCard .mainContent .reviewsInfo .star-ratings {
+    align-self: flex-end;
+    unicode-bidi: bidi-override;
+    color: #ccc;
+    font-size: 16px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+section#searchBarCards .guideCard .mainContent .reviewsInfo .star-ratings .starRate {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #002c2f;
+    margin: 0px 6px;
+}
+
+section#SearchBarCardsIntro .searchBarFilter .search input {
+    padding-right: 140px;
+}
+section#searchBarCards .guideCard .mainContent .reviewsInfo .star-ratings .fill-ratings {
+    color: #ffd938;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+section#searchBarCards .guideCard .mainContent .reviewsInfo .star-ratings .fill-ratings span {
+    display: inline-block;
+}
+
+section#searchBarCards .guideCard .mainContent .reviewsInfo .star-ratings .empty-ratings {
+    padding: 0;
+    font-size: 16px;
+    display: block;
+    z-index: 0;
+    color: #bfc1c9;
+}
+
+section#searchBarCards .guideCard .mainContent .reviewsInfo .reviewsTitle {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #7b808a;
+}
+
+section#searchBarCards .guideCard .mainContent .reviewsInfo .reviewsTitle .count {
+    font-weight: 600;
+    color: #002c2f;
+}
+#chooseActivity {
+    .modal-content {
+        background: $white;
+        border-radius: 16px !important;
+    }
+    input {
+        &[type="number"] {
+            width: 100%;
+            &:disabled {
+                background: #f4f5f6 !important  ;
+            }
+        }
+        &[type="text"],
+        &[type="date"],
+        &[type="number"] {
+            background: $white;
+            padding: 12px 0 12px 24px;
+            border: 1px solid #e5e7eb;
+            box-sizing: border-box;
+            border-radius: 12px;
+            font-family: $open;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 160%;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+            color: $black;
+            &:focus {
+                outline: none;
+                box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+            }
+            &::placeholder {
+                font-family: $open;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 160%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.02em;
+                color: $dark-grey;
+            }
+        }
+
+        &[type="radio"],
+        &[type="checkbox"] {
+            width: 20px;
+            background: none;
+            height: 20px;
+            border-radius: 6px !important;
+            &:hover {
+                cursor: pointer;
+            }
+            &:checked {
+                background: #258ee3;
+                border: 1px solid #258ee3;
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+            }
+        }
+    }
+    .form-check {
+        margin-top: 20px;
+        margin-right: 32px;
+
+        label {
+            font-family: $open;
+            margin-left: 12px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+    }
+    .modal-header {
+        border-bottom: 1px dashed #e5e7eb;
+        .head {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 160%;
+            padding-left: 30px;
+            letter-spacing: 0.02em;
+            color: #000000;
+        }
+        .close {
+            cursor: pointer;
+        }
+    }
+    .modal-body {
+        padding-right: 0;
+        .body {
+            height: 352px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            .nav-search {
+                position: relative;
+            }
+            .nav-search .searchNavIcon {
+                position: absolute;
+                top: 14%;
+                left: 4%;
+            }
+            .nav-search input {
+                width: 368px;
+                height: 40px;
+                padding-left: 56px;
+                border: 1px solid #bfc1c9;
+                box-sizing: border-box;
+                border-radius: 44px;
+                outline: none;
+            }
+            .nav-search input:focus {
+                border: rgba(0, 187, 199, 0.61) 1px solid;
+                outline: none;
+                box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+            }
+            .nav-search input::placeholder {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: #bfc1c9;
+            }
+        }
+    }
+    .modal-footer {
+        display: flex;
+        justify-content: space-between;
+        .clear {
+            cursor: pointer;
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+        .save {
+            button {
+                padding: 10px 20px;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                color: $white;
+                background: $dark-blue;
+                border-radius: 100px;
+                transition: 0.3s;
+                border: 1px solid $dark-blue;
+                &:hover {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+    }
+}
+section#searchBarCards .navv {
+    justify-content: flex-end;
+}
+#filterPopUp {
+    .modal-content {
+        background: $white;
+        border-radius: 16px;
+    }
+    .modal-header {
+        border-bottom: 1px dashed #e5e7eb !important;
+        padding: 26px 0 !important;
+        .head {
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+        .closeBtn {
+            button {
+                background: #f3f3f4;
+                border: 1px solid #f3f3f4;
+                box-sizing: border-box;
+                border-radius: 6px;
+                width: initial;
+                color: black;
+                img {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+    .modal-body {
+        /* custom styles for UiSlider */
+        .form-group {
+            .comment {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $med-grey;
+                margin-top: 12px;
+            }
+            .datepicker-dropdown .datepicker-picker {
+                background: #ffffff !important;
+                border: 1px solid #e5e7eb !important;
+                box-sizing: border-box !important;
+                box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1) !important;
+                border-radius: 12px !important;
+            }
+            .datepicker-header {
+                .datepicker-controls {
+                    padding: 20px !important;
+                }
+            }
+            button.button.view-switch {
+                background: white !important;
+            }
+            input {
+                &[type="number"] {
+                    width: 100%;
+                    &:disabled {
+                        background: #f4f5f6 !important  ;
+                    }
+                }
+                &[type="text"],
+                &[type="password"],
+                &[type="date"],
+                &[type="number"] {
+                    background: $white;
+                    padding: 12px 0 12px 24px;
+                    border: 1px solid #e5e7eb;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+                    }
+                    &::placeholder {
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 160%;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.02em;
+                        color: $dark-grey;
+                    }
+                }
+
+                &[type="radio"],
+                &[type="checkbox"] {
+                    width: 20px;
+                    background: none;
+                    height: 20px;
+                    border-radius: 6px !important;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &:checked {
+                        background: #258ee3;
+                        border: 1px solid #258ee3;
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+                    }
+                }
+            }
+
+            .form-check {
+                margin-right: 32px;
+
+                label {
+                    font-family: $open;
+                    margin-left: 12px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    letter-spacing: 0.02em;
+                    color: $black;
+                }
+            }
+
+            .head {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                padding: 40px 0 8px 0;
+                color: $black;
+            }
+        }
+        padding: 0 !important;
+        .titleText {
+            margin: 0 0 16px 0;
+            font-family: $open;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: $black;
+            .clearLanguages,
+            .clearActivities {
+                padding: 4px 10px;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 120%;
+                letter-spacing: 0.02em;
+                color: $dark-grey;
+                background: $light;
+                margin-left: 24px;
+                cursor: pointer;
+                border-radius: 100px;
+            }
+        }
+        .priceGender {
+            padding: 24px 30px;
+        }
+        .activities {
+            margin-top: 32px;
+        }
+        .languageAndActivities {
+            padding: 24px 30px;
+            border-top: 1px dashed #e5e7eb;
+            .titleText {
+                margin-bottom: 12px !important;
+            }
+            .showMore {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 240%;
+                cursor: pointer;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+            .language {
+                font-family: $open;
+                font-style: normal;
+                margin-top: 4px;
+                font-weight: normal;
+                cursor: pointer;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $dark-grey;
+                margin-right: 16px;
+                margin-left: 8px;
+                .remove {
+                    display: none;
+                    cursor: pointer;
+                }
+                &.chosenn {
+                    .remove {
+                        display: unset;
+                    }
+                    background: #eef9ff;
+                    padding: 4px 8px;
+                    border-radius: 8px;
+                    line-height: 25%;
+                    &.language {
+                        margin-right: 16px !important;
+                        margin-left: 0px !important;
+                    }
+                }
+            }
+            .activity {
+                font-family: $open;
+                font-style: normal;
+                margin-top: 4px;
+                font-weight: normal;
+                cursor: pointer;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $dark-grey;
+                margin-right: 16px;
+                margin-left: 8px;
+                .remove {
+                    display: none;
+                    cursor: pointer;
+                }
+                &.chosen {
+                    .remove {
+                        display: unset;
+                    }
+                    background: #eef9ff;
+                    padding: 4px 8px;
+                    border-radius: 8px;
+                    line-height: 25%;
+                    &.activity {
+                        margin-right: 16px !important;
+                        margin-left: 0px !important;
+                    }
+                }
+            }
+        }
+    }
+    .modal-footer {
+        justify-content: start;
+        padding: 24px;
+        .confirm {
+            button {
+                padding: 10px 20px;
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                color: $white;
+                background: $dark-blue;
+                border: 1px solid $dark-blue;
+                border-radius: 100px;
+                &:focus {
+                    background: $dark;
+                    border: 1px solid $dark;
+                }
+            }
+        }
+        .clear {
+            font-family: $open;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 120%;
+            cursor: pointer;
+            letter-spacing: 0.02em;
+            color: $black;
+        }
+    }
+}
+
+@media screen and (max-width: 577px) {
+    section#SearchBarCardsIntro .searchBarFilter .search {
+        margin-top: 16px;
+    }
+    section#searchBarCards .searchBarCardsCenterBetween {
+        justify-content: center;
+    }
+    section#searchBarCards .guideCard {
+        margin-left: 0 !important;
+    }
+    section#SearchBarFilter .smallFilter .navv {
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section#searchCardsCard .navv {
+        justify-content: center !important;
+    }
+    #filterPopUp .modal-header {
+        padding: 19px 0 8px 0 !important;
+    }
+    #filterPopUp .modal-body .priceGender {
+        padding: 0 6px 16px 6px;
+    }
+    #filterPopUp .modal-body .languageAndActivities {
+        padding: 0 16px 16px 16px;
+    }
+    #filterPopUp .modal-body .activities {
+        margin-top: 0px;
+    }
+    #filterPopUp .modal-body .titleText {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 16px 0 4px 0;
+    }
+    section#searchBarCards .navv {
+        justify-content: center !important;
+    }
+    section#searchBarCards .navv .page-item a {
+        padding: 8px 12px;
+    }
+    section#searchBarCards .cardSlider .cardSliderr .items .item {
+        font-size: 16px;
+        line-height: 160%;
+    }
+    section#SearchBarFilter .head {
+        margin-top: 24px;
+        font-size: 17px;
+        line-height: 21px;
+    }
+    section#SearchBarFilter .smallFilter .dropdown .btn {
+        font-size: 13px;
+        line-height: 160%;
+    }
+    section#SearchBarFilter .smallFilter .navv .page-item a {
+        padding: 6px 12px;
+    }
+    section#SearchBarFilter .smallFilter .navv {
+        justify-content: start !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    section#SearchBarCardsIntro .searchBarFilter .search input {
+        padding-left: 16px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .modal-content .closeBtn {
+        padding: 0;
+    }
+    #filterPopUp .modal-body .languageAndActivities .activity.chosen.activity {
+        margin-bottom: 10px;
+    }
+    #chooseALanguage .modal-header .head {
+        padding-left: 0 !important;
+    }
+    #chooseActivity .form-check {
+        margin-left: 4px;
+    }
+    section#searchBarCards .cardSlider .cardSliderr .nav .second {
+        height: 60px;
+    }
+    section#SearchBarCardsIntro .searchBarFilter .search .submitButton button {
+        right: 1.5%;
+    }
+    #chooseActivity .modal-header .head {
+        padding-left: 50px !important;
+    }
+    #filterPopUp .modal-header .head {
+        font-size: 13px;
+        margin-left: 14px !important;
+        padding-top: 5px !important;
+    }
+    #chooseActivity .modal-body {
+        padding: 0 !important;
+        padding-top: 16px !important;
+    }
+    #chooseActivity .modal-body .body {
+        margin-left: 10px;
+    }
+    section#searchBarCards .navv .page-item a {
+        padding: 8px 8px;
+    }
+    #filterPopUp .modal-footer .confirm button {
+        font-size: 1;
+    }
+    #filterPopUp .modal-footer .confirm button {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 330px) {
+    section#SearchBarFilter .smallFilter .navv .page-item a {
+        margin: 0 2px;
+    }
+    section#searchBarCards .navv .page-item a {
+        padding: 8px 10px;
+        margin: 0 3px;
+    }
+}
+@media screen and (max-width: 320px) {
+    section#SearchBarCardsIntro .searchBarFilter .search .submitButton button {
+        right: 1.8%;
+    }
+    section#searchBarCards .navv .page-item a {
+        padding: 6px 10px;
+        margin: 0 0px;
+    }
+    section#searchBarCards .navv .titleDes {
+        font-size: 13px !important;
+    }
+    section#SearchBarFilter .smallFilter .navv .page-item a {
+        margin: 0 0px !important;
+    }
+}
+
+@media screen and (max-width: 295px) {
+    section#SearchBarFilter .smallFilter .navv .page-item a {
+        padding: 4px 10px;
+        margin: 0 0px;
+    }
+    section#searchBarCards .navv .titleDes {
+        font-size: 13px !important;
+    }
+    section#SearchBarFilter .smallFilter .navv .page-item a {
+        margin: 0 0px !important;
+    }
+    section#SearchBarFilter .smallFilter .navv .titleDes {
+        font-size: 13px;
+    }
+}

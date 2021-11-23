@@ -1,0 +1,104 @@
+.datepicker-input {
+    background: #ffffff;
+    cursor: pointer;
+    border: 1px solid #e5e7eb;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 12px 12px 12px 60px;
+    &:focus {
+        background: $white;
+        box-shadow: 0px 0px 4px rgba(0, 187, 199, 0.61);
+        border-radius: 12px;
+        outline: none;
+    }
+}
+.head {
+    margin-bottom: 8px;
+}
+.inputDate {
+    position: relative;
+    &.disabled {
+        .dateIcon {
+            display: none;
+        }
+        .dateIcondDisabled {
+            display: unset;
+        }
+    }
+    .dateIcon {
+        position: absolute;
+        top: 17%;
+        left: 8%;
+        cursor: pointer;
+    }
+    .dateIcondDisabled {
+        display: none;
+        position: absolute;
+        top: 17%;
+        left: 8%;
+        cursor: pointer;
+    }
+}
+
+.datepicker {
+    z-index: 10000;
+
+    &.datepicker-dropdown {
+        .btn {
+            padding: 0.375rem 0rem !important       ;
+        }
+        .datepicker-picker {
+            background: $white;
+            padding: 16px;
+            border: 1px solid #e5e7eb;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            .datepicker-view .dow {
+                font-family: $inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 160%;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #19181a;
+            }
+            .datepicker-view .days .datepicker-cell {
+                font-family: $inter;
+                font-style: normal;
+                font-weight: 500;
+                padding-top: 8px;
+                font-size: 13px;
+                line-height: 160%;
+                text-align: center;
+                align-self: center;
+                letter-spacing: 0.02em;
+                border-radius: 40px;
+                color: #19181a;
+                &.selected.focused {
+                    background: #215273;
+                    border-radius: 40px;
+                    color: $white;
+                }
+                &.day.prev {
+                    color: $dark-grey;
+                }
+            }
+            .datepicker-header {
+                .datepicker-controls {
+                    padding: 0;
+                    .view-switch {
+                        font-family: $inter;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: #11142d;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,751 @@
+section#myTrips {
+    padding-top: 83px;
+
+    .detailsDropdown {
+        position: absolute;
+        top: 3%;
+        left: 15%;
+        z-index: 1000000;
+        ul {
+            list-style: none;
+            padding: 0;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            background: $white;
+
+            li {
+                font-family: $open;
+                font-style: normal;
+                cursor: pointer;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: #11142d;
+                padding: 16px 18px;
+                &:hover {
+                    color: #258ee3 !important;
+                }
+                &:first-child {
+                    border-bottom: 1px solid #e5e7eb;
+                }
+            }
+        }
+    }
+    .title {
+        padding: 24px 0;
+        .head {
+            font-family: $monst;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 27px;
+            letter-spacing: 0.03em;
+            color: $black;
+        }
+        .count {
+            font-family: $open;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 200%;
+            letter-spacing: 0.02em;
+            margin-left: 24px;
+            color: #a8b0c0;
+        }
+    }
+    .tab {
+        overflow: hidden;
+        margin-bottom: 24px;
+        border-bottom: 1px solid $light;
+        .tablinks:last-of-type {
+            margin-left: 0px;
+        }
+        button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-family: $open;
+            font-style: normal;
+            padding-bottom: 16px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: $black;
+            border-bottom: 3px solid transparent !important
+            ;
+            &:hover {
+                color: #2fb3ff;
+            }
+            &.active {
+                font-weight: 600;
+                border-bottom: 3px solid #2fb3ff !important;
+            }
+        }
+    }
+    .tabcontent {
+        display: none;
+        border-top: none;
+        &#Tourist {
+            min-height: 510px;
+            .emptyList {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $black;
+                text-align: center;
+                padding-bottom: 16px;
+            }
+            .makeATripBtn {
+                margin: 0px 0 24px 0;
+                button {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    transition: 0.2s;
+                    line-height: 19px;
+                    letter-spacing: 0.03em;
+                    padding: 10px 0;
+                    background: $dark-blue;
+                    border-radius: 100px;
+                    border: 1px solid $dark-blue;
+                    width: 100%;
+                    color: $white;
+                    &:hover {
+                        border: 1px solid $dark;
+                        background: $dark;
+                    }
+                }
+            }
+            .tripCard {
+                position: relative;
+                margin-top: 16px;
+                background: #ffffff;
+                box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.06);
+                border-radius: 12px;
+                &:hover {
+                    img {
+                        transform: scale(1.05);
+                        transition: 0.5s;
+                        cursor: pointer;
+                        overflow: hidden;
+                    }
+                }
+                .cityNamePin {
+                    z-index: 10;
+                    background: #fb3968;
+                    border-radius: 100px;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    padding: 6px 12px;
+                    line-height: 160%;
+                    position: absolute;
+                    letter-spacing: 0.02em;
+                    top: -3.5%;
+                    left: 76%;
+                    color: $white;
+                }
+                .details {
+                    position: absolute;
+                    top: 4%;
+                    left: 5.5%;
+                    width: 32px;
+                    height: 32px;
+                    z-index: 11;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+                .cardImg {
+                    width: 100%;
+                    overflow: hidden;
+                    height: 196px;
+                    border-radius: 12px 12px 0 0;
+                    img {
+                        width: 100%;
+                        height: 196px;
+                    }
+                }
+                .content {
+                    padding: 16px 24px;
+                    .date {
+                        margin-bottom: 24px;
+                        max-height: 24px;
+                        .text {
+                            font-family: $open;
+                            padding: 4px 0 0 0;
+                            font-style: normal;
+                            font-weight: normal;
+                            margin-left: 16px;
+                            align-self: center;
+                            font-size: 14px;
+                            line-height: 200%;
+                            letter-spacing: 0.02em;
+                            color: $black;
+                        }
+                    }
+                    .numOfPeople {
+                        max-height: 22px;
+                        margin-bottom: 24px;
+                        .text {
+                            font-family: $open;
+                            font-style: normal;
+                            font-weight: normal;
+                            padding: 4px 0 0 0;
+                            margin-left: 16px;
+                            align-self: center;
+                            font-size: 14px;
+                            line-height: 200%;
+                            letter-spacing: 0.02em;
+                            color: $black;
+                            color: $dark-grey;
+                            span {
+                                color: $black;
+                            }
+                        }
+                    }
+                    .languages {
+                        margin-bottom: 24px;
+                        padding-bottom: 24px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: $dark-grey;
+                        span.langs {
+                            color: $black;
+                        }
+                        border-bottom: 1px solid $light;
+                    }
+                    .chosenguide {
+                        .text {
+                            font-family: $open;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 200%;
+                            letter-spacing: 0.02em;
+                            color: $black;
+                        }
+                        .textMany {
+                            font-family: $open;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 200%;
+                            letter-spacing: 0.02em;
+                            color: $black;
+                        }
+                        .guides {
+                            position: relative;
+                            .guideImg {
+                                margin-bottom: 3px;
+                                margin-left: 16px;
+                                width: 32px;
+                                overflow: hidden;
+                                height: 32px;
+                                border-radius: 100px;
+                                img {
+                                    width: 32px;
+                                    height: 32px;
+                                }
+                            }
+                            .name {
+                                padding: 5px 8px;
+                                font-family: $open;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                letter-spacing: 0.02em;
+                                color: $dark-blue;
+                            }
+                        }
+                        .guidesMany {
+                            position: relative;
+                            .plusCount {
+                                position: absolute;
+                                top: 0;
+                                left: 96px;
+                                font-family: $open;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 200%;
+                                letter-spacing: 0.02em;
+                                color: $black;
+                            }
+                            .guideImg {
+                                position: absolute;
+                                margin-bottom: 3px;
+                                margin-left: 16px;
+                                width: 32px;
+                                overflow: hidden;
+                                height: 32px;
+                                border-radius: 100px;
+                                top: 0;
+                                &.first {
+                                    left: 0;
+                                }
+                                &.second {
+                                    left: 20px;
+                                }
+                                &.third {
+                                    left: 40px;
+                                }
+
+                                img {
+                                    width: 32px;
+                                    height: 32px;
+                                }
+                            }
+
+                            .name {
+                                padding: 5px 8px;
+                                font-family: $open;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                letter-spacing: 0.02em;
+                                color: $dark-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#Guide {
+            min-height: 510px;
+            .emptyList {
+                font-family: $open;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: $black;
+                text-align: center;
+                padding-bottom: 16px;
+            }
+            .makeATripBtn {
+                button {
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    transition: 0.2s;
+                    line-height: 19px;
+                    letter-spacing: 0.03em;
+                    padding: 10px 0;
+                    margin-bottom: 24px;
+                    background: $white;
+                    border-radius: 100px;
+                    border: 1px solid $dark-blue;
+                    width: 100%;
+                    color: $dark-blue;
+                    &:hover {
+                        border: 1px solid $dark-blue;
+                        background: $dark-blue;
+                        color: $white;
+                    }
+                }
+            }
+            .tripCard {
+                position: relative;
+                margin-top: 16px;
+                background: #ffffff;
+                box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.06);
+                border-radius: 12px;
+
+                &:hover {
+                    img {
+                        transform: scale(1.05);
+                        transition: 0.5s;
+                        cursor: pointer;
+                    }
+                }
+                .cityNamePin {
+                    background: #fb3968;
+                    border-radius: 100px;
+                    z-index: 10;
+                    font-family: $open;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    padding: 6px 12px;
+                    line-height: 160%;
+                    position: absolute;
+                    letter-spacing: 0.02em;
+                    top: -3.5%;
+                    left: 76%;
+                    color: $white;
+                }
+                .details {
+                    position: absolute;
+                    top: 4%;
+                    left: 5.5%;
+                    z-index: 11;
+                    width: 32px;
+                    height: 32px;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+                .cardImg {
+                    width: 100%;
+                    overflow: hidden;
+                    height: 196px;
+                    border-radius: 12px 12px 0 0;
+                    img {
+                        width: 100%;
+                        height: 196px;
+                    }
+                }
+                .content {
+                    padding: 16px 24px;
+                    .date {
+                        margin-bottom: 24px;
+                        max-height: 24px;
+                        .text {
+                            font-family: $open;
+                            padding: 4px 0 0 0;
+                            font-style: normal;
+                            font-weight: normal;
+                            margin-left: 16px;
+                            align-self: center;
+                            font-size: 14px;
+                            line-height: 200%;
+                            letter-spacing: 0.02em;
+                            color: $black;
+                        }
+                    }
+                    .numOfPeople {
+                        max-height: 22px;
+                        margin-bottom: 24px;
+                        .text {
+                            font-family: $open;
+                            font-style: normal;
+                            font-weight: normal;
+                            padding: 4px 0 0 0;
+                            margin-left: 16px;
+                            align-self: center;
+                            font-size: 14px;
+                            line-height: 200%;
+                            letter-spacing: 0.02em;
+                            color: $black;
+                            color: $dark-grey;
+                            span {
+                                color: $black;
+                            }
+                        }
+                    }
+                    .languages {
+                        margin-bottom: 24px;
+                        padding-bottom: 24px;
+                        font-family: $open;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 160%;
+                        letter-spacing: 0.02em;
+                        color: $dark-grey;
+                        span.langs {
+                            color: $black;
+                        }
+                        border-bottom: 1px solid $light;
+                    }
+                    .chosenguide {
+                        .text {
+                            font-family: $open;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 200%;
+                            letter-spacing: 0.02em;
+                            color: $black;
+                        }
+                        .textMany {
+                            font-family: $open;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 200%;
+                            letter-spacing: 0.02em;
+                            color: $black;
+                        }
+                        .guides {
+                            position: relative;
+                            .guideImg {
+                                margin-bottom: 3px;
+                                margin-left: 16px;
+                                width: 32px;
+                                overflow: hidden;
+                                height: 32px;
+                                border-radius: 100px;
+                                img {
+                                    width: 32px;
+                                    height: 32px;
+                                }
+                            }
+                            .name {
+                                padding: 5px 8px;
+                                font-family: $open;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                letter-spacing: 0.02em;
+                                color: $dark-blue;
+                            }
+                        }
+                        .guidesMany {
+                            position: relative;
+                            .plusCount {
+                                position: absolute;
+                                top: 0;
+                                left: 96px;
+                                font-family: $open;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 200%;
+                                letter-spacing: 0.02em;
+                                color: $black;
+                            }
+                            .guideImg {
+                                position: absolute;
+                                margin-bottom: 3px;
+                                margin-left: 16px;
+                                width: 32px;
+                                overflow: hidden;
+                                height: 32px;
+                                border-radius: 100px;
+                                top: 0;
+                                &.first {
+                                    left: 0;
+                                }
+                                &.second {
+                                    left: 20px;
+                                }
+                                &.third {
+                                    left: 40px;
+                                }
+
+                                img {
+                                    width: 32px;
+                                    height: 32px;
+                                }
+                            }
+
+                            .name {
+                                padding: 5px 8px;
+                                font-family: $open;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                letter-spacing: 0.02em;
+                                color: $dark-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#myTrips .tab .tablinks:last-of-type {
+        margin-left: 20px;
+    }
+    section#myTrips .title {
+        padding: 24px 0 14px 0;
+    }
+    section#myTrips .tab button {
+        padding: 4px 0px !important;
+    }
+    section#myTrips .tab button {
+        font-size: 14px;
+    }
+    section#myTrips .title .head {
+        font-size: 17px;
+    }
+    section#myTrips .title .count {
+        font-size: 14px;
+        margin-left: 21px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .cityNamePin,
+    section#myTrips .tabcontent#Guide .tripCard .cityNamePin {
+        padding: 4px 12px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content,
+    section#myTrips .tabcontent#Guide .tripCard .content {
+        padding: 16px 24px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guidesMany .guideImg.first,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guidesMany .guideImg.first {
+        margin-bottom: 3px;
+        margin-left: 24px;
+        left: 5px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .cityNamePin,
+    section#myTrips .tabcontent#Guide .tripCard .cityNamePin {
+        left: 72%;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guidesMany .plusCount,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guidesMany .plusCount {
+        left: 65px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guidesMany .guideImg.third,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guidesMany .guideImg.third {
+        left: 15px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guidesMany .guideImg.second,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guidesMany .guideImg.second {
+        left: 2px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guidesMany .guideImg.first,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guidesMany .guideImg.first {
+        left: -19px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard,
+    section#myTrips .tabcontent#Guide .tripCard {
+        margin-top: 24px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .languages,
+    section#myTrips .tabcontent#Guide .tripCard .content .languages {
+        font-size: 13px;
+        line-height: 160%;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .numOfPeople .text,
+    section#myTrips .tabcontent#Guide .tripCard .content .numOfPeople .text {
+        font-size: 12px !important;
+        line-height: 160%;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .text,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .text {
+        font-size: 12px !important;
+        line-height: 180%;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .textMany,
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guides .name,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .textMany,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guides .name {
+        font-size: 12px;
+    }
+
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guides .name,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guides .name {
+        padding: 5px 4px;
+    }
+    // section#myTrips .tabcontent#Tourist .tripCard .cityNamePin,
+    // section#myTrips .tabcontent#Guide .tripCard .cityNamePin {
+    //     left: 63%;
+    // }
+    section#myTrips .tabcontent#Tourist .tripCard .content,
+    section#myTrips .tabcontent#Guide .tripCard .content {
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    section#myTrips .tab button {
+        padding: 12px 9px;
+    }
+}
+@media screen and (max-width: 360px) {
+    section#myTrips .tab button {
+        padding: 10px 9px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guidesMany .guideImg img,
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guides .guideImg img,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guidesMany .guideImg img,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guides .guideImg img {
+        width: 24px;
+        height: 24px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guides .guideImg,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guides .guideImg {
+        width: 24px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guidesMany .plusCount,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guidesMany .plusCount {
+        left: 44px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    section#myTrips .tab button {
+        padding: 10px 5px !important;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 300px) {
+    section#myTrips .tab button {
+        font-size: 12px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guidesMany .guideImg.first,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guidesMany .guideImg.first {
+        margin-bottom: 3px;
+        margin-left: 16px;
+        left: -15px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guidesMany .guideImg.second,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guidesMany .guideImg.second {
+        left: -3px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guidesMany .guideImg.third,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guidesMany .guideImg.third {
+        left: 7px;
+    }
+
+    section#myTrips .tabcontent#Tourist .tripCard .content .chosenguide .guidesMany .plusCount,
+    section#myTrips .tabcontent#Guide .tripCard .content .chosenguide .guidesMany .plusCount {
+        font-size: 12px;
+        top: 3px;
+        left: 36px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content,
+    section#myTrips .tabcontent#Guide .tripCard .content {
+        padding: 16px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .content .numOfPeople,
+    section#myTrips .tabcontent#Tourist .tripCard .content .date,
+    section#myTrips .tabcontent#Guide .tripCard .content .numOfPeople,
+    section#myTrips .tabcontent#Guide .tripCard .content .date {
+        margin-bottom: 16px;
+    }
+    section#myTrips .tabcontent#Tourist .tripCard .cityNamePin,
+    section#myTrips .tabcontent#Guide .tripCard .cityNamePin {
+        padding: 4px 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    section#myTrips .tabcontent#Tourist .tripCard .cityNamePin,
+    section#myTrips .tabcontent#Guide .tripCard .cityNamePin {
+        left: 68%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    section#myTrips .tabcontent#Tourist .tripCard .cityNamePin,
+    section#myTrips .tabcontent#Guide .tripCard .cityNamePin {
+        left: 64%;
+    }
+}
