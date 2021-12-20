@@ -1,35 +1,5 @@
 $(document).ready(function () {
 
-
-    $('#guides .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 22,
-        nav: true,
-        autoplay: false, responsiveClass: true,
-        navigation: true, startPosition: 1
-        ,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            800: {
-                items: 2
-            },
-            900: {
-                items: 2
-            },
-            1200: {
-                items: 4
-            },
-            1400: {
-                items: 4
-            }
-        }
-    })
-
     $('#countriesShouldVisit .owl-carousel').owlCarousel({
         loop: true,
         margin: 30,

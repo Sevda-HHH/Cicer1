@@ -334,6 +334,12 @@
             color: #a8b0c0;
             margin-top: 16px;
         }
+        .emailInputt {
+            position: relative;
+            input {
+                padding-left: 24px !important;
+            }
+        }
         .emailInput {
             position: relative;
             input {

@@ -25,3 +25,10 @@ function scrollFunction() {
         document.querySelector(".mainn .aa").style.left = "63%";
     }
 }
+
+// my/other profile choose dropdown
+function chooseThis(item) {
+    let target = $(".smallFilter span.choosenText")
+    target.text(item)
+}
+

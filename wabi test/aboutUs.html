@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@600&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/stylee.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -560,50 +561,58 @@
                 <div class="headd    text-center">
                     Как это работает?
                 </div>
-                <div class="row howItWorksCards wrapNoWrap justify-content-center">
-                    <div class="col-lg-4 row  col-md-8 col-11 justify-content-center">
-                        <div class="col-lg-5 p-0 col-md-5 col-5 howItWorksImage   ">
-                            <img src="./assets/img/howWorksNew11.png" height="100%" class="w-100"
-                                alt="A girl looking for smth ">
-                        </div>
-                        <div class=" col-lg-6  d-flex  content">
-                            <div style="align-self: center;    height: 107px;">
-                                <div class="title">
-                                    Ищи
+                <div class="swiperHowItWorks howItWorksCards   justify-content-center">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="  row   justify-content-center">
+                                <div class="col-lg-5 p-0 col-md-5 col-5 howItWorksImage   ">
+                                    <img src="./assets/img/howWorksNew11.png" height="100%" class="w-100"
+                                        alt="A girl looking for smth ">
                                 </div>
-                                <div class="des">
-                                    Просматривайте местных жителей и выберете того, кто вам понравился
+                                <div class=" col-lg-6  d-flex  content">
+                                    <div style="align-self: center;    height: 107px;">
+                                        <div class="title">
+                                            Ищи
+                                        </div>
+                                        <div class="des">
+                                            Просматривайте местных жителей и выберете того, кто вам понравился
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 row col-md-8 col-11 justify-content-center">
-                        <div class="col-lg-5 col-md-5 col-5">
-                            <img src="./assets/img/circleSlideImgNew22.png" class="w-100"
-                                alt="A girl looking for smth ">
-                        </div>
-                        <div class=" col-lg-6 d-flex  content">
-                            <div style="align-self: center;    height: 107px;">
-                                <div class="title">
-                                    Договаривайся
+                        <div class="swiper-slide">
+                            <div class=" row  justify-content-center">
+                                <div class="col-lg-5 col-md-5 col-5">
+                                    <img src="./assets/img/circleSlideImgNew22.png" class="w-100"
+                                        alt="A girl looking for smth ">
                                 </div>
-                                <div class="des">
-                                    Планируйте и обсуждайте предстоящую поездку перед вашей встречей </div>
+                                <div class=" col-lg-6 d-flex  content">
+                                    <div style="align-self: center;    height: 107px;">
+                                        <div class="title">
+                                            Договаривайся
+                                        </div>
+                                        <div class="des">
+                                            Планируйте и обсуждайте предстоящую поездку перед вашей встречей </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4  row col-md-8 col-11 justify-content-center ">
-                        <div class="col-lg-5 col-md-5 col-5">
-                            <img src="./assets/img/circleSlideImgNew33.png" class="w-100"
-                                alt="A girl looking for smth ">
-                        </div>
-                        <div class=" col-lg-6 d-flex  content">
-                            <div style="align-self: center;    height: 107px;">
-                                <div class="title">
-                                    Наслаждайтесь поездкой
+                        <div class="swiper-slide">
+                            <div class="  row   justify-content-center ">
+                                <div class="col-lg-5 col-md-5 col-5">
+                                    <img src="./assets/img/circleSlideImgNew33.png" class="w-100"
+                                        alt="A girl looking for smth ">
                                 </div>
-                                <div class="des">
-                                    Узнайте о городе глазами местного жителя! </div>
+                                <div class=" col-lg-6 d-flex  content">
+                                    <div style="align-self: center;    height: 107px;">
+                                        <div class="title">
+                                            Наслаждайтесь поездкой
+                                        </div>
+                                        <div class="des">
+                                            Узнайте о городе глазами местного жителя! </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -630,8 +639,9 @@
                                     <div>
                                         <h2>Расширьте свои возможности </h2>
                                     </div>
-                                    <div>
+                                    <div class="close">
                                         <img src="./assets/img/plusAccordion.svg" alt="plus icon ">
+                                        <img class="d-none" src="./assets/img/closeIconFaq.svg" alt="plus icon ">
                                     </div>
                                 </div>
 
@@ -648,8 +658,9 @@
                                     <div>
                                         <h2>Представьтесь </h2>
                                     </div>
-                                    <div>
+                                    <div class="close">
                                         <img src="./assets/img/plusAccordion.svg" alt="plus icon ">
+                                        <img class="d-none" src="./assets/img/closeIconFaq.svg" alt="plus icon ">
                                     </div>
                                 </div>
                                 </h2>
@@ -666,8 +677,9 @@
                                     <div>
                                         <h2>Познакомьтесь с местным</h2>
                                     </div>
-                                    <div>
+                                    <div class="close">
                                         <img src="./assets/img/plusAccordion.svg" alt="plus icon ">
+                                        <img class="d-none" src="./assets/img/closeIconFaq.svg" alt="plus icon ">
                                     </div>
                                 </div>
                                 </h2>
@@ -685,8 +697,9 @@
                                         <h2>Подготовить все
                                         </h2>
                                     </div>
-                                    <div>
+                                    <div class="close">
                                         <img src="./assets/img/plusAccordion.svg" alt="plus icon ">
+                                        <img class="d-none" src="./assets/img/closeIconFaq.svg" alt="plus icon ">
                                     </div>
                                 </div>
                                 </h2>
@@ -857,8 +870,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <!-- only here  -->
+    <script src="./js/swiperAbout.js"></script>
     <script src="./js/accordion.js"></script>
     <!-- only here  -->
 </body>

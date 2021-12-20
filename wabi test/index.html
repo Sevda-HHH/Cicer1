@@ -21,13 +21,14 @@
     <link rel="stylesheet" href="assets/css/stylee.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.carousel.css">
 
     <title>Cicer1</title>
 </head>
 
-<body>
+<body style="overflow-x: hidden !important;">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container">
@@ -191,20 +192,22 @@
                                         <li>
                                             <a href="#"> Выйти</a>
                                         </li>
+                                        <li>
+
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <button id="navBarBurgerIcon" class=" col-2 navbar-toggler" type="button"
+                        <button id="navBarBurgerIcon" data-status="close" class=" col-2 navbar-toggler" type="button"
                             data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <img src="./assets/img/burger.svg" class="burgerOpen" alt="Burger ">
                             <img src="./assets/img/closetab.svg" class="d-none burgerClose" alt="Burger Close ">
                         </button>
                     </div>
+
                 </div>
-
-
                 <div class="collapse navbar-collapse row" id="navbarNavAltMarkup">
                     <div class="col-lg-7 d-flex navBarCollapseTest">
                         <div class="nav-search">
@@ -223,19 +226,73 @@
                             <a class="nav-link active" aria-current="page" href="./searchForTourists.html">Поиск
                                 туристов </a>
                             <a class="nav-link aboutUsLink" href="./aboutUs.html">О нас </a>
-                            <div class="languageDropdown">
-                                <a class="nav-link" href="#">Ru <span><i class="fas fa-chevron-down"></i></span></a>
-                                <div class="dropdownMenu d-none">
-                                    <ul>
-                                        <li>
-                                            Az
-                                        </li>
-                                        <li>
-                                            Ru
-                                        </li>
-                                    </ul>
-                                </div>
+                            <style>
+                                .select-main {
+                                    width: 20px;
+                                    -ms-overflow-style: none;
+                                    scrollbar-width: none;
+                                    cursor: pointer;
+                                }
+
+                                ul.select-list {
+                                    -ms-overflow-style: none;
+                                    scrollbar-width: none;
+                                    list-style: none;
+                                    padding: 0;
+                                    position: absolute;
+                                    list-style: none;
+                                    padding: 0;
+                                    border: 1px solid #e5e7eb;
+                                    border-radius: 12px;
+                                    background: white;
+                                }
+
+                                .select-set {
+                                    position: relative;
+                                }
+
+                                .select-set::after {
+                                    font-family: "Font Awesome 5 Free";
+                                    font-weight: 900;
+                                    font-size: 12px;
+                                    position: absolute;
+                                    left: 24px;
+                                    content: "\f078";
+                                }
+
+                                .select-list::-webkit-scrollbar {
+                                    width: 0;
+                                    background: transparent;
+                                }
+
+                                ul.select-list li {
+                                    font-family: "Open Sans", sans-serif;
+                                    font-style: normal;
+                                    cursor: pointer;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 160%;
+                                    letter-spacing: 0.02em;
+                                    color: #11142d;
+                                    padding: 8px 16px;
+                                }
+
+                                ul.select-list li:hover {
+                                    color: #258ee3 !important;
+                                }
+
+                                ul.select-list li:first-of-type {
+                                    border-bottom: 1px solid #e5e7eb;
+                                }
+                            </style>
+                            <div class="d-flex justify-content-center">
+                                <a class="nav-link" ref="no-referrer"> <select name="langs"
+                                        class="dropdownMenu ui-select">
+                                        <option value="az">Az <span><i class="fas fa-chevron-down"></i></span></option>
+                                        <option value="ru">Ru</option>
+                                    </select></a>
                             </div>
+
                         </div>
                     </div>
                     <div class="navBarFooter">
@@ -537,58 +594,69 @@
             <div class="head text-center">
                 Как это работает?
             </div>
-            <div class="row howItWorksCards">
-                <div class="col-lg-4 col-11 row col-md-9  justify-content-center">
-                    <div class="col-lg-5 col-5 p-0 ">
-                        <img src="./assets/img/howWorksNew11.png" height="100%" class="w-100"
-                            alt="A girl looking for smth ">
-                    </div>
-                    <div class=" col-lg-6 col-6 d-flex  content">
-                        <div style="align-self: center;    height: 107px;">
-                            <div class="title">
-                                Ищи
+            <div class="  howItWorksCards swiperHowItWorks">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class=" row  justify-content-center">
+                            <div class="col-lg-5 col-5 p-0 ">
+                                <img src="./assets/img/howWorksNew11.png" height="100%" class="w-100"
+                                    alt="A girl looking for smth ">
                             </div>
-                            <div class="des">
-                                Просматривайте местных жителей и выберете того, кто вам понравился
+                            <div class=" col-lg-6 col-6 d-flex  content">
+                                <div style="align-self: center;    height: 107px;">
+                                    <div class="title">
+                                        Ищи
+                                    </div>
+                                    <div class="des">
+                                        Просматривайте местных жителей и выберете того, кто вам понравился </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-11 row col-md-9  howItWorksStart">
-                    <div class="col-lg-5 col-5">
-                        <img src="./assets/img/circleSlideImgNew22.png" class="w-100" alt="A girl looking for smth ">
-                    </div>
-                    <div class=" col-lg-6 col-6 d-flex  content">
-                        <div style="align-self: center;    height: 107px;">
-                            <div class="title">
-                                Договаривайся
+                    <div class="swiper-slide">
+                        <div class=" row howItWorksStart">
+                            <div class="col-lg-5 col-5">
+                                <img src="./assets/img/circleSlideImgNew22.png" class="w-100"
+                                    alt="A girl looking for smth ">
                             </div>
-                            <div class="des">
-                                Планируйте и обсуждайте предстоящую поездку перед вашей встречей </div>
+                            <div class=" col-lg-6 col-6 d-flex  content">
+                                <div style="align-self: center;    height: 107px;">
+                                    <div class="title">
+                                        Договаривайся
+                                    </div>
+                                    <div class="des">
+                                        Планируйте и обсуждайте предстоящую поездку перед вашей встречей </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="  howItWorksStart  row ">
+                            <div class="col-lg-5 col-5">
+                                <img src="./assets/img/circleSlideImgNew33.png" class="w-100"
+                                    alt="A girl looking for smth ">
+                            </div>
+                            <div class=" col-lg-6  col-6 d-flex  content">
+                                <div style="align-self: center;    height: 107px;">
+                                    <div class="title">
+                                        Наслаждайтесь поездкой
+                                    </div>
+                                    <div class="des">
+                                        Узнайте о городе глазами местного жителя! </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-10 col-md-9  howItWorksStart  row ">
-                    <div class="col-lg-5 col-5">
-                        <img src="./assets/img/circleSlideImgNew33.png" class="w-100" alt="A girl looking for smth ">
-                    </div>
-                    <div class=" col-lg-6  col-6 d-flex  content">
-                        <div style="align-self: center;    height: 107px;">
-                            <div class="title">
-                                Наслаждайтесь поездкой
-                            </div>
-                            <div class="des">
-                                Узнайте о городе глазами местного жителя! </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </section>
 
     <!-- guide cards  -->
     <section id="guides">
-        <div class="container">
+        <div class="container   guideCardsSlider">
             <div class="row justify-content-end mb-40 mt-17 p-0">
                 <div class="col-lg-12 col-12 row p-0">
                     <div class="col-lg-8 col-sm-12 col-12 col-md-9  row justify-content-end p-0 ">
@@ -605,9 +673,21 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container guideCardsSlider">
-            <div class="d-flex justify-content-between guidesSlider ">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class=" cityCategory resposive">
+                            <img src="./assets/img/cityPhoto.png" height="100%" width="100%" alt="Moscow">
+                            <div class="cityName">
+                                <img id="locationIcon" src="./assets/img/location.svg" alt="location icon"> <span
+                                    class="country">
+                                    Moscow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper container">
                 <div class=" cityCategory">
                     <img src="./assets/img/cityPhoto.png" height="100%" width="100%" alt="Moscow">
                     <div class="cityName">
@@ -616,8 +696,10 @@
                             Moscow</span>
                     </div>
                 </div>
-                <div class="col-lg-12 col-12">
-                    <div class="owl-carousel w-100">
+                <div class="swiper-wrapper   guidesSlider">
+                    <div class="swiper-slide frst">
+                    </div>
+                    <div class="swiper-slide">
                         <div class="guideCard" draggable="true">
                             <a href="./searchForTourists.html">
                                 <div class="pricePerHour">
@@ -638,335 +720,6 @@
                                     <div class="des">
                                         ⚜️THE BEST⚜️<br>
                                         Youtube: Ruslan' s World rusmoscow (instagram) </div>
-                                    <div class="languages">
-                                        Языки: <span>Английский, Русский, Азербайджанский</span>
-                                    </div>
-                                    <div class="reviewsInfo d-flex justify-content-between">
-                                        <div>
-                                            <div class="star-ratings">
-                                                <div class="fill-ratings" style="width: 36%;">
-                                                    <span>★★★★★</span>
-                                                </div>
-                                                <div class="empty-ratings">
-                                                    <span>★★★★★</span><span class="starRate">3.6</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="guideCard" draggable="true">
-                            <a href="./searchForTourists.html">
-                                <div class="pricePerHour">
-                                    $15/ч
-                                </div>
-                                <div class="cardImg ">
-                                    <img src="./assets/img/photoGuide2.png" class="w-100" alt="">
-                                </div>
-                                <div class="mainContent row">
-                                    <div class="nameAndCity">
-                                        <div class="name">
-                                            Андрей
-                                        </div>
-                                        <div class="city">
-                                            Москва, Россия </div>
-                                    </div>
-                                    <div class="des">
-                                        —I love people ♥️<br>
-                                        I waiting My guest....😊<br>
-                                        From snow-covered roads, ...
-                                    </div>
-                                    <div class="languages">
-                                        Языки: <span>Русский, Английский</span>
-                                    </div>
-                                    <div class="reviewsInfo d-flex justify-content-between">
-                                        <div>
-                                            <div class="star-ratings">
-                                                <div class="fill-ratings" style="width: 36%;">
-                                                    <span>★★★★★</span>
-                                                </div>
-                                                <div class="empty-ratings">
-                                                    <span>★★★★★</span><span class="starRate">3.6</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reviewsTitle">
-                                            Отзывы: <span class='count'> 26</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="guideCard" draggable="true">
-                            <a href="./searchForTourists.html">
-                                <div class="pricePerHour">
-                                    $15/ч
-                                </div>
-                                <div class="cardImg ">
-                                    <img src="./assets/img/photoGuide3.png" class="w-100" alt="">
-                                </div>
-                                <div class="mainContent row">
-                                    <div class="nameAndCity">
-                                        <div class="name">
-                                            Катерина
-                                        </div>
-                                        <div class="city">
-                                            Москва, Россия
-                                        </div>
-                                    </div>
-                                    <div class="des">
-                                        Traveling with Lena is always a good idea. Insta: @cosmostravelena.
-                                    </div>
-                                    <div class="languages">
-                                        Языки: <span>Английский, Русский, Азербайджанский</span>
-                                    </div>
-                                    <div class="reviewsInfo d-flex justify-content-between">
-                                        <div>
-                                            <div class="star-ratings">
-                                                <div class="fill-ratings" style="width: 36%;">
-                                                    <span>★★★★★</span>
-                                                </div>
-                                                <div class="empty-ratings">
-                                                    <span>★★★★★</span><span class="starRate">3.6</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reviewsTitle">
-                                            Отзывы: <span class='count'> 26</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="guideCard" draggable="true">
-                            <a href="./searchForTourists.html">
-                                <div class="pricePerHour">
-                                    $15/ч
-                                </div>
-                                <div class="cardImg ">
-                                    <img src="./assets/img/photoGuide1.png" class="w-100" alt="">
-                                </div>
-                                <div class="mainContent row">
-                                    <div class="nameAndCity">
-                                        <div class="name">
-                                            Руслан
-                                        </div>
-                                        <div class="city">
-                                            Москва, Россия
-                                        </div>
-                                    </div>
-                                    <div class="des">
-                                        ⚜️THE BEST⚜️<br>
-                                        Youtube: Ruslan' s World rusmoscow (instagram) </div>
-                                    <div class="languages">
-                                        Языки: <span>Английский, Русский, Азербайджанский</span>
-                                    </div>
-                                    <div class="reviewsInfo d-flex justify-content-between">
-                                        <div>
-                                            <div class="star-ratings">
-                                                <div class="fill-ratings" style="width: 36%;">
-                                                    <span>★★★★★</span>
-                                                </div>
-                                                <div class="empty-ratings">
-                                                    <span>★★★★★</span><span class="starRate">3.6</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reviewsTitle">
-                                            Отзывы: <span class='count'> 26</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="guideCard" draggable="true">
-                            <a href="./searchForTourists.html">
-                                <div class="pricePerHour">
-                                    $15/ч
-                                </div>
-                                <div class="cardImg ">
-                                    <img src="./assets/img/photoGuide2.png" class="w-100" alt="">
-                                </div>
-                                <div class="mainContent row">
-                                    <div class="nameAndCity">
-                                        <div class="name">
-                                            Андрей
-                                        </div>
-                                        <div class="city">
-                                            Москва, Россия </div>
-                                    </div>
-                                    <div class="des">
-                                        —I love people ♥️<br>
-                                        I waiting My guest....😊<br>
-                                        From snow-covered roads, ...
-                                    </div>
-                                    <div class="languages">
-                                        Языки: <span>Русский, Английский</span>
-                                    </div>
-                                    <div class="reviewsInfo d-flex justify-content-between">
-                                        <div>
-                                            <div class="star-ratings">
-                                                <div class="fill-ratings" style="width: 36%;">
-                                                    <span>★★★★★</span>
-                                                </div>
-                                                <div class="empty-ratings">
-                                                    <span>★★★★★</span><span class="starRate">3.6</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reviewsTitle">
-                                            Отзывы: <span class='count'> 26</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="guideCard" draggable="true">
-                            <a href="./searchForTourists.html">
-                                <div class="pricePerHour">
-                                    $15/ч
-                                </div>
-                                <div class="cardImg ">
-                                    <img src="./assets/img/photoGuide3.png" class="w-100" alt="">
-                                </div>
-                                <div class="mainContent row">
-                                    <div class="nameAndCity">
-                                        <div class="name">
-                                            Катерина
-                                        </div>
-                                        <div class="city">
-                                            Москва, Россия
-                                        </div>
-                                    </div>
-                                    <div class="des">
-                                        Traveling with Lena is always a good idea. Insta: @cosmostravelena.
-                                    </div>
-                                    <div class="languages">
-                                        Языки: <span>Английский, Русский, Азербайджанский</span>
-                                    </div>
-                                    <div class="reviewsInfo d-flex justify-content-between">
-                                        <div>
-                                            <div class="star-ratings">
-                                                <div class="fill-ratings" style="width: 36%;">
-                                                    <span>★★★★★</span>
-                                                </div>
-                                                <div class="empty-ratings">
-                                                    <span>★★★★★</span><span class="starRate">3.6</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reviewsTitle">
-                                            Отзывы: <span class='count'> 26</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="guideCard" draggable="true">
-                            <a href="./searchForTourists.html">
-                                <div class="pricePerHour">
-                                    $15/ч
-                                </div>
-                                <div class="cardImg ">
-                                    <img src="./assets/img/photoGuide1.png" class="w-100" alt="">
-                                </div>
-                                <div class="mainContent row">
-                                    <div class="nameAndCity">
-                                        <div class="name">
-                                            Руслан
-                                        </div>
-                                        <div class="city">
-                                            Москва, Россия
-                                        </div>
-                                    </div>
-                                    <div class="des">
-                                        ⚜️THE BEST⚜️<br>
-                                        Youtube: Ruslan' s World rusmoscow (instagram) </div>
-                                    <div class="languages">
-                                        Языки: <span>Английский, Русский, Азербайджанский</span>
-                                    </div>
-                                    <div class="reviewsInfo d-flex justify-content-between">
-                                        <div>
-                                            <div class="star-ratings">
-                                                <div class="fill-ratings" style="width: 36%;">
-                                                    <span>★★★★★</span>
-                                                </div>
-                                                <div class="empty-ratings">
-                                                    <span>★★★★★</span><span class="starRate">3.6</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reviewsTitle">
-                                            Отзывы: <span class='count'> 26</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                        <div class="guideCard" draggable="true">
-                            <a href="./searchForTourists.html">
-                                <div class="pricePerHour">
-                                    $15/ч
-                                </div>
-                                <div class="cardImg ">
-                                    <img src="./assets/img/photoGuide2.png" class="w-100" alt="">
-                                </div>
-                                <div class="mainContent row">
-                                    <div class="nameAndCity">
-                                        <div class="name">
-                                            Андрей
-                                        </div>
-                                        <div class="city">
-                                            Москва, Россия </div>
-                                    </div>
-                                    <div class="des">
-                                        —I love people ♥️<br>
-                                        I waiting My guest....😊<br>
-                                        From snow-covered roads, ...
-                                    </div>
-                                    <div class="languages">
-                                        Языки: <span>Русский, Английский</span>
-                                    </div>
-                                    <div class="reviewsInfo d-flex justify-content-between">
-                                        <div>
-                                            <div class="star-ratings">
-                                                <div class="fill-ratings" style="width: 36%;">
-                                                    <span>★★★★★</span>
-                                                </div>
-                                                <div class="empty-ratings">
-                                                    <span>★★★★★</span><span class="starRate">3.6</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="reviewsTitle">
-                                            Отзывы: <span class='count'> 26</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="guideCard" draggable="true">
-                            <a href="./searchForTourists.html">
-                                <div class="pricePerHour">
-                                    $15/ч
-                                </div>
-                                <div class="cardImg ">
-                                    <img src="./assets/img/photoGuide3.png" class="w-100" alt="">
-                                </div>
-                                <div class="mainContent row">
-                                    <div class="nameAndCity">
-                                        <div class="name">
-                                            Катерина
-                                        </div>
-                                        <div class="city">
-                                            Москва, Россия
-                                        </div>
-                                    </div>
-                                    <div class="des">
-                                        Traveling with Lena is always a good idea. Insta: @cosmostravelena.
-                                    </div>
                                     <div class="languages">
                                         Языки: <span>Английский, Русский, Азербайджанский</span>
                                     </div>
@@ -989,185 +742,274 @@
                             </a>
                         </div>
                     </div>
-                    <div class="guidesResponsive row  ">
-                        <div class="col-md-6 col-sm-6 row justify-content-center">
-                            <div class="guideCard " draggable="true">
-                                <a href="./searchForTourists.html">
-                                    <div class="pricePerHour">
-                                        $15/ч
+                    <div class="swiper-slide">
+                        <div class="guideCard" draggable="true">
+                            <a href="./searchForTourists.html">
+                                <div class="pricePerHour">
+                                    $15/ч
+                                </div>
+                                <div class="cardImg ">
+                                    <img src="./assets/img/photoGuide2.png" class="w-100" alt="">
+                                </div>
+                                <div class="mainContent row">
+                                    <div class="nameAndCity">
+                                        <div class="name">
+                                            Андрей
+                                        </div>
+                                        <div class="city">
+                                            Москва, Россия </div>
                                     </div>
-                                    <div class="cardImg ">
-                                        <img src="./assets/img/photoGuide2.png" class="w-100" alt="">
+                                    <div class="des">
+                                        —I love people ♥️<br>
+                                        I waiting My guest....😊<br>
+                                        From snow-covered roads, ...
                                     </div>
-                                    <div class="mainContent row">
-                                        <div class="nameAndCity">
-                                            <div class="name">
-                                                Андрей
-                                            </div>
-                                            <div class="city">
-                                                Москва, Россия </div>
-                                        </div>
-                                        <div class="des">
-                                            —I love people ♥️<br>
-                                            I waiting My guest....😊<br>
-                                            From snow-covered roads, ...
-                                        </div>
-                                        <div class="languages">
-                                            Языки: <span>Русский, Английский</span>
-                                        </div>
-                                        <div class="reviewsInfo d-flex justify-content-between">
-                                            <div>
-                                                <div class="star-ratings">
-                                                    <div class="fill-ratings" style="width: 36%;">
-                                                        <span>★★★★★</span>
-                                                    </div>
-                                                    <div class="empty-ratings">
-                                                        <span>★★★★★</span><span class="starRate">3.6</span>
-                                                    </div>
+                                    <div class="languages">
+                                        Языки: <span>Русский, Английский</span>
+                                    </div>
+                                    <div class="reviewsInfo d-flex justify-content-between">
+                                        <div>
+                                            <div class="star-ratings">
+                                                <div class="fill-ratings" style="width: 36%;">
+                                                    <span>★★★★★</span>
+                                                </div>
+                                                <div class="empty-ratings">
+                                                    <span>★★★★★</span><span class="starRate">3.6</span>
                                                 </div>
                                             </div>
-                                            <div class="reviewsTitle">
-                                                Отзывы: <span class='count'> 26</span>
-                                            </div>
+                                        </div>
+                                        <div class="reviewsTitle">
+                                            Отзывы: <span class='count'> 26</span>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-md-6 col-sm-6 row justify-content-center">
-                            <div class="guideCard  " draggable="true">
-                                <a href="./searchForTourists.html">
-                                    <div class="pricePerHour">
-                                        $15/ч
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="guideCard" draggable="true">
+                            <a href="./searchForTourists.html">
+                                <div class="pricePerHour">
+                                    $15/ч
+                                </div>
+                                <div class="cardImg ">
+                                    <img src="./assets/img/photoGuide2.png" class="w-100" alt="">
+                                </div>
+                                <div class="mainContent row">
+                                    <div class="nameAndCity">
+                                        <div class="name">
+                                            Андрей
+                                        </div>
+                                        <div class="city">
+                                            Москва, Россия </div>
                                     </div>
-                                    <div class="cardImg ">
-                                        <img src="./assets/img/photoGuide3.png" class="w-100" alt="">
+                                    <div class="des">
+                                        —I love people ♥️<br>
+                                        I waiting My guest....😊<br>
+                                        From snow-covered roads, ...
                                     </div>
-                                    <div class="mainContent row">
-                                        <div class="nameAndCity">
-                                            <div class="name">
-                                                Катерина
-                                            </div>
-                                            <div class="city">
-                                                Москва, Россия
-                                            </div>
-                                        </div>
-                                        <div class="des">
-                                            Traveling with Lena is always a good idea. Insta: @cosmostravelena.
-                                        </div>
-                                        <div class="languages">
-                                            Языки: <span>Английский, Русский, Азербайджанский</span>
-                                        </div>
-                                        <div class="reviewsInfo d-flex justify-content-between">
-                                            <div>
-                                                <div class="star-ratings">
-                                                    <div class="fill-ratings" style="width: 36%;">
-                                                        <span>★★★★★</span>
-                                                    </div>
-                                                    <div class="empty-ratings">
-                                                        <span>★★★★★</span><span class="starRate">3.6</span>
-                                                    </div>
+                                    <div class="languages">
+                                        Языки: <span>Русский, Английский</span>
+                                    </div>
+                                    <div class="reviewsInfo d-flex justify-content-between">
+                                        <div>
+                                            <div class="star-ratings">
+                                                <div class="fill-ratings" style="width: 36%;">
+                                                    <span>★★★★★</span>
+                                                </div>
+                                                <div class="empty-ratings">
+                                                    <span>★★★★★</span><span class="starRate">3.6</span>
                                                 </div>
                                             </div>
-                                            <div class="reviewsTitle">
-                                                Отзывы: <span class='count'> 26</span>
-                                            </div>
+                                        </div>
+                                        <div class="reviewsTitle">
+                                            Отзывы: <span class='count'> 26</span>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-md-6 col-sm-6 row justify-content-center">
-                            <div class="guideCard  " draggable="true">
-                                <a href="./searchForTourists.html">
-                                    <div class="pricePerHour">
-                                        $15/ч
-                                    </div>
-                                    <div class="cardImg ">
-                                        <img src="./assets/img/photoGuide1.png" class="w-100" alt="">
-                                    </div>
-                                    <div class="mainContent row">
-                                        <div class="nameAndCity">
-                                            <div class="name">
-                                                Руслан
-                                            </div>
-                                            <div class="city">
-                                                Москва, Россия
-                                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="guideCard" draggable="true">
+                            <a href="./searchForTourists.html">
+                                <div class="pricePerHour">
+                                    $15/ч
+                                </div>
+                                <div class="cardImg ">
+                                    <img src="./assets/img/photoGuide2.png" class="w-100" alt="">
+                                </div>
+                                <div class="mainContent row">
+                                    <div class="nameAndCity">
+                                        <div class="name">
+                                            Андрей
                                         </div>
-                                        <div class="des">
-                                            ⚜️THE BEST⚜️<br>
-                                            Youtube: Ruslan' s World rusmoscow (instagram) </div>
-                                        <div class="languages">
-                                            Языки: <span>Английский, Русский, Азербайджанский</span>
-                                        </div>
-                                        <div class="reviewsInfo d-flex justify-content-between">
-                                            <div>
-                                                <div class="star-ratings">
-                                                    <div class="fill-ratings" style="width: 36%;">
-                                                        <span>★★★★★</span>
-                                                    </div>
-                                                    <div class="empty-ratings">
-                                                        <span>★★★★★</span><span class="starRate">3.6</span>
-                                                    </div>
+                                        <div class="city">
+                                            Москва, Россия </div>
+                                    </div>
+                                    <div class="des">
+                                        —I love people ♥️<br>
+                                        I waiting My guest....😊<br>
+                                        From snow-covered roads, ...
+                                    </div>
+                                    <div class="languages">
+                                        Языки: <span>Русский, Английский</span>
+                                    </div>
+                                    <div class="reviewsInfo d-flex justify-content-between">
+                                        <div>
+                                            <div class="star-ratings">
+                                                <div class="fill-ratings" style="width: 36%;">
+                                                    <span>★★★★★</span>
+                                                </div>
+                                                <div class="empty-ratings">
+                                                    <span>★★★★★</span><span class="starRate">3.6</span>
                                                 </div>
                                             </div>
-                                            <div class="reviewsTitle">
-                                                Отзывы: <span class='count'> 26</span>
-                                            </div>
+                                        </div>
+                                        <div class="reviewsTitle">
+                                            Отзывы: <span class='count'> 26</span>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-md-6 col-sm-6 row justify-content-center">
-                            <div class="guideCard  " draggable="true">
-                                <a href="./searchForTourists.html">
-                                    <div class="pricePerHour">
-                                        $15/ч
-                                    </div>
-                                    <div class="cardImg ">
-                                        <img src="./assets/img/photoGuide1.png" class="w-100" alt="">
-                                    </div>
-                                    <div class="mainContent row">
-                                        <div class="nameAndCity">
-                                            <div class="name">
-                                                Руслан
-                                            </div>
-                                            <div class="city">
-                                                Москва, Россия
-                                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="guideCard" draggable="true">
+                            <a href="./searchForTourists.html">
+                                <div class="pricePerHour">
+                                    $15/ч
+                                </div>
+                                <div class="cardImg ">
+                                    <img src="./assets/img/photoGuide2.png" class="w-100" alt="">
+                                </div>
+                                <div class="mainContent row">
+                                    <div class="nameAndCity">
+                                        <div class="name">
+                                            Андрей
                                         </div>
-                                        <div class="des">
-                                            ⚜️THE BEST⚜️<br>
-                                            Youtube: Ruslan' s World rusmoscow (instagram) </div>
-                                        <div class="languages">
-                                            Языки: <span>Английский, Русский, Азербайджанский</span>
-                                        </div>
-                                        <div class="reviewsInfo d-flex justify-content-between">
-                                            <div>
-                                                <div class="star-ratings">
-                                                    <div class="fill-ratings" style="width: 36%;">
-                                                        <span>★★★★★</span>
-                                                    </div>
-                                                    <div class="empty-ratings">
-                                                        <span>★★★★★</span><span class="starRate">3.6</span>
-                                                    </div>
+                                        <div class="city">
+                                            Москва, Россия </div>
+                                    </div>
+                                    <div class="des">
+                                        —I love people ♥️<br>
+                                        I waiting My guest....😊<br>
+                                        From snow-covered roads, ...
+                                    </div>
+                                    <div class="languages">
+                                        Языки: <span>Русский, Английский</span>
+                                    </div>
+                                    <div class="reviewsInfo d-flex justify-content-between">
+                                        <div>
+                                            <div class="star-ratings">
+                                                <div class="fill-ratings" style="width: 36%;">
+                                                    <span>★★★★★</span>
+                                                </div>
+                                                <div class="empty-ratings">
+                                                    <span>★★★★★</span><span class="starRate">3.6</span>
                                                 </div>
                                             </div>
-                                            <div class="reviewsTitle">
-                                                Отзывы: <span class='count'> 26</span>
-                                            </div>
+                                        </div>
+                                        <div class="reviewsTitle">
+                                            Отзывы: <span class='count'> 26</span>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
-
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="guideCard" draggable="true">
+                            <a href="./searchForTourists.html">
+                                <div class="pricePerHour">
+                                    $15/ч
+                                </div>
+                                <div class="cardImg ">
+                                    <img src="./assets/img/photoGuide2.png" class="w-100" alt="">
+                                </div>
+                                <div class="mainContent row">
+                                    <div class="nameAndCity">
+                                        <div class="name">
+                                            Андрей
+                                        </div>
+                                        <div class="city">
+                                            Москва, Россия </div>
+                                    </div>
+                                    <div class="des">
+                                        —I love people ♥️<br>
+                                        I waiting My guest....😊<br>
+                                        From snow-covered roads, ...
+                                    </div>
+                                    <div class="languages">
+                                        Языки: <span>Русский, Английский</span>
+                                    </div>
+                                    <div class="reviewsInfo d-flex justify-content-between">
+                                        <div>
+                                            <div class="star-ratings">
+                                                <div class="fill-ratings" style="width: 36%;">
+                                                    <span>★★★★★</span>
+                                                </div>
+                                                <div class="empty-ratings">
+                                                    <span>★★★★★</span><span class="starRate">3.6</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviewsTitle">
+                                            Отзывы: <span class='count'> 26</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="guideCard" draggable="true">
+                            <a href="./searchForTourists.html">
+                                <div class="pricePerHour">
+                                    $15/ч
+                                </div>
+                                <div class="cardImg ">
+                                    <img src="./assets/img/photoGuide2.png" class="w-100" alt="">
+                                </div>
+                                <div class="mainContent row">
+                                    <div class="nameAndCity">
+                                        <div class="name">
+                                            Андрей
+                                        </div>
+                                        <div class="city">
+                                            Москва, Россия </div>
+                                    </div>
+                                    <div class="des">
+                                        —I love people ♥️<br>
+                                        I waiting My guest....😊<br>
+                                        From snow-covered roads, ...
+                                    </div>
+                                    <div class="languages">
+                                        Языки: <span>Русский, Английский</span>
+                                    </div>
+                                    <div class="reviewsInfo d-flex justify-content-between">
+                                        <div>
+                                            <div class="star-ratings">
+                                                <div class="fill-ratings" style="width: 36%;">
+                                                    <span>★★★★★</span>
+                                                </div>
+                                                <div class="empty-ratings">
+                                                    <span>★★★★★</span><span class="starRate">3.6</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviewsTitle">
+                                            Отзывы: <span class='count'> 26</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-
         </div>
         <div class="row justify-content-end mb-40 mt-17 mt-32">
             <div class="col-lg-8 col-12 row ">
@@ -1182,6 +1024,8 @@
         </div>
 
     </section>
+
+
 
     <!-- Лучший выбор местных гидов  -->
     <section id="bestChoices">
@@ -1404,70 +1248,82 @@
             </div>
         </div>
         <div class="container">
-            <div class="row travelCards">
-                <div class="col-lg-4 frst col-md-8 col-sm-9 col-10">
-                    <a href="./blog.html">
-                        <div class="newsCard">
-                            <div class="travelImg">
-                                <img src="./assets/img/news1.png" alt="News card">
-                            </div>
-                            <div class="content row">
-                                <div class="date">
-                                    12.05.21
+            <div class="  travelCards swiperNewsCards">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="   ">
+                            <a href="./blog.html">
+                                <div class="newsCard">
+                                    <div class="travelImg">
+                                        <img src="./assets/img/news1.png" alt="News card">
+                                    </div>
+                                    <div class="content row">
+                                        <div class="date">
+                                            12.05.21
+                                        </div>
+                                        <div class="head">
+                                            Готовьтесь заранее, ваше следующее путешествий имеет значение!
+                                        </div>
+                                        <div class="des">
+                                            Товарищи! укрепление и развитие структуры позволяет оценить значение
+                                            направлений
+                                            прогрессивного развития.
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="head">
-                                    Готовьтесь заранее, ваше следующее путешествий имеет значение!
-                                </div>
-                                <div class="des">
-                                    Товарищи! укрепление и развитие структуры позволяет оценить значение направлений
-                                    прогрессивного развития.
-                                </div>
-                            </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-8 col-sm-9 col-10">
-                    <a href="./blog.html">
-                        <div class="newsCard">
-                            <div class="travelImg">
-                                <img src="./assets/img/news2.png" alt="News card">
-                            </div>
-                            <div class="content row">
-                                <div class="date">
-                                    12.05.21
+                    </div>
+                    <div class="swiper-slide">
+                        <div class=" ">
+                            <a href="./blog.html">
+                                <div class="newsCard">
+                                    <div class="travelImg">
+                                        <img src="./assets/img/news2.png" alt="News card">
+                                    </div>
+                                    <div class="content row">
+                                        <div class="date">
+                                            12.05.21
+                                        </div>
+                                        <div class="head">
+                                            Готовьтесь заранее, ваше следующее путешествий имеет значение!
+                                        </div>
+                                        <div class="des">
+                                            Товарищи! укрепление и развитие структуры позволяет оценить значение
+                                            направлений
+                                            прогрессивного развития.
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="head">
-                                    Готовьтесь заранее, ваше следующее путешествий имеет значение!
-                                </div>
-                                <div class="des">
-                                    Товарищи! укрепление и развитие структуры позволяет оценить значение направлений
-                                    прогрессивного развития.
-                                </div>
-                            </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-8 col-sm-9 col-10">
-                    <a href="./blog.html">
-                        <div class="newsCard">
-                            <div class="travelImg">
-                                <img src="./assets/img/news3.png" alt="News card">
-                            </div>
-                            <div class="content row">
-                                <div class="date">
-                                    12.05.21
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="  ">
+                            <a href="./blog.html">
+                                <div class="newsCard">
+                                    <div class="travelImg">
+                                        <img src="./assets/img/news3.png" alt="News card">
+                                    </div>
+                                    <div class="content row">
+                                        <div class="date">
+                                            12.05.21
+                                        </div>
+                                        <div class="head">
+                                            Готовьтесь заранее, ваше следующее путешествий имеет значение!
+                                        </div>
+                                        <div class="des">
+                                            Товарищи! укрепление и развитие структуры позволяет оценить значение
+                                            направлений прогрессивного развития.
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="head">
-                                    Готовьтесь заранее, ваше следующее путешествий имеет значение!
-                                </div>
-                                <div class="des">
-                                    Товарищи! укрепление и развитие структуры позволяет оценить значение направлений
-                                    прогрессивного развития.
-                                </div>
-                            </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -1605,14 +1461,16 @@
                         </div>
                     </div>
                     <div class="col-lg-5 subscribeForm ">
-                        <div class="subscribeInput">
-                            <input type="text" placeholder="Ваша почта">
-                            <div class="submitButton">
-                                <button>
-                                    Подписаться
-                                </button>
+                        <form action="">
+                            <div class="subscribeInput">
+                                <input type="text" placeholder="Ваша почта">
+                                <div class="submitButton">
+                                    <button>
+                                        Подписаться
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
 
                         <div class="desc">
                             Отправляя эту форму, я принимаю Условия использования и Политику конфиденциальности Cicer1.
@@ -1976,7 +1834,7 @@
                                         <div class="head">
                                             Код
                                         </div>
-                                        <div class="emailInput ">
+                                        <div class="emailInputt ">
                                             <input class="w-100 " placeholder="999-999-999" type="text">
                                         </div>
                                     </div>
@@ -2000,7 +1858,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/select-widget-min.js"></script>
+    <script src="./js/dropdownSelect.js"></script>
+    <script src="./js/swiperHome.js"></script>
     <script src="./js/owl.js"></script>
     <script src="./js/script.js"></script>
 </body>

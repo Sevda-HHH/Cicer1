@@ -160,7 +160,12 @@ section#mainContent {
 }
 @media screen and (max-width: 1087px) {
     section#mainContent .webSites {
-        left: 7.2% !important;
+        left: 6.2% !important;
+    }
+}
+@media screen and (max-width: 1025px) {
+    section#mainContent .webSites {
+        display: none;
     }
 }
 @media screen and (max-width: 1015px) {
@@ -172,9 +177,7 @@ section#mainContent {
     section#mainContent .mainn .main .contentText .webLinksAdaptive {
         display: flex;
     }
-    section#mainContent .webSites {
-        display: none;
-    }
+
     section#mainContent .newsCards .item .content {
         padding: 16px 24px;
     }

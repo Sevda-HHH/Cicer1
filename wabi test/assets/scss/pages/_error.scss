@@ -66,7 +66,7 @@ section#error {
                 font-size: 14px;
                 line-height: 19px;
                 letter-spacing: 0.03em;
-                padding: 14.5px 0px;
+                padding: 14.5px 12px;
                 width: 75%;
                 color: $white;
                 &:hover {
@@ -79,10 +79,10 @@ section#error {
     }
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1300px) {
     section#error .linkButtons .contactBtn,
     section#error .linkButtons .goBackBtn {
-        width: 30% !important;
+        font-size: 13px;
     }
 }
 @media screen and (max-width: 900px) {

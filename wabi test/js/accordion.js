@@ -10,12 +10,17 @@ function toggleaccordian() {
             thisitem.classList.toggle('open');
             return;
         }
-        item.classList.remove('open');
-
     });
-
 }
 
 
-
 questions.forEach(question => question.addEventListener('click', toggleaccordian));
+
+$(".accordian .question").on("click", function () {
+    let hiddenIcon = $(this).find(".close img")
+    hiddenIcon.toggleClass("d-none")
+})
+$(".accordian ul li").on("change", function () {
+    let hiddenIcon = $(this).find(".close img")
+    hiddenIcon.toggleClass("d-none")
+})

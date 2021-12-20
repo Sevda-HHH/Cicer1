@@ -1,6 +1,6 @@
- .scrollbar-hidden::-webkit-scrollbar {
+ /* .scrollbar-hidden::-webkit-scrollbar {
    display: none;
- }
+ } */
 
  header {
    font-family: "Open Sans", sans-serif;
@@ -96,6 +96,8 @@
    background: white;
  }
 
+
+
  header nav .languageDropdown .dropdownMenu ul li {
    font-family: "Open Sans", sans-serif;
    font-style: normal;
@@ -113,6 +115,40 @@
  }
 
  header nav .languageDropdown .dropdownMenu ul li:first-child {
+   border-bottom: 1px solid #e5e7eb;
+ }
+
+ header nav .languageDropdown .dropdownMenuu {
+   position: absolute;
+   top: 89%;
+   left: 20%;
+ }
+
+ header nav .languageDropdown .dropdownMenuu ul {
+   list-style: none;
+   padding: 0;
+   border: 1px solid #e5e7eb;
+   border-radius: 12px;
+   background: white;
+ }
+
+ header nav .languageDropdown .dropdownMenuu ul li {
+   font-family: "Open Sans", sans-serif;
+   font-style: normal;
+   cursor: pointer;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 160%;
+   letter-spacing: 0.02em;
+   color: #11142d;
+   padding: 8px 16px;
+ }
+
+ header nav .languageDropdown .dropdownMenuu ul li:hover {
+   color: #258ee3 !important;
+ }
+
+ header nav .languageDropdown .dropdownMenuu ul li:first-child {
    border-bottom: 1px solid #e5e7eb;
  }
 
@@ -885,8 +921,10 @@
    position: absolute;
    text-align: center;
    border-radius: 1000px;
-   top: 51%;
-   right: -2%;
+   top: 58%;
+   height: 40px;
+   right: 0%;
+   width: 40px;
    background: #ffffff;
    border: 1px solid #e5e7eb;
    box-sizing: border-box;
@@ -905,7 +943,7 @@
 
  section#guides .nextButton i {
    color: #215273;
-   padding: 12px 13px 12px 17px;
+   padding: 12px 18px 12px 42px;
  }
 
  section#guides .prevButton {
@@ -913,8 +951,10 @@
    position: absolute;
    text-align: center;
    border-radius: 1000px;
-   top: 51%;
-   right: 71%;
+   top: 58%;
+   height: 40px;
+   right: 72%;
+   width: 40px;
    background: #ffffff;
    border: 1px solid #e5e7eb;
    box-sizing: border-box;
@@ -933,7 +973,19 @@
 
  section#guides .prevButton i {
    color: #215273;
-   padding: 12px 17px 12px 13px;
+   padding: 12px 18px 12px 17px;
+ }
+
+ .swiper-button-prev, .swiper-rtl .swiper-button-next {
+   left: unset !important;
+ }
+
+ .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+   display: none;
+ }
+
+ .swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
+   display: none !important;
  }
 
  /* countries buttons */
@@ -1034,13 +1086,31 @@
    position: relative;
  }
 
+ section#guides .swiper {
+   padding: 10px 16px 10px 0 !important;
+ }
+
  section#guides .cityCategory {
    position: absolute;
    padding-top: 8px;
-   max-height: 465px;
-   top: -1%;
-   left: 2.5%;
+   max-height: 464px;
+   max-width: 305px;
+   top: -2%;
+   height: 110%;
+   left: 0%;
    z-index: 2;
+   width: 100%;
+ }
+
+ section#guides .cityCategory.resposive {
+   display: none;
+   position: relative;
+   padding-top: 8px;
+   max-height: 464px;
+   max-width: 350px;
+   height: 100%;
+   z-index: 2;
+   width: 100%;
  }
 
  section#guides .cityCategory img {
@@ -1055,6 +1125,10 @@
 
  section#guides .cityCategory .cityName #locationIcon {
    padding: 1px 9px 7px 9px;
+ }
+
+ .swiper-horizontal>.swiper-scrollbar {
+   display: none !important;
  }
 
  section#guides .cityCategory .cityName .country {
@@ -1082,7 +1156,7 @@
    max-height: 196px !important;
    margin: 0 auto;
    overflow: hidden !important;
-   border-radius: 6px 6px 0px 0px;
+   border-radius: 12px 12px 0px 0px;
  }
 
  section#guides .guideCard .cardImg {
@@ -1090,7 +1164,7 @@
    max-height: 196px !important;
    margin: 0 auto;
    overflow: hidden !important;
-   border-radius: 6px 6px 0px 0px;
+   border-radius: 12px 12px 0px 0px;
  }
 
  section#guides .guideCard:hover .name {
@@ -1168,7 +1242,7 @@
  }
 
  section#guides .guideCard .mainContent .languages {
-   height: 44px;
+   height: 20px;
    font-family: "Open Sans", sans-serif;
    font-style: normal;
    font-weight: normal;
@@ -1351,7 +1425,7 @@
  section#bestChoices .guideCard img {
    margin: 0 auto;
    transition: transform 0.5s;
-   border-radius: 6px 6px 0px 0px;
+   border-radius: 12px 12px 0px 0px;
  }
 
  section#bestChoices .guideCard:hover img {
@@ -1362,7 +1436,7 @@
  section#guides .guideCard img {
    margin: 0 auto;
    transition: transform 0.5s;
-   border-radius: 6px 6px 0px 0px;
+   border-radius: 12px 12px 0px 0px;
  }
 
  section#guides .guideCard:hover img {
@@ -2139,6 +2213,10 @@
    justify-content: center;
  }
 
+ section#howItWorks {
+   overflow-x: hidden !important;
+ }
+
  .travelCards .frst {
    margin-left: 0;
  }
@@ -2178,31 +2256,42 @@
    display: block;
  }
 
+ #profileSettings .uploadPhoto .secondPart .uploadedImages .uploadOnMore {
+   width: unset !important;
+ }
+
  @media screen and (max-width: 1400px) {
    header nav .nav-search input {
      width: 314px;
    }
+
    header nav .navLinks .beLocalguideButton button {
      margin: 3px 10px;
    }
  }
 
  @media screen and (max-width: 1210px) {
+
+
    header nav .nav-search input {
      width: 269px;
    }
+
    .navbar-expand-lg .navbar-nav .nav-link {
      padding-right: 0 !important;
      padding-left: 0 !important;
    }
+
    header nav .navLinks .nav-link {
      margin-left: 8px;
      font-size: 14px;
    }
+
    header nav .navLinks .navIcons {
      margin-left: 0;
      padding: 10px 12px;
    }
+
    header nav .navLinks .beLocalguideButton button {
      font-size: 14px;
      padding: 7px 7px;
@@ -2222,19 +2311,34 @@
    header nav .nav-search input {
      width: 240px;
    }
+
    footer .footerWebLinks {
      justify-content: flex-end
    }
+
    .navBarFooter .footerWebLinks {
      justify-content: flex-end
    }
  }
 
  @media screen and (max-width: 989px) {
+
+   section#error .linkButtons .contactBtn,
+   section#error .linkButtons .goBackBtn {
+     font-size: 13px;
+     width: 50% !important;
+   }
+
    section#countriesShouldVisit .prevButton, section#countriesShouldVisit .nextButton {
      display: none !important;
    }
+
+   section#bestChoices .guideCard {
+     margin-top: 64px;
+   }
+
    .howItWorksCards {
+     cursor: pointer;
      flex-wrap: nowrap !important;
      overflow-x: scroll;
      overflow-y: hidden !important;
@@ -2243,76 +2347,120 @@
      -ms-overflow-style: none;
      scrollbar-width: none;
    }
+
+   /* select */
+
+
+   /* select */
+
    .howItWorksCards::-webkit-scrollbar {
      display: none;
    }
+
    .travelCards {
      flex-wrap: nowrap !important;
-     overflow-x: scroll;
+     /* overflow-x: scroll;
      -ms-overflow-style: none;
-     scrollbar-width: none;
+     scrollbar-width: none; */
    }
+
+
+
    .travelCards::-webkit-scrollbar {
-     display: none;
+     /* background: red; */
    }
+
    .adaptiveIcons {
      display: flex !important;
    }
+
    .navBarFooter {
      display: unset;
    }
+
    header nav .languageDropdown .dropdownMenu {
      left: 38%;
    }
+
    header nav .navLinks .beLocalguideButton {
      display: none;
    }
+
    header nav .navLinks .beLocalguideButton.forTab {
      display: block;
    }
+
    #navbarNavAltMarkup {
      border-top: 1px solid #E5E7EB;
      margin-top: 24px;
      padding-top: 24px;
    }
+
    .navBarCollapseTest {
      justify-content: center;
      flex-wrap: wrap-reverse;
      text-align: center;
    }
+
    .navBarCollapseTest .aboutUsLink {
      display: none;
    }
+
    header nav .navLinks .navIcons {
      display: none;
    }
+
    header nav .navLinks .logintxt {
      display: none;
    }
+
    header nav .nav-search {
      display: none;
    }
+ }
+
+ .swiper-slide.frst {
+   display: unset;
  }
 
  @media screen and (max-width: 1390px) {
    section#news .newsCard .content {
      height: 229px;
    }
+
    section#howItWorks .content {
      width: 202px;
    }
  }
 
+ @media screen and (max-width: 1300px) {
+   section#guides .cityCategory {
+     max-width: 320px !important;
+   }
+
+ }
+
  @media screen and (max-width: 1200px) {
+   section#guides .prevButton {
+     right: 63%;
+   }
+
    section#news .newsCard .content {
      height: 245px;
    }
+
+   section#guides .cityCategory {
+     max-width: 300px !important;
+   }
+
    section#news .newsCard .content .des {
      max-height: 104px;
    }
+
    section#howItWorks .content {
      width: 172px;
    }
+
    #whoAreWe {
      padding: 0 24px;
    }
@@ -2328,14 +2476,53 @@
    section#subscribe .intro {
      padding-bottom: 0;
    }
+
+   section#guides .cityCategory {
+     max-width: 320px !important;
+   }
+
  }
 
  @media screen and (max-width: 966px) {
    section#subscribe .subscribeForm .subscribeInput {
      width: 550px !important;
    }
+
+   section#guides .prevButton {
+     right: 45%;
+   }
+
    .madeBy {
      display: none !important;
+   }
+ }
+
+ @media screen and (max-width: 900px) {
+   section#guides .cityCategory {
+     max-width: 310px !important;
+   }
+ }
+
+ @media screen and (max-width: 786px) {
+   section#guides .cityCategory {
+     max-width: 328px !important;
+   }
+
+   .swiper-slide {
+     display: flex;
+     justify-content: center;
+   }
+
+   section#intro .des .content .searchInput .searchSubmitbutton {
+     right: 15px;
+   }
+ }
+
+
+ @media screen and (max-width: 768px) {
+   section#guides .cityCategory {
+
+     max-width: 261px !important;
    }
  }
 
@@ -2343,20 +2530,38 @@
    section#intro .des .content .searchInput .searchSubmitbutton {
      right: 3% !important;
    }
+
    #bestChoices .bestChoicesCenterBetween {
      justify-content: space-around !important;
    }
+
    section#bestChoices .intro {
      margin-top: 32px;
    }
+
+   section#bestChoices .guideCard {
+     margin-top: 24px;
+   }
+
  }
 
  @media screen and (max-width: 570px) {
    footer .main {
      padding: 24px;
    }
+
+   section#guides .cityCategory {
+     max-width: 270px !important;
+   }
+
    #bestChoices .bestChoicesCenterBetween {
      justify-content: center !important;
+   }
+ }
+
+ @media screen and (max-width: 530px) {
+   section#guides .cityCategory {
+     max-width: 305px !important;
    }
  }
 
@@ -2364,29 +2569,37 @@
    section#intro .des .content .searchInput .searchSubmitbutton {
      right: 3% !important;
    }
+
    section#subscribe {
      padding-left: 10px;
    }
+
    header nav #profileHeader .dropdownn {
      top: 186%;
      left: -901%;
    }
+
    .travelCards .frst {
      padding-left: 24px !important;
    }
+
    section#countriesShouldVisit .mainContent {
      margin-left: 16px;
    }
+
    .last .policyText {
      justify-content: space-around;
    }
+
    .last .cicreLogo {
      margin-top: 0;
      margin-bottom: 18px;
    }
+
    .section#howItWorks .head {
      margin: 56px 0 24px 0px;
    }
+
    .howItWorksCards {
      padding: 0;
    }
@@ -2396,6 +2609,7 @@
    section#intro .des .content .searchInput .searchSubmitbutton {
      right: 3% !important;
    }
+
    .last .cicreLogo {
      margin-top: 14px;
      margin-bottom: 18px;
@@ -2406,18 +2620,23 @@
    section#guides .showAllButton button {
      width: 156px;
    }
+
    section#subscribe .subscribeForm .subscribeInput {
      width: 480px !important;
    }
+
    section#howItWorks .content {
      width: 214px !important;
    }
+
    #howItWorks {
      overflow: hidden;
    }
+
    #howItWorks .container {
      overflow: hidden !important;
    }
+
    #howItWorks .head {
      margin-right: 24px !important;
    }
@@ -2427,6 +2646,7 @@
    section#howItWorks .content {
      width: 200px !important;
    }
+
    .howItWorksStart {
      justify-content: start !important;
    }
@@ -2436,18 +2656,33 @@
    section#subscribe .subscribeForm .subscribeInput {
      width: 440px !important;
    }
+
+   section#guides .cityCategory.resposive {
+     display: block;
+   }
+
+   section#guides .cityCategory {
+     display: none;
+   }
+
+   .swiper-slide.frst {
+     display: none !important;
+   }
  }
 
  @media screen and (max-width:517px) {
    section#intro .des .content .searchInput .searchSubmitbutton {
      right: 3% !important;
    }
+
    section#intro .des .content .title {
      font-size: 32px !important;
    }
+
    section#intro .des .content .searchInput input {
      width: 482px !important;
    }
+
    section#intro .des .content {
      padding-left: 24px !important;
    }
@@ -2457,6 +2692,7 @@
    section#intro .des .content .searchInput .searchSubmitbutton {
      right: 5.5% !important;
    }
+
    section#howItWorks .content {
      width: 170px !important;
    }
@@ -2467,21 +2703,26 @@
      font-size: 16px;
      line-height: 140%;
    }
+
    section#news .newsCard .content .des {
      font-size: 14px;
      align-self: unset;
    }
+
    section#news .newsCard .content .date {
      font-size: 13px;
    }
+
    section#subscribe .subscribeForm .subscribeInput .submitButton button {
      padding: 12px 13px;
      font-size: 13px;
      right: 1.5%;
    }
+
    section#subscribe .subscribeForm .subscribeInput {
      width: 400px !important;
    }
+
    header nav .notificationsContent, header nav .notificationssContent {
      right: -386%;
    }
@@ -2504,9 +2745,11 @@
    section#subscribe .subscribeForm .subscribeInput {
      width: 355px !important;
    }
+
    section#howItWorks .content {
      width: 157px !important;
    }
+
    header .adaptiveIcons .navIcons {
      padding: 10px 7px;
    }
@@ -2516,9 +2759,11 @@
    section#howItWorks .content .des {
      font-size: 11px !important;
    }
+
    section#howItWorks .content {
      width: 150px !important;
    }
+
    section#subscribe {
      padding-left: 12px;
    }
@@ -2528,6 +2773,7 @@
    section#subscribe .subscribeForm .subscribeInput .submitButton button {
      right: 2%;
    }
+
    section#howItWorks .content {
      width: 140px !important;
    }
@@ -2537,34 +2783,43 @@
    .travelCards {
      padding: 10px 0;
    }
+
    section#news .newsCard .content .head {
      font-size: 14px;
      line-height: 140%;
    }
+
    section#news .newsCard .content .des {
      font-size: 12px;
      align-self: unset;
    }
+
    section#news .newsCard .content .date {
      font-size: 12px;
    }
+
    section#news .newsCard .content {
      height: 189px;
      padding: 8px 16px !important;
    }
+
    header nav .notificationsContent, header nav .notificationssContent {
      width: 389px;
    }
+
    header nav .notificationssContent {
      right: -350%;
      width: 367px;
    }
+
    header nav .notificationsContent .content .item .message, header nav .notificationssContent .content .item .message, header nav .notificationsContent .content .item .notif, header nav .notificationssContent .content .item .notif {
      font-size: 11px;
    }
+
    .adaptiveIcons {
      width: 67%;
    }
+
    section#subscribe .subscribeForm .subscribeInput {
      width: 329px !important;
    }
@@ -2574,12 +2829,15 @@
    header nav .notificationssContent {
      width: 367px;
    }
+
    header nav .notificationsContent .content .item .message, header nav .notificationssContent .content .item .message, header nav .notificationsContent .content .item .notif, header nav .notificationssContent .content .item .notif {
      font-size: 11px;
    }
+
    .adaptiveIcons {
      width: 67%;
    }
+
    section#howItWorks .content {
      width: 155px !important;
    }
@@ -2590,9 +2848,11 @@
      right: -439%;
      width: 330px;
    }
+
    header nav #profileHeader .dropdownn {
      top: 200%;
    }
+
    header nav .profile img {
      width: 107%;
      margin-left: 8px;
@@ -2604,9 +2864,11 @@
      padding-right: 80px !important;
      padding-left: 10px;
    }
+
    section#subscribe .subscribeForm .subscribeInput {
      width: 280px !important;
    }
+
    .navbar-brand {
      margin-right: 0 !important;
    }
@@ -2617,25 +2879,31 @@
      font-size: 13px;
      margin: 0 !important;
    }
+
    section#news .newsCard .content .des {
      font-size: 11px;
      align-self: unset;
    }
+
    section#news .newsCard .content .date {
      font-size: 11px;
    }
+
    section#news .newsCard .content {
      height: 175px;
      padding: 6px 14px !important;
    }
+
    header nav .notificationssContent {
      right: -439%;
      width: 300px;
    }
+
    header nav .profile img {
      width: 120%;
      margin-left: 10px;
    }
+
    header nav #profileHeader .dropdownn {
      top: 200%;
    }
@@ -2651,10 +2919,12 @@
    section#intro .des .content .searchInput input::placeholder {
      font-size: 12px;
    }
+
    section#guides .guideCard .mainContent {
      height: 258px;
      padding: 12px 16px;
    }
+
    section#guides .guideCard .mainContent .des {
      margin-bottom: 8px !important;
    }
@@ -2665,24 +2935,47 @@
      height: 258px;
      padding: 12px 16px;
    }
+
    section#guides .guideCard .mainContent .des {
      mix-blend-mode: 8px !important;
    }
+
    header nav .notificationssContent {
      width: 245px;
    }
+
    section#subscribe .subscribeForm .subscribeInput {
      width: 260px !important;
    }
+
    header nav #profileHeader .dropdownn {
      top: 253%;
    }
+
    section#howItWorks .content {
      width: 122px !important;
    }
+
    section#howItWorks .content .des {
      font-size: 10px;
    }
+ }
+
+
+
+ option::before {
+   font-family: "Open Sans", sans-serif;
+   font-style: normal;
+   cursor: pointer;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 160%;
+   border: 1px solid #e5e7eb !important;
+   letter-spacing: 0.02em;
+   color: #11142d;
+   border-radius: 12px !important;
+   background: white !important;
+   padding: 8px 16px;
  }
 
  @media screen and (max-width: 260px) {
@@ -2697,122 +2990,154 @@
        top: 346px;
        left: 100px;
      }
+
      20% {
        top: 300px;
        left: 140px;
      }
+
      40% {
        top: 250px;
        left: 160px;
      }
+
      60% {
        top: 200px;
        left: 180px;
      }
+
      80% {
        top: 150px;
        left: 200px;
      }
+
      90% {
        top: 113px;
        left: 220px;
      }
+
      100% {
        top: 113px;
        left: 220px;
      }
    }
+
    @keyframes front-3-to-1 {
      0% {
        top: 346px;
        left: 100px;
      }
+
      100% {
        top: 113px;
        left: 220px;
      }
    }
+
    @-webkit-keyframes front-4-to-3 {
      0% {
        top: 443px;
        left: -119px;
      }
+
      20% {
        top: 150px;
        left: -50px;
      }
+
      40% {
        top: 200px;
        left: -10px;
      }
+
      60% {
        top: 250px;
        left: 20px;
      }
+
      100% {
        top: 346px;
        left: 100px;
      }
    }
+
    @keyframes front-4-to-3 {
      0% {
        top: 443px;
        left: -119px;
        opacity: 0;
      }
+
      100% {
        top: 346px;
        left: 100px;
        opacity: 1;
      }
    }
+
    @-webkit-keyframes from-1-to-5 {
      0% {
        opacity: 1 !important;
        top: 113px;
        left: 220px;
      }
+
      100% {
        opacity: 1 !important;
        top: -130px;
        left: 100px;
      }
    }
+
    @keyframes from-1-to-5 {
      0% {
        opacity: 1 !important;
        top: 113px;
        left: 220px;
      }
+
      100% {
        opacity: 1 !important;
        top: -130px;
        left: 100px;
      }
    }
+
    @-webkit-keyframes from-5-to-4 {
      0% {
        opacity: 1 !important;
        top: -130px;
        left: 100px;
      }
+
      100% {
        opacity: 1 !important;
        top: -225px;
        left: 50px;
      }
    }
+
    @keyframes from-5-to-4 {
      0% {
        opacity: 1 !important;
        top: -130px;
        left: 100px;
      }
+
      100% {
        opacity: 1 !important;
        top: -225px;
        left: 50px;
      }
+   }
+ }
+
+ @media screen and (max-width: 1370px) {
+   section#guides .cityCategory {
+     max-height: 484px;
+     max-width: 281px;
+     top: -2%;
+     height: 102%;
    }
  }
 
@@ -2826,128 +3151,154 @@
    section#intro .slideNav {
      padding: 0px 26px 0 28px;
    }
+
    section#intro .travelSlide .slideImages .slideImg2 {
      left: 180px !important;
    }
+
    section#intro .des .content .title {
      font-size: 29px;
    }
+
    @-webkit-keyframes front-3-to-1 {
      0% {
        top: 346px;
        left: 100px;
      }
+
      20% {
        top: 300px;
        left: 140px;
      }
+
      40% {
        top: 250px;
        left: 160px;
      }
+
      60% {
        top: 200px;
        left: 180px;
      }
+
      80% {
        top: 150px;
        left: 200px;
      }
+
      90% {
        top: 113px;
        left: 220px;
      }
+
      100% {
        top: 113px;
        left: 180px;
      }
    }
+
    @keyframes front-3-to-1 {
      0% {
        top: 346px;
        left: 100px;
      }
+
      100% {
        top: 113px;
        left: 180px;
      }
    }
+
    @-webkit-keyframes front-4-to-3 {
      0% {
        top: 443px;
        left: -119px;
      }
+
      20% {
        top: 150px;
        left: -50px;
      }
+
      40% {
        top: 200px;
        left: -10px;
      }
+
      60% {
        top: 250px;
        left: 20px;
      }
+
      100% {
        top: 346px;
        left: 100px;
      }
    }
+
    @keyframes front-4-to-3 {
      0% {
        top: 443px;
        left: -119px;
        opacity: 0;
      }
+
      100% {
        top: 346px;
        left: 100px;
        opacity: 1;
      }
    }
+
    @-webkit-keyframes from-1-to-5 {
      0% {
        opacity: 1 !important;
        top: 113px;
        left: 180px;
      }
+
      100% {
        opacity: 1 !important;
        top: -130px;
        left: 100px;
      }
    }
+
    @keyframes from-1-to-5 {
      0% {
        opacity: 1 !important;
        top: 113px;
        left: 180px;
      }
+
      100% {
        opacity: 1 !important;
        top: -130px;
        left: 100px;
      }
    }
+
    @-webkit-keyframes from-5-to-4 {
      0% {
        opacity: 1 !important;
        top: -130px;
        left: 100px;
      }
+
      100% {
        opacity: 1 !important;
        top: -225px;
        left: 50px;
      }
    }
+
    @keyframes from-5-to-4 {
      0% {
        opacity: 1 !important;
        top: -130px;
        left: 100px;
      }
+
      100% {
        opacity: 1 !important;
        top: -225px;
@@ -2956,108 +3307,137 @@
    }
  }
 
- @media screen and (max-width: 1260px) {
+ @media screen and (max-width: 1400px) {
    section#intro .des .content .searchInput input {
      width: 560px !important;
    }
+
    section#intro .travelSlide .slideImages .slideImg2 {
      left: 112px !important;
    }
+
    section#intro .travelSlide .slideImages .slideImg {
      left: 22px !important;
    }
+
    section#intro .travelSlide .slideImages .slideImg3 {
      left: 22px !important;
    }
+
    @-webkit-keyframes front-3-to-1 {
      0% {
        top: 346px !important;
        left: 22px !important;
      }
+
      100% {
        top: 113px !important;
        left: 112px !important;
      }
    }
+
    @keyframes front-3-to-1 {
      0% {
        top: 346px;
        left: 22px !important;
      }
+
      100% {
        top: 113px;
        left: 112px !important;
      }
    }
+
    @-webkit-keyframes front-4-to-3 {
      0% {
        top: 443px;
        left: -119px !important;
      }
+
      100% {
        top: 346px;
        left: 22px !important;
      }
    }
+
    @keyframes front-4-to-3 {
      0% {
        top: 443px;
        left: -119px !important;
        opacity: 0;
      }
+
      100% {
        top: 346px;
        left: 22px !important;
        opacity: 1;
      }
    }
+
    @-webkit-keyframes from-1-to-5 {
      0% {
        opacity: 1 !important;
        top: 113px;
        left: 112px !important;
      }
+
      100% {
        opacity: 1 !important;
        top: -130px;
        left: 22px !important;
      }
    }
+
    @keyframes from-1-to-5 {
      0% {
        opacity: 1 !important;
        top: 113px;
        left: 112px !important;
      }
+
      100% {
        opacity: 1 !important;
        top: -130px;
        left: 22px !important;
      }
    }
+
    @-webkit-keyframes from-5-to-4 {
      0% {
        opacity: 1 !important;
        top: -130px;
        left: 22px !important;
      }
+
      100% {
        opacity: 1 !important;
        top: -225px;
        left: -50px !important;
      }
    }
+
    @keyframes from-5-to-4 {
      0% {
        opacity: 1 !important;
        top: -130px;
        left: 22px !important;
      }
+
      100% {
        opacity: 1 !important;
        top: -225px;
        left: -50px !important;
      }
+   }
+ }
+
+ @media screen and (max-width: 1170px) {
+   section#guides .cityCategory {
+     max-width: 304px;
+   }
+
+   #profileSettings .uploadPhoto .secondPart .uploadedImages .uploadOnMore {
+     width: 70% !important;
    }
  }
 
@@ -3065,25 +3445,34 @@
    #guides .owl-item {
      margin-left: -7px !important;
    }
+
+
  }
 
  @media screen and (max-width: 992px) {
+
+
    section#guides .guidesResponsive {
      display: flex;
      justify-content: space-around;
    }
+
    section#guides .guidesResponsive .guideCard {
      margin-top: 16px;
    }
+
    section#guides .cityCategory {
-     display: none;
+     /* display: none; */
    }
+
    #guides .owl-carousel {
      display: none !important;
    }
+
    section#intro .travelSlide {
      display: none !important;
    }
+
    section#intro .slideNav {
      display: none !important;
    }
@@ -3093,19 +3482,24 @@
    section#guides .nextButton, section#guides .prevButton {
      display: none;
    }
+
    section#guides .container.guideCardsSlider {
      max-width: 100%;
      padding: 0;
    }
+
    section#guides .owl-carousel {
      padding-left: 0;
    }
+
    #guides .cityCategory {
-     display: none;
+     /* display: none; */
    }
+
    #guides .owl-item {
      margin-left: 0px !important;
    }
+
    section#guides .head {
      justify-content: flex-start !important;
    }
@@ -3117,55 +3511,87 @@
      text-align: center !important;
      justify-content: center !important;
    }
+
    #guides .owl-carousel .owl-stage-outer {
      max-height: 480px !important;
    }
+
    section#guides .head {
      justify-content: center !important;
      width: 100%;
    }
+
    #guides .owl-carousel.owl-loaded {
      margin-left: 0 !important;
    }
+
    .showAllButton.first {
      display: none !important;
    }
+
    .showAllButton.scnd {
      display: unset;
    }
+
    section#guides .head {
      justify-content: start !important;
    }
+
    section#howItWorks .content {
      width: 225px;
    }
+
    .mt-32 {
      margin-top: 32px !important;
    }
  }
 
+ /* map */
+ /* Set the size of the div element that contains the map */
+ #map {
+   height: 400px;
+   width: 100%;
+ }
+
  @media screen and (max-width: 769px) {
+   .navBarFooter .main ul a li {
+     margin-bottom: 14px;
+   }
+
+   .navBarFooter .main ul {
+     margin-bottom: 8px;
+   }
+
    section#guides .guideCard {
      margin-left: 0 !important;
    }
+
    section#intro .des .content {
      padding-left: 24px;
    }
+
    section#intro .des .content .title {
      font-size: 26px;
    }
+
    section#intro .des .content .searchInput input {
      width: 487px !important;
    }
+
    section#guides .head {
      text-align: center;
    }
+
    .mb-40 {
      margin-bottom: 24px !important;
    }
  }
 
  @media screen and (max-width: 630px) {
+   footer .main {
+     padding-left: 24px;
+   }
+
    section#guides .head {
      justify-content: center !important;
    }
@@ -3175,39 +3601,63 @@
    section#guides .guidesResponsive {
      justify-content: center;
    }
+
    header nav .navLinks .nav-link {
      margin-top: 8px;
    }
+
    section#guides .owl-carousel .owl-item {
      margin-left: 2px !important;
    }
+
    #bestChoices .showMoreBtn {
      padding: 0 24px !important;
    }
  }
 
+ .overflow-hidden {
+   overflow: hidden !important;
+ }
+
+
  @media screen and (max-width: 516px) {
    section#news .title {
      margin-top: 56px;
    }
+
+   section#guides .swiper {
+     padding: unset !important;
+   }
+
+   .swiper {
+     padding-top: 16px !important;
+     padding-bottom: 16px !important;
+   }
+
    section#countriesShouldVisit .title {
      margin-top: 56px !important;
    }
+
    section#whoAreWe .title {
      margin-top: 48px;
    }
+
    section#whoAreWe .mainContent .knowMoreBtn button {
      padding: 11px 25px;
    }
+
    .travelCards {
      height: 460px;
    }
+
    section#intro .des .content .title {
      font-size: 32px !important;
    }
+
    section#intro .des .content .searchInput input {
      width: 440px !important;
    }
+
    section#intro .des .content {
      padding-left: 24px !important;
    }
@@ -3218,9 +3668,11 @@
      width: 260.667px !important;
      margin-right: 10px !important;
    }
+
    section#intro .des .content .searchInput input {
      width: 430px !important;
    }
+
    section#intro .des .content {
      padding-left: 16px !important;
      padding-right: 16px;
@@ -3231,11 +3683,13 @@
    section#intro .des .content .searchInput input {
      width: 430px !important;
    }
+
    section#intro .des .content .title {
      font-size: 25px !important;
      list-style: 27px;
      margin-bottom: 48px;
    }
+
    section#intro .des .content {
      align-self: flex-end;
      padding-bottom: 40px;
@@ -3246,6 +3700,7 @@
    section#intro .des .content .searchInput input {
      width: 410px !important;
    }
+
    section#intro .des .content .searchInput .searchSubmitbutton {
      right: 20px !important;
    }
@@ -3275,6 +3730,11 @@
      line-height: 21px;
      text-align: center;
    }
+
+   footer .main {
+     padding-left: 16px;
+   }
+
    section#intro .des .content .searchInput input {
      width: 370px !important;
    }
@@ -3290,6 +3750,7 @@
    section#intro .des .content .searchInput input {
      width: 350px !important;
    }
+
    section#intro .des .content .title {
      font-size: 24px !important;
    }
@@ -3302,9 +3763,14 @@
  }
 
  @media screen and (max-width: 360px) {
+   .last .policyText {
+     font-size: 12px;
+   }
+
    section#intro .des .content .title {
      font-size: 22px !important;
    }
+
    section#intro .des .content .searchInput input {
      width: 330px !important;
    }
@@ -3314,6 +3780,7 @@
    section#intro .des .content .title {
      font-size: 20px !important;
    }
+
    section#intro .des .content .searchInput input {
      width: 320px !important;
    }
@@ -3329,6 +3796,7 @@
    section#intro .des .content .searchInput input {
      width: 290px !important;
    }
+
    section#intro .des .content .searchInput .searchSubmitbutton button {
      padding: 13px 21px;
    }
@@ -3349,6 +3817,14 @@
  @media screen and (max-width: 300px) {
    section#intro .des .content .searchInput input {
      width: 270px !important;
+   }
+
+   .last .policyText {
+     font-size: 10px;
+   }
+
+   .swiper {
+     padding: 16px !important;
    }
  }
 

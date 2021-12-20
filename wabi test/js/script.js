@@ -19,7 +19,6 @@ let langs = [
     "Арабский",
     "Русский",
 ]
-
 $("#imagesAlbomSlider .carousel-control-prev ").on("click", function () {
     let count
     let prev = $(".carousel-item.active").prev()
@@ -152,6 +151,49 @@ const nextImageCarousel = async () => {
 function showNotification(btn) {
     btn.nextElementSibling.classList.toggle("d-none")
 }
+// const swiperHowItWorks = new Swiper('.swiperHowItWorks', {
+//     slidesPerView: 3,
+//     spaceBetween: 30,
+//     breakpoints: {
+//         280: {
+//             slidesPerView: 1,
+//             spaceBetween: 16,
+//         },
+//         380: {
+//             slidesPerView: 1.2,
+//             spaceBetween: 16,
+
+//         },
+//         500: {
+//             slidesPerView: 1.2,
+//         },
+//         540: {
+//             slidesPerView: 1.2,
+//         },
+
+//         720: {
+//             slidesPerView: 1.5
+//         },
+//         680: {
+//             slidesPerView: 1.5,
+//         },
+//         1200: {
+//             slidesPerView: 2,
+//         },
+//         1250: {
+//             slidesPerView: 2.5,
+//         },
+//         1300: {
+//             slidesPerView: 3,
+//         },
+
+
+//         2000: {
+//             slidesPerView: 3,
+//             spaceBetween: 16,
+//         },
+//     },
+// });
 $(".cancel").on("click", function () {
     let formId = $(this).parent().prev().attr("id")
     switch (formId) {
@@ -182,6 +224,7 @@ $("#Tourist .details").on("click", function () {
     $(this).next().toggleClass("d-none")
 })
 
+
 $(".langss").on("click", ".language", function () {
     $(this).toggleClass("chosenn")
     let chsn = $(".language.chosenn")
@@ -194,6 +237,7 @@ $(".activitiess").on("click", ".activity", function () {
     let btn = $(".clearActivities")
     checkButton(btn, chsn)
 })
+
 
 function showTab(btn, id, rem) {
     $(".headTitle .active").removeClass("active")
@@ -309,12 +353,14 @@ $(".dropdownMenu").click(function (event) {
     event.stopPropagation();
 });
 $(".burgerOpen").on("click", function () {
-    $(this).addClass("d-none")
-    $(this).next().removeClass("d-none")
+    $(this).toggleClass("d-none")
+    $(this).next().toggleClass("d-none")
+    $('body').addClass('overflow-hidden')
 })
 $(".burgerClose").on("click", function () {
     $(this).addClass("d-none")
     $(this).prev().removeClass("d-none")
+    $('body').removeClass('overflow-hidden')
 })
 $("#profileHeader .dropdownn").click(function (event) {
     event.stopPropagation();

@@ -222,18 +222,14 @@
                             <a class="nav-link active" aria-current="page" href="./searchForTourists.html">Поиск
                                 туристов </a>
                             <a class="nav-link aboutUsLink" href="./aboutUs.html">О нас </a>
-                            <div class="languageDropdown">
-                                <a class="nav-link" href="#">Ru <span><i class="fas fa-chevron-down"></i></span></a>
-                                <div class="dropdownMenu d-none">
-                                    <ul>
-                                        <li>
-                                            Az
-                                        </li>
-                                        <li>
-                                            Ru
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="languageDropdown"> <select name="langs" id="">
+                                    <option class="nav-link" value="az">
+                                        Az
+                                    </option>
+                                    <option class="nav-link" value="ru">
+                                        Ru
+                                    </option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -646,19 +642,89 @@
                                         Почасовая оплата
                                     </div>
                                     <div class="row">
-                                        <div class="col-lg-9 col-md-9 col-7">
+                                        <div class="col-lg-8 col-md-8 col-7">
                                             <input class="w-100" type="text">
                                         </div>
-                                        <div class="dropdown col-lg-3 col-md-3 col-5 p-0 ">
-                                            <button class="btn d-flex  " type="button" id="dropdownMenuButton1"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                <span> EUR</span> <img src="./assets/img/downdown.svg" alt="down icon ">
-                                            </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a class="dropdown-item" href="#">EUR</a></li>
-                                                <li><a class="dropdown-item" href="#">USD</a></li>
-                                                <li><a class="dropdown-item" href="#">AZN</a></li>
-                                            </ul>
+                                        <style>
+                                            .select-main {
+                                                width: 100%;
+                                                -ms-overflow-style: none;
+                                                scrollbar-width: none;
+                                            }
+
+                                            ul.select-list {
+                                                -ms-overflow-style: none;
+                                                scrollbar-width: none;
+                                                list-style: none;
+                                                padding: 0;
+                                                position: absolute;
+                                                list-style: none;
+                                                padding: 0;
+                                                background: #ffffff;
+                                                border: 1px solid #e5e7eb;
+                                                box-sizing: border-box !important;
+                                                box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1) !important;
+                                                border-radius: 12px !important;
+                                                cursor: pointer;
+                                                box-sizing: border-box;
+                                                border-radius: 12px;
+                                                color: black;
+                                            }
+
+                                            .select-set {
+                                                position: relative;
+                                                background: #ffffff !important;
+                                                border: 1px solid #e5e7eb !important;
+                                                box-sizing: border-box !important;
+                                                box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1) !important;
+                                                border-radius: 12px !important;
+                                                padding: 12px 16px;
+
+                                            }
+
+                                            .select-set::after {
+                                                font-family: "Font Awesome 5 Free";
+                                                font-weight: 900;
+                                                font-size: 14px;
+                                                position: absolute;
+                                                left: 50px;
+                                                content: "\f078";
+                                            }
+
+                                            .select-list::-webkit-scrollbar {
+                                                width: 0;
+                                                background: transparent;
+                                            }
+
+                                            ul.select-list li {
+                                                font-family: "Open Sans", sans-serif;
+                                                font-style: normal;
+                                                cursor: pointer;
+                                                font-weight: normal;
+                                                font-size: 14px;
+                                                line-height: 160%;
+                                                letter-spacing: 0.02em;
+                                                color: #11142d;
+                                                width: 100%;
+                                                padding: 8px 16px;
+                                            }
+
+                                            ul.select-list li:hover {
+                                                color: #258ee3 !important;
+                                            }
+
+                                            ul.select-list li:first-of-type,
+                                            ul.select-list li:nth-last-of-type(2) {
+                                                border-bottom: 1px solid #e5e7eb;
+                                            }
+                                        </style>
+                                        <div class="dropdown col-lg-4 col-md-4 col-5 p-0 "> <select name="langs"
+                                                class="dropdownMenu ui-select">
+                                                <option value="EUR">EUR
+                                                </option>
+                                                <option value="USD">USD</option>
+                                                <option value="AZN">AZN</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -1047,7 +1113,9 @@
             <!-- only here  -->
             <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker.min.js"></script>
             <script src="./js/scriptSecond.js"></script>
-            <script src="./js/script.js"></script>
+            <script src="./js/jquery-ui.min.js"></script>
+            <script src="./js/select-widget-min.js"></script>
+            <script src="./js/dropdownSelect.js"></script>
             <!-- only here  -->
 </body>
 
